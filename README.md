@@ -97,6 +97,18 @@ git status
 git checkout branch-name
 ```
 
+### Create a New Branch
+
+**Create and switch to a new branch:**
+```bash
+git checkout -b new-branch-name
+```
+
+**Or create a branch without switching:**
+```bash
+git branch new-branch-name
+```
+
 ### Stage Changes
 
 > **⚠️ Important Note:** When adding files, make sure you are in the correct file path. If the files you want to add are outside of the `frontend` folder, you must navigate outside of the `frontend` folder first before adding those files.
