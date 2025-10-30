@@ -51,7 +51,7 @@ The application will open in your default browser at `http://localhost:3000`
 
 ## 🧱 Project Structure
 
-Here's a general overview of the React project layout:
+Here's a general overview of the React planned project layout:
 
 ```
 frontend/
