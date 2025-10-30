@@ -1,22 +1,20 @@
 # SAWO React
-
 Welcome to the SAWO React Application! This guide will help you set up and run the project locally.
 
 ---
 
 ## 📋 Prerequisites
-
 Before you begin, ensure you have the following installed:
 - [Node.js](https://nodejs.org/) (v20 or higher)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
 - [Git](https://git-scm.com/)
 
-## 🚀 Getting Started
+---
 
+## 🚀 Getting Started
 Follow these steps to get the application running on your local machine:
 
 ### 1️⃣ Clone the Repository
-
 Clone the repository using one of the following commands:
 
 **Clone the default branch:**
@@ -30,27 +28,25 @@ git clone -b "branch-name" https://github.com/SawoWebDev/sawocom.git
 ```
 
 ### 2️⃣ Navigate to the Frontend Directory
-
 ```bash
 cd frontend
 ```
 
 ### 3️⃣ Install Dependencies
-
 ```bash
 npm install
 ```
 
 ### 4️⃣ Run the Application
-
 ```bash
 npm start
 ```
 
 The application will open in your default browser at `http://localhost:3000`
 
-## 🧱 Project Structure
+---
 
+## 🧱 Project Structure
 Here's a general overview of the React planned project layout:
 
 ```
@@ -69,8 +65,9 @@ frontend/
 └── README.md
 ```
 
-## 📦 Available Scripts
+---
 
+## 📦 Available Scripts
 In the project directory, you can run:
 
 ### `npm start`
@@ -85,11 +82,53 @@ Builds the app for production to the `build` folder.
 ### `npm run eject`
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## 🛠️ Built With
+---
 
+## 🔀 Git Commands
+Here are commonly used Git commands for working with this project:
+
+### Check Repository Status
+```bash
+git status
+```
+
+### Switch to a Different Branch
+```bash
+git checkout branch-name
+```
+
+### Stage Changes
+
+**Add all files:**
+```bash
+git add .
+```
+
+**Add a specific file:**
+```bash
+git add /filepath
+```
+
+### Commit Changes
+```bash
+git commit -m "Commit comment"
+```
+
+### Push Changes
+
+**Push to main branch:**
+```bash
+git push origin
+```
+
+**Push to a specific branch:**
+```bash
+git push origin branch-name
+```
+
+---
+
+## 🛠️ Built With
 - [React](https://reactjs.org/) - A JavaScript library for building user interfaces
 - [Node.js](https://nodejs.org/) - JavaScript runtime
 - [npm](https://www.npmjs.com/) - Package manager
-
-
-Set Up Your Backend Project
