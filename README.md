@@ -99,6 +99,8 @@ git checkout branch-name
 
 ### Stage Changes
 
+> **⚠️ Important Note:** When adding files, make sure you are in the correct file path. If the files you want to add are outside of the `frontend` folder, you must navigate outside of the `frontend` folder first before adding those files.
+
 **Add all files:**
 ```bash
 git add .
@@ -106,7 +108,20 @@ git add .
 
 **Add a specific file:**
 ```bash
-git add /filepath
+git add filename.ext
+```
+Example:
+```bash
+git add README.md
+```
+
+**Add a specific folder:**
+```bash
+git add foldername/
+```
+Example:
+```bash
+git add frontend/
 ```
 
 ### Commit Changes
