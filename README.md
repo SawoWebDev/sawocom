@@ -47,21 +47,71 @@ The application will open in your default browser at `http://localhost:3000`
 ---
 
 ## 🧱 Project Structure
-Here's a general overview of the React planned project layout:
+Here's a comprehensive overview of the SAWOJS project layout:
 
 ```
-frontend/
-├── public/
-│   ├── index.html
-│   └── favicon.ico
-├── src/
-│   ├── assets/          # Images and icons
-│   ├── components/      # Reusable components
-│   ├── pages/           # Page-level components
-│   ├── styles/          # Global and component-specific styles
-│   ├── App.js
-│   └── index.js
-├── package.json
+SAWOJS/
+│
+├── backend/
+│   ├── app.js
+│   ├── .env
+│   ├── package.json
+│   ├── models/
+│   │   ├── db.js
+│   │   ├── Template.js            # Model for custom templates
+│   │   ├── Page.js                # Model for custom pages that use templates
+│   │   ├── Content.js             # Model for form content/input data
+│   │   ├── Seo.js                 # Model for SEO fields
+│   ├── routes/
+│   │   ├── templates.js           # API endpoints for managing templates
+│   │   ├── pages.js               # API endpoints for managing custom pages
+│   │   ├── content.js             # API endpoints for managing content
+│   │   ├── seo.js                 # API endpoints for managing SEO data
+│   ├── controllers/
+│   │   ├── templatesController.js
+│   │   ├── pagesController.js
+│   │   ├── contentController.js
+│   │   ├── seoController.js
+│   ├── middleware/
+│   │   ├── auth.js                # Authentication middleware
+│   │   ├── validate.js            # Validation middleware
+│   ├── utils/
+│   │   ├── emailSender.js         # For sending emails
+│   │   ├── templateEngine.js      # For rendering templates
+│   │   ├── formGenerator.js       # For generating forms from templates
+│   └── README.md
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Header.jsx         # Reusable Header
+│   │   │   ├── Footer.jsx         # Reusable Footer
+│   │   │   ├── TemplateRenderer.jsx   # Renders custom templates
+│   │   │   ├── FormGenerator.jsx      # Renders forms for template input
+│   │   │   ├── SeoFields.jsx          # Component for SEO input fields
+│   │   ├── pages/
+│   │   │   ├── MainPage.jsx
+│   │   │   ├── CustomPage.jsx        # Renders selected custom template/content
+│   │   │   ├── CreateTemplate.jsx    # UI for drag-and-drop template creation
+│   │   │   ├── ManageTemplates.jsx   # List/select templates
+│   │   ├── hooks/
+│   │   │   ├── useTemplates.js
+│   │   │   ├── useContent.js
+│   │   ├── utils/
+│   │   │   ├── api.js                # API calls to backend
+│   │   ├── App.js
+│   │   ├── index.js
+│   └── README.md
+│
+├── database/
+│   ├── schema.sql                   # All table definitions (templates, pages, content, seo, etc.)
+│
+├── docs/
+│   ├── architecture.md
+│   ├── routes.md
+│   ├── templates.md
+│   ├── seo.md
+│
 └── README.md
 ```
 
