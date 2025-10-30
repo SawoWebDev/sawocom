@@ -141,6 +141,28 @@ git push origin
 git push origin branch-name
 ```
 
+### Delete a Local Branch
+
+**Switch to main branch:**
+```bash
+git checkout main
+```
+
+**Pull latest changes:**
+```bash
+git pull origin main
+```
+
+**Delete the local branch:**
+```bash
+git branch -d branch-name
+```
+
+**Fetch and prune to remove remote-tracking references:**
+```bash
+git fetch -p
+```
+
 ---
 
 ## 🛠️ Built With
