@@ -1,4 +1,4 @@
-# React Application
+# SAWO React
 
 Welcome to the SAWO React Application! This guide will help you set up and run the project locally.
 
