@@ -8,23 +8,23 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.  
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload when you make changes.  
 You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in the interactive watch mode.  
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.  
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
+The build is minified and the filenames include the hashes.  
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
@@ -68,3 +68,148 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---
+
+## Git Workflow
+
+### GitHub Flow
+
+![GitHub Flow Diagram](./src/assets/GithubFlow.png)
+
+### Git Commands Reference
+
+```bash
+# Create and switch to a new branch
+git branch <branch-name>
+git checkout <branch-name>
+# or use: git checkout -b <branch-name>
+
+# Push branch to remote
+git push -u origin <branch-name>
+
+# Fetch updates from remote
+git fetch
+
+# Switch to development branch
+git checkout development
+
+# Check status of changes
+git status
+
+# Stage all changes
+git add .
+
+# Commit changes
+git commit -m "Your commit message"
+
+# Push to remote
+git push
+```
+
+---
+
+## React Learning Guide
+
+### 1. React Core Concepts (Quick Review)
+
+- **JSX**: Syntax extension for JavaScript
+- **Components**: Functional and class components
+- **Props & State**: Passing data and managing local state
+- **Event Handling**: Handling user events
+
+### 2. Intermediate React
+
+#### Hooks
+
+- `useState`, `useEffect`, `useContext`
+- Custom hooks
+
+#### Component Composition
+
+- Children props
+- Render props
+- Higher-order components (HOC)
+
+#### Context API
+
+- Global state management without Redux
+
+#### Forms
+
+- Controlled vs uncontrolled components
+- Form libraries: Formik, React Hook Form
+
+#### Routing
+
+- React Router (v6+)
+
+#### Data Fetching
+
+- Fetch API, Axios, SWR, React Query
+
+### 3. Advanced React
+
+#### Performance Optimization
+
+- Memoization: `React.memo`, `useMemo`, `useCallback`
+- Code splitting and lazy loading: `React.lazy`, `Suspense`
+- Error Boundaries
+
+#### Testing
+
+- Unit testing with Jest and React Testing Library
+
+#### TypeScript with React
+
+- Optional but recommended
+
+#### State Management
+
+- Redux Toolkit
+- Zustand
+- Recoil
+- Jotai
+- MobX
+
+#### Server-Side Rendering (SSR) & Static Site Generation (SSG)
+
+- Next.js framework
+
+#### Additional Topics
+
+- Custom hooks & reusable components
+- Accessibility (a11y)
+- Animations: Framer Motion, React Spring
+
+### 4. Best Practices & Patterns
+
+- Folder structure and scalable architecture
+- Prop drilling vs context vs state management
+- Code splitting and lazy loading
+- Environment variables and configuration
+
+### 5. Ecosystem & Tooling
+
+- **Linting**: ESLint
+- **Formatting**: Prettier
+- **DevTools**: React DevTools, Redux DevTools
+- **Deployment**: Vercel, Netlify, AWS, etc.
+
+### 6. Project Ideas for Practice
+
+- Dashboard with authentication
+- E-commerce frontend
+- Blog with markdown support
+- Real-time chat app (with WebSockets)
+- Integration with REST APIs or GraphQL
+
+---
+
+## Contributing
+
+Contributions are welcome! Please follow the Git workflow outlined above.
+
+## License
+
+This project is licensed under the MIT License.
