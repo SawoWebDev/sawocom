@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import heroBg from "../assets/STONE-WALL-WITH-BLACK-ACC-and-sawo-30-wall-revised.webp";
 
 const Hero = () => {
   useEffect(() => {
@@ -8,7 +9,10 @@ const Hero = () => {
       "wellness with ancient tradition",
       "an authentic Finnish sauna",
     ];
-    let n = 0, i = 0, isTyping = true, spans = [];
+    let n = 0,
+      i = 0,
+      isTyping = true,
+      spans = [];
 
     function setupSentence() {
       const current = sentences[n];
@@ -49,17 +53,23 @@ const Hero = () => {
   }, []);
 
   return (
+    // eslint-disable-next-line jsx-a11y/no-redundant-roles
     <section
       className="sauna-unique relative z-0 min-h-[95vh]"
       role="region"
       aria-label="Sauna Sentences"
       style={{
-        background: `url('https://www.sawo.com/wp-content/uploads/2025/09/STONE-WALL-WITH-BLACK-ACC-and-sawo-30-wall-revised-home-page.jpg') center/cover no-repeat`,
+        backgroundImage: `url(${heroBg})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <h1 className="experience-title">Experience . . .</h1>
       <div className="sr-only">
-        a rejuvenating escape, wellness with ancient tradition, an authentic Finnish sauna, SAWO sauna heaters, Finnish sauna, sauna accessories, infrared sauna, steam generator
+        a rejuvenating escape, wellness with ancient tradition, an authentic
+        Finnish sauna, SAWO sauna heaters, Finnish sauna, sauna accessories,
+        infrared sauna, steam generator
       </div>
       <div className="stack">
         <div className="typewriter"></div>
@@ -91,8 +101,14 @@ const Hero = () => {
           flex-direction: column;
           justify-content: center;
           color: #fff;
-          font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto,
-            Arial, sans-serif !important;
+          font-family:
+            "Montserrat",
+            system-ui,
+            -apple-system,
+            "Segoe UI",
+            Roboto,
+            Arial,
+            sans-serif !important;
           font-weight: 400;
           padding: 20px;
         }
@@ -147,8 +163,11 @@ const Hero = () => {
           padding: clamp(8px, 2vw, 14px) clamp(14px, 3.5vw, 28px);
           border-radius: 4px;
           text-decoration: none !important;
-          transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out,
-            border-color 0.3s ease-in-out, transform 0.25s ease;
+          transition:
+            background-color 0.3s ease-in-out,
+            color 0.5s ease-in-out,
+            border-color 0.3s ease-in-out,
+            transform 0.25s ease;
         }
         .sauna-unique .btn:hover {
           background: #fff !important;
