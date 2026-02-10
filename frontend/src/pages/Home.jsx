@@ -66,8 +66,23 @@ const Home = () => {
       {/* Hero Section (Full Width, No Padding) */}
       <Hero />
 
+      {/* Title Above Carousel */}
+      <section className="py-8">
+        <h2
+          className="text-center"
+          style={{
+            fontFamily: "Montserrat, sans-serif",
+            fontWeight: 500,
+            color: "rgb(175, 133, 100)",
+            fontSize: "35px",
+          }}
+        >
+          Dive into our SAuna WOrld
+        </h2>
+      </section>
+
       {/* Carousel Section */}
-      <section className="py-12 bg-gray-50">
+      <section className="pb-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <div
             className="sawo-carousel-container overflow-x-auto overflow-y-hidden flex gap-5 snap-x scroll-smooth"
@@ -97,7 +112,7 @@ const Home = () => {
                       <div className="sawo-carousel-title text-white text-base uppercase font-normal">
                         {item.title}
                       </div>
-                      <div className="sawo-carousel-caption text-white text-sm opacity-0 translate-y-2 transition-all duration-300">
+                      <div className="sawo-carousel-caption text-white text-xs sm:text-sm md:text-sm opacity-0 translate-y-2 transition-all duration-300">
                         {item.caption}
                       </div>
                     </div>
