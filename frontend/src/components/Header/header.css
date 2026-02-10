@@ -1,0 +1,172 @@
+/* header.css */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: transform 0.5s ease;
+}
+
+.header-hidden {
+  transform: translateY(-100%);
+}
+
+.header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-wrap {
+  flex-shrink: 0;
+}
+
+.site-logo {
+  width: auto;
+  height: auto;
+  max-height: 80px;
+  min-height: 56px;
+  max-width: 160px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.main-nav {
+  display: flex;
+  gap: 28px;
+  white-space: nowrap;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #af8564;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  min-width: 220px;
+  z-index: 1100;
+}
+
+.dropdown-link {
+  display: block;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 23px;
+  color: #333;
+  text-decoration: none;
+  margin: 2px;
+}
+
+.dropdown-link:hover {
+  background: #af8564;
+  color: #fff;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.mobile-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.mobile-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.mobile-link {
+  width: 100%;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+}
+
+.mobile-link:hover {
+  background: #af8564;
+  color: #fff;
+}
+
+.mobile-submenu {
+  background: #f7f7f7;
+}
+
+.mobile-sublink {
+  display: block;
+  padding: 10px 28px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 23px;
+  color: #333;
+  text-decoration: none;
+}
+
+.mobile-sublink:hover {
+  background: #af8564;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .site-logo {
+    max-height: 56px;
+  }
+}
+
+/* ===========================
+   HEADER STYLES — END
+=========================== */

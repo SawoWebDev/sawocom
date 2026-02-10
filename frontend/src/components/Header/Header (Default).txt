@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
+import sLogo from "../assets/SAWO_logo.webp";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -56,16 +57,17 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-[1000] transition-all duration-500 ${isScrolled
+      className={`fixed top-0 left-0 w-full z-[1000] transition-all duration-500 ${
+        isScrolled
           ? "bg-white shadow-md"
           : "bg-gradient-to-b from-black/70 to-transparent"
-        }`}
+      }`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
         {/* Logo */}
         <a href="#" className="flex items-center space-x-2">
           <img
-            src="https://www.sawo.com/wp-content/uploads/2025/09/SAWO_logo.webp"
+            src={sLogo}
             alt="SAWO Logo"
             className="h-14 md:h-20 w-auto object-contain"
           />
@@ -81,8 +83,9 @@ const Header = () => {
               onMouseLeave={handleMouseLeave}
             >
               <button
-                className={`flex items-center space-x-1 ${isScrolled ? "text-[#333333]" : "text-white"
-                  } hover:text-[#af8564] transition`}
+                className={`flex items-center space-x-1 ${
+                  isScrolled ? "text-[#333333]" : "text-white"
+                } hover:text-[#af8564] transition`}
               >
                 <span>{item.name}</span>
                 {item.submenu && <ChevronDown size={16} />}
@@ -114,8 +117,9 @@ const Header = () => {
 
         {/* Mobile Toggle */}
         <button
-          className={`md:hidden ${isScrolled ? "text-[#333333]" : "text-white"
-            } text-2xl`}
+          className={`md:hidden ${
+            isScrolled ? "text-[#333333]" : "text-white"
+          } text-2xl`}
           onClick={() => setMobileOpen(!mobileOpen)}
         >
           ☰
