@@ -1,5 +1,5 @@
 import MainLayout from "./layouts/MainLayout";
-import Home from "./pages/Home"; // Carousel section
+import Home from "pages/Home"; // Carousel section
 
 function App() {
   return (

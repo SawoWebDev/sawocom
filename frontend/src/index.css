@@ -11,10 +11,14 @@ body {
   color: #333;
 }
 
+/* ===========================
+   HEADER STYLES — END
+=========================== */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-5px);
+    transform: translateY(-6px);
   }
   to {
     opacity: 1;
