@@ -1,6 +1,8 @@
 // src/pages/Hero.jsx
 import React, { useEffect } from "react";
 import heroBg from "assets/Home/SAWO-hero.webp";
+// import heroBgSmall from "assets/Home/SAWO-hero-400.webp";
+// import heroBgMedium from "assets/Home/SAWO-hero-800.webp";
 
 const Hero = () => {
   useEffect(() => {
@@ -10,10 +12,7 @@ const Hero = () => {
       "wellness with ancient tradition",
       "an authentic Finnish sauna",
     ];
-    let n = 0,
-      i = 0,
-      isTyping = true,
-      spans = [];
+    let n = 0, i = 0, isTyping = true, spans = [];
 
     function setupSentence() {
       const current = sentences[n];
@@ -54,20 +53,32 @@ const Hero = () => {
   }, []);
 
   return (
-    <section
-      className="sauna-unique relative z-0 min-h-[95vh] flex flex-col justify-center px-5 md:px-10"
-      style={{
-        backgroundImage: `url(${heroBg})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+    <section className="sauna-unique relative z-0 w-full min-h-[95vh] flex flex-col justify-center px-5 md:px-10">
+      {/* Preload hero image */}
+      <link rel="preload" as="image" href={heroBg} fetchpriority="high" />
+
+      {/* Hero image */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+        <img
+          src={heroBg}
+          alt="SAWO hero"
+          className="w-full h-full object-cover"
+          loading="eager"
+          decoding="async"
+        />
+        {/*
+        // Uncomment when responsive images are available
+        <picture>
+          <source type="image/webp" media="(max-width:640px)" srcSet={heroBgSmall} />
+          <source type="image/webp" media="(max-width:1024px)" srcSet={heroBgMedium} />
+          <img src={heroBg} alt="SAWO hero" className="w-full h-full object-cover" loading="eager" decoding="async" />
+        </picture>
+        */}
+      </div>
+
       <h1
         className="experience-title font-montserrat font-bold text-white text-left whitespace-nowrap text-2xl mt-10 sm:text-4xl md:text-5xl lg:text-[60px] leading-tight"
-        style={{
-          textShadow: "4px 6px 7px rgba(0,0,0,0.5)",
-        }}
+        style={{ textShadow: "4px 6px 7px rgba(0,0,0,0.5)" }}
       >
         Experience . . .
       </h1>
@@ -81,14 +92,9 @@ const Hero = () => {
       <div className="stack flex flex-col items-center text-center">
         <div
           className="typewriter font-montserrat font-light text-white text-center mb-6 sm:mb-8 text-lg sm:text-2xl md:text-4xl lg:text-[46px] leading-snug"
-          style={{
-            letterSpacing: "0.2px",
-            textShadow: "0px 12px 10px rgba(0,0,0,0.9)",
-            minHeight: "1.4em",
-          }}
+          style={{ letterSpacing: "0.2px", textShadow: "0px 12px 10px rgba(0,0,0,0.9)", minHeight: "1.4em" }}
         ></div>
 
-        {/* Responsive Button */}
         <a
           href="https://www.sawo.com/wp-content/uploads/2025/10/SAWO-Product-Catalogue-2025.pdf"
           download="SAWO-Product-Catalogue-2025.pdf"
