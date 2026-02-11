@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import sLogo from "assets/SAWO-logo.webp";
 import heroBg from "assets/Home/SAWO-hero.webp";
+import menuPaths from "menuPaths";
 
 export default function Header() {
   const [hidden, setHidden] = useState(false);
@@ -16,42 +18,56 @@ export default function Header() {
   const mobileMenuRef = useRef(null);
 
   const navItems = [
-    { name: "Home" },
+    { name: "Home", path: menuPaths.home },
     {
       name: "Sauna",
+      path: menuPaths.sauna, // Optional: make top parent clickable
       submenu: [
         {
           name: "Sauna Heaters",
           submenu: [
-            "Wall-Mounted",
-            "Tower",
-            "Stone",
-            "Floor",
-            "Combi",
-            "Dragonfire",
+            { name: "Wall-Mounted", path: menuPaths.sauna.heaters.wallMounted },
+            { name: "Tower", path: menuPaths.sauna.heaters.tower },
+            { name: "Stone", path: menuPaths.sauna.heaters.stone },
+            { name: "Floor", path: menuPaths.sauna.heaters.floor },
+            { name: "Combi", path: menuPaths.sauna.heaters.combi },
+            { name: "Dragonfire", path: menuPaths.sauna.heaters.dragonfire },
           ],
         },
-        { name: "Sauna Controls" },
-        { name: "Sauna Accessories" },
-        { name: "Sauna Rooms" },
+        { name: "Sauna Controls", path: menuPaths.sauna.controls },
+        { name: "Sauna Accessories", path: menuPaths.sauna.accessories },
+        { name: "Sauna Rooms", path: menuPaths.sauna.rooms },
       ],
     },
     {
       name: "Steam",
-      submenu: ["Steam Generators", "Steam Controls", "Accessories"],
-    },
-    { name: "Infrared" },
-    {
-      name: "Support",
+      path: menuPaths.steam, // Optional clickable parent
       submenu: [
-        "Frequently Asked Questions",
-        "User Manuals",
-        "Product Catalogue",
+        { name: "Steam Generators", path: menuPaths.steam.generators },
+        { name: "Steam Controls", path: menuPaths.steam.controls },
+        { name: "Accessories", path: menuPaths.steam.accessories },
       ],
     },
-    { name: "Contact Us" },
-    { name: "About Us", submenu: ["Latest News", "Sustainability"] },
-    { name: "Careers" },
+    { name: "Infrared", path: menuPaths.infrared },
+    {
+      name: "Support",
+      path: menuPaths.support, // Optional clickable parent
+      submenu: [
+        { name: "Frequently Asked Questions", path: menuPaths.support.faq },
+        { name: "User Manuals", path: menuPaths.support.manuals },
+        { name: "Product Catalogue", path: menuPaths.support.catalogue },
+      ],
+    },
+    { name: "Contact Us", path: menuPaths.contact },
+    {
+      name: "About Us",
+      path: menuPaths.about, // Optional clickable parent
+      submenu: [
+        { name: "Latest News", path: menuPaths.about.news },
+        { name: "Sustainability", path: menuPaths.about.sustainability },
+      ],
+    },
+    { name: "Careers", path: menuPaths.careers },
   ];
 
   // Hide header on scroll down + close mobile menu
@@ -82,10 +98,7 @@ export default function Header() {
   // Close mobile menu on outside click
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (
-        mobileMenuRef.current &&
-        !mobileMenuRef.current.contains(event.target)
-      ) {
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
         setMobileOpen(false);
       }
     };
@@ -131,14 +144,16 @@ export default function Header() {
         style={{ fontFamily: `"Montserrat"` }}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
-          <a href="/" className="flex-shrink-0">
+          {/* Logo */}
+          <Link to="/" className="flex-shrink-0">
             <img
               src={sLogo}
               alt="SAWO-logo"
               className="h-14 md:h-20 object-contain transition-all duration-300"
             />
-          </a>
+          </Link>
 
+          {/* Desktop nav */}
           {!forceMobile && (
             <nav
               ref={navRef}
@@ -151,53 +166,76 @@ export default function Header() {
                   onMouseEnter={() => handleMouseEnterMenu(item.name)}
                   onMouseLeave={handleMouseLeaveMenu}
                 >
-                  <button className="flex items-center gap-1 hover:text-[#af8564] transition-colors">
-                    {item.name}{" "}
-                    {item.submenu && (
-                      <i className="fa-solid fa-chevron-down text-[10px]"></i>
-                    )}
-                  </button>
+                  {/* Top-level link or button */}
+                  {item.submenu ? (
+                    item.path ? (
+                      <Link
+                        to={item.path}
+                        className="flex items-center gap-1 hover:text-[#af8564] transition-colors"
+                      >
+                        {item.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
+                      </Link>
+                    ) : (
+                      <button className="flex items-center gap-1 hover:text-[#af8564] transition-colors">
+                        {item.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
+                      </button>
+                    )
+                  ) : (
+                    <Link
+                      to={item.path}
+                      className="flex items-center gap-1 hover:text-[#af8564] transition-colors"
+                    >
+                      {item.name}
+                    </Link>
+                  )}
 
+                  {/* Submenu */}
                   {item.submenu && hoveredMenu === item.name && (
                     <div className="absolute left-0 top-full mt-2 bg-white rounded-md shadow-lg min-w-[220px] z-50">
-                      {item.submenu.map((sub) => (
-                        <div
-                          key={sub.name || sub}
-                          className="relative group"
-                          onMouseEnter={() => handleMouseEnterSubmenu(sub.name)}
-                          onMouseLeave={handleMouseLeaveSubmenu}
-                        >
-                          {sub.submenu ? (
-                            <>
+                      {item.submenu.map((sub) =>
+                        sub.submenu ? (
+                          <div
+                            key={sub.name}
+                            className="relative group"
+                            onMouseEnter={() => handleMouseEnterSubmenu(sub.name)}
+                            onMouseLeave={handleMouseLeaveSubmenu}
+                          >
+                            {sub.path ? (
+                              <Link
+                                to={sub.path}
+                                className="w-full text-left px-4 py-2 hover:bg-[#af8564] hover:text-white transition-colors rounded-md flex justify-between items-center"
+                              >
+                                {sub.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
+                              </Link>
+                            ) : (
                               <button className="w-full text-left px-4 py-2 hover:bg-[#af8564] hover:text-white transition-colors rounded-md flex justify-between items-center">
-                                {sub.name}{" "}
-                                <i className="fa-solid fa-chevron-down text-[10px]"></i>
+                                {sub.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
                               </button>
-
-                              {hoveredSubmenu === sub.name && (
-                                <div className="absolute top-0 left-full ml-1 bg-white rounded-md shadow-lg min-w-[180px] z-50">
-                                  {sub.submenu.map((item2) => (
-                                    <a
-                                      key={item2}
-                                      href="/"
-                                      className="block px-4 py-2 text-[16px] font-normal text-[rgb(51,51,51)] hover:bg-[#af8564] hover:text-white transition-colors rounded-md"
-                                    >
-                                      {item2}
-                                    </a>
-                                  ))}
-                                </div>
-                              )}
-                            </>
-                          ) : (
-                            <a
-                              href="/"
-                              className="block px-4 py-2 text-[16px] font-normal text-[rgb(51,51,51)] hover:bg-[#af8564] hover:text-white transition-colors rounded-md"
-                            >
-                              {sub.name || sub}
-                            </a>
-                          )}
-                        </div>
-                      ))}
+                            )}
+                            {hoveredSubmenu === sub.name && (
+                              <div className="absolute top-0 left-full ml-1 bg-white rounded-md shadow-lg min-w-[180px] z-50">
+                                {sub.submenu.map((item2) => (
+                                  <Link
+                                    key={item2.name || item2}
+                                    to={item2.path || "#"}
+                                    className="block px-4 py-2 text-[16px] font-normal text-[rgb(51,51,51)] hover:bg-[#af8564] hover:text-white transition-colors rounded-md"
+                                  >
+                                    {item2.name || item2}
+                                  </Link>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        ) : (
+                          <Link
+                            key={sub.name || sub}
+                            to={sub.path || "#"}
+                            className="block px-4 py-2 text-[16px] font-normal text-[rgb(51,51,51)] hover:bg-[#af8564] hover:text-white transition-colors rounded-md"
+                          >
+                            {sub.name || sub}
+                          </Link>
+                        )
+                      )}
                     </div>
                   )}
                 </div>
@@ -205,6 +243,7 @@ export default function Header() {
             </nav>
           )}
 
+          {/* Mobile toggle */}
           <button
             className="md:hidden text-2xl font-bold bg-transparent border-none cursor-pointer"
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -213,63 +252,92 @@ export default function Header() {
           </button>
         </div>
 
+        {/* Mobile menu */}
         {mobileOpen && (
           <div ref={mobileMenuRef} className="md:hidden bg-white shadow-lg">
             {navItems.map((item) => (
               <div key={item.name} className="border-b border-gray-200">
-                <button
-                  className="w-full px-4 py-3 flex justify-between items-center text-gray-800 font-normal hover:bg-[#af8564] hover:text-white transition-colors"
-                  onClick={() =>
-                    setHoveredMenu(hoveredMenu === item.name ? null : item.name)
-                  }
-                >
-                  {item.name}
-                  {item.submenu && (
-                    <i className="fa-solid fa-chevron-down text-[10px]"></i>
-                  )}
-                </button>
+                {/* Top-level link or toggle */}
+                {item.submenu ? (
+                  item.path ? (
+                    <Link
+                      to={item.path}
+                      className="w-full px-4 py-3 flex justify-between items-center text-gray-800 font-normal hover:bg-[#af8564] hover:text-white transition-colors"
+                      onClick={() => setMobileOpen(false)}
+                    >
+                      {item.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
+                    </Link>
+                  ) : (
+                    <button
+                      className="w-full px-4 py-3 flex justify-between items-center text-gray-800 font-normal hover:bg-[#af8564] hover:text-white transition-colors"
+                      onClick={() =>
+                        setHoveredMenu(hoveredMenu === item.name ? null : item.name)
+                      }
+                    >
+                      {item.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
+                    </button>
+                  )
+                ) : (
+                  <Link
+                    to={item.path}
+                    className="w-full px-4 py-3 flex items-center text-gray-800 font-normal hover:bg-[#af8564] hover:text-white transition-colors"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                )}
+
+                {/* Submenu */}
                 {item.submenu && hoveredMenu === item.name && (
                   <div className="bg-gray-50">
                     {item.submenu.map((sub) =>
                       sub.submenu ? (
-                        <div
-                          key={sub.name}
-                          className="border-t border-gray-200"
-                        >
-                          <button
-                            className="w-full px-6 py-2 flex justify-between items-center text-gray-800 font-normal hover:bg-[#af8564] hover:text-white transition-colors"
-                            onClick={() =>
-                              setHoveredSubmenu(
-                                hoveredSubmenu === sub.name ? null : sub.name,
-                              )
-                            }
-                          >
-                            {sub.name}{" "}
-                            <i className="fa-solid fa-chevron-down text-[10px]"></i>
-                          </button>
+                        <div key={sub.name} className="border-t border-gray-200">
+                          {sub.path ? (
+                            <Link
+                              to={sub.path}
+                              className="w-full px-6 py-2 flex justify-between items-center text-gray-800 font-normal hover:bg-[#af8564] hover:text-white transition-colors"
+                              onClick={() => setMobileOpen(false)}
+                            >
+                              {sub.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
+                            </Link>
+                          ) : (
+                            <button
+                              className="w-full px-6 py-2 flex justify-between items-center text-gray-800 font-normal hover:bg-[#af8564] hover:text-white transition-colors"
+                              onClick={() =>
+                                setHoveredSubmenu(
+                                  hoveredSubmenu === sub.name ? null : sub.name
+                                )
+                              }
+                            >
+                              {sub.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
+                            </button>
+                          )}
                           {hoveredSubmenu === sub.name && (
                             <div className="bg-gray-100">
                               {sub.submenu.map((item2) => (
-                                <a
-                                  key={item2}
-                                  href="/"
+                                <Link
+                                  key={item2.name || item2}
+                                  to={item2.path || "#"}
                                   className="block px-8 py-2 text-gray-800 hover:bg-[#af8564] hover:text-white transition-colors"
+                                  onClick={() => setMobileOpen(false)}
                                 >
-                                  {item2}
-                                </a>
+                                  {item2.name || item2}
+                                </Link>
                               ))}
                             </div>
                           )}
                         </div>
                       ) : (
-                        <a
+                        <Link
                           key={sub.name || sub}
-                          href="/"
+                          to={sub.path || "#"}
                           className="block px-6 py-2 text-gray-800 hover:bg-[#af8564] hover:text-white transition-colors"
+                          onClick={() => setMobileOpen(false)}
                         >
                           {sub.name || sub}
-                        </a>
-                      ),
+                        </Link>
+                      )
                     )}
                   </div>
                 )}

@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import Hero from "./Hero";
@@ -64,3 +64,4 @@ const Home = () => {
 };
 
 export default Home;
+
