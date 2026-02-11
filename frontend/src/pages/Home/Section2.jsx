@@ -1,4 +1,4 @@
-// src/pages/Home/Section2.jsx
+﻿// src/pages/Home/Section2.jsx
 import React, { useRef, useEffect, useState } from "react";
 
 // Import local images
@@ -205,3 +205,4 @@ const Section2 = () => {
 };
 
 export default Section2;
+

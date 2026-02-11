@@ -1,4 +1,4 @@
-// src/pages/Section1.jsx
+﻿// src/pages/Section1.jsx
 import React from "react";
 
 // Import local images from assets/Home
@@ -14,7 +14,7 @@ const Section1 = () => {
     {
       title: "SAUNA HEATERS",
       caption:
-        "Rejuvenate in the warmth of a traditional Finnish sauna with SAWO’s premium heaters.",
+        "Rejuvenate in the warmth of a traditional Finnish sauna with SAWOâ€™s premium heaters.",
       href: "https://www.sawo.com/sawo-products/finnish-sauna/sauna-heaters/",
       imgWebp: FinnishSauna,
       imgJpg: FinnishSauna,
@@ -175,3 +175,4 @@ const Section1 = () => {
 };
 
 export default Section1;
+

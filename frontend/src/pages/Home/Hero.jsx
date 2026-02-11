@@ -1,4 +1,4 @@
-// src/pages/Hero.jsx
+﻿// src/pages/Hero.jsx
 import React, { useEffect } from "react";
 import heroBg from "assets/Home/SAWO-hero.webp";
 // import heroBgSmall from "assets/Home/SAWO-hero-400.webp";
@@ -133,3 +133,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

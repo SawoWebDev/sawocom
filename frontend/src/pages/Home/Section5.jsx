@@ -1,4 +1,4 @@
-// src/pages/Section5.jsx
+﻿// src/pages/Section5.jsx
 import React, { useState, useRef, useCallback, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
@@ -88,7 +88,7 @@ const Section5 = () => {
               }}
             >
               We craft sauna solutions tailored to your style and space. Whether
-              for home or business, we've got you covered—from design to
+              for home or business, we've got you coveredâ€”from design to
               installation to technical support.
             </p>
             <p
@@ -191,3 +191,4 @@ const Section5 = () => {
 };
 
 export default Section5;
+

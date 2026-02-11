@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+﻿import React, { useRef, useEffect, useState } from "react";
 
 // Import all images locally
 import imgPailsLadles from "../../assets/Home/Section4/DRAGON-FIRE-PAIL-AND-LADDLE-SCENE.webp";
@@ -236,3 +236,4 @@ const Section4 = () => {
 };
 
 export default Section4;
+
