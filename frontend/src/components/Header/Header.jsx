@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import sLogo from "assets/SAWO-logo.webp";
-import heroBg from "assets/STONE-WALL-WITH-BLACK-ACC-and-sawo-30-wall-revised.webp";
+import heroBg from "assets/Home/SAWO-hero.webp";
 
 export default function Header() {
   const [hidden, setHidden] = useState(false);

@@ -1,6 +1,6 @@
 // src/pages/Hero.jsx
 import React, { useEffect } from "react";
-import heroBg from "assets/STONE-WALL-WITH-BLACK-ACC-and-sawo-30-wall-revised.webp";
+import heroBg from "assets/Home/SAWO-hero.webp";
 
 const Hero = () => {
   useEffect(() => {

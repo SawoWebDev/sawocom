@@ -3,6 +3,10 @@ import React, { useState, useRef, useCallback, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
+// Import local images
+import imgCustomizedSolutions from "../../assets/Home/Section5/Customized-Solutions_1.webp";
+import imgPreventiveMaintenance from "../../assets/Home/Section5/PREVENTIVE-MAINTENANCE_1.webp";
+
 const Section5 = () => {
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
@@ -10,11 +14,9 @@ const Section5 = () => {
 
   const handleMove = useCallback((clientX) => {
     if (!containerRef.current) return;
-
     const rect = containerRef.current.getBoundingClientRect();
     const x = clientX - rect.left;
     const percentage = (x / rect.width) * 100;
-
     setSliderPosition(Math.min(Math.max(percentage, 0), 100));
   }, []);
 
@@ -132,10 +134,11 @@ const Section5 = () => {
               {/* Background Image (Right side - Image 2) */}
               <div className="absolute inset-0">
                 <img
-                  src="https://www.sawo.com/wp-content/uploads/2025/12/Customized-Solutions_1.webp"
+                  src={imgCustomizedSolutions}
                   alt="Customized sauna solutions"
                   className="w-full h-full object-cover"
                   draggable="false"
+                  loading="eager"
                 />
               </div>
 
@@ -145,10 +148,11 @@ const Section5 = () => {
                 style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
               >
                 <img
-                  src="https://www.sawo.com/wp-content/uploads/2025/12/PREVENTIVE-MAINTENANCE_1.webp"
+                  src={imgPreventiveMaintenance}
                   alt="Preventive maintenance"
                   className="w-full h-full object-cover"
                   draggable="false"
+                  loading="eager"
                 />
               </div>
 

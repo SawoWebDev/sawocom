@@ -1,6 +1,14 @@
 // src/pages/Section1.jsx
 import React from "react";
 
+// Import local images from assets/Home
+import SteamGenerator from "../../assets/Home/Section1/5-SAUNA-ROOM-STEAM-GENERATOR.webp";
+import FinnishSauna from "../../assets/Home/Section1/FinnishSauna.webp";
+import SaunovaSeries from "../../assets/Home/Section1/INC-S-V2AspenSauna.webp";
+import InfraredSauna from "../../assets/Home/Section1/IR-SAUNA-1P-CEDAR.webp";
+import SaunaAccessories from "../../assets/Home/Section1/Sauna-Accessories.webp";
+import SaunaRoom from "../../assets/Home/Section1/Sauna-Room.webp";
+
 const Section1 = () => {
   const carouselItems = [
     {
@@ -8,32 +16,26 @@ const Section1 = () => {
       caption:
         "Rejuvenate in the warmth of a traditional Finnish sauna with SAWO’s premium heaters.",
       href: "https://www.sawo.com/sawo-products/finnish-sauna/sauna-heaters/",
-      imgWebp:
-        "https://www.sawo.com/wp-content/uploads/2025/05/FinnishSauna_.webp",
-      imgJpg:
-        "https://www.sawo.com/wp-content/uploads/2025/05/FinnishSauna_.jpg",
+      imgWebp: FinnishSauna,
+      imgJpg: FinnishSauna,
       alt: "Finnish sauna heater collection by SAWO for efficient sauna heating",
     },
     {
-      title: "STEAM GENERATOR",
+      title: "STEAM GENERATORS",
       caption:
         "Relieve your stress and tension with healing steam powered by SAWO generators.",
       href: "https://www.sawo.com/sawo-products/steam-sauna/steam-generators/",
-      imgWebp:
-        "https://www.sawo.com/wp-content/uploads/2025/05/5-SAUNA-ROOM-STEAM-GENERATOR1.webp",
-      imgJpg:
-        "https://www.sawo.com/wp-content/uploads/2025/05/5-SAUNA-ROOM-STEAM-GENERATOR1.jpg",
+      imgWebp: SteamGenerator,
+      imgJpg: SteamGenerator,
       alt: "SAWO steam generator for modern sauna and spa steam rooms",
     },
     {
-      title: "SAUNA ROOM",
+      title: "SAUNA ROOMS",
       caption:
         "Relax, detox, and rejuvenate in a SAWO-designed sauna room with therapeutic heat.",
       href: "https://www.sawo.com/sawo-products/finnish-sauna/sauna-rooms/",
-      imgWebp:
-        "https://www.sawo.com/wp-content/uploads/2025/07/StandardSauna386px.webp",
-      imgJpg:
-        "https://www.sawo.com/wp-content/uploads/2025/07/StandardSauna386px.jpg",
+      imgWebp: SaunaRoom,
+      imgJpg: SaunaRoom,
       alt: "Standard Finnish sauna room by SAWO with natural wood design",
     },
     {
@@ -41,10 +43,8 @@ const Section1 = () => {
       caption:
         "Experience deep relaxation with advanced infrared sauna technology.",
       href: "https://www.sawo.com/sawo-products/infrared-sauna/",
-      imgWebp:
-        "https://www.sawo.com/wp-content/uploads/2025/04/IR-SAUNA-1P-CEDAR-SCENE-.webp",
-      imgJpg:
-        "https://www.sawo.com/wp-content/uploads/2025/04/IR-SAUNA-1P-CEDAR-SCENE-.webp",
+      imgWebp: InfraredSauna,
+      imgJpg: InfraredSauna,
       alt: "Infrared sauna with cedar wood interior by SAWO",
     },
     {
@@ -52,11 +52,18 @@ const Section1 = () => {
       caption:
         "Enhance your sauna with thoughtfully designed SAWO accessories.",
       href: "https://www.sawo.com/sawo-products/finnish-sauna/sauna-accessories/",
-      imgWebp:
-        "https://www.sawo.com/wp-content/uploads/2025/04/Sauna-Accessories-Cover1.webp",
-      imgJpg:
-        "https://www.sawo.com/wp-content/uploads/2025/04/Sauna-Accessories-Cover1.jpg",
+      imgWebp: SaunaAccessories,
+      imgJpg: SaunaAccessories,
       alt: "SAWO sauna accessories collection including buckets, ladles, and thermometers",
+    },
+    {
+      title: "SAUNA CONTROLS",
+      caption:
+        "Precise temperature and time control for total comfort.",
+      href: "https://www.sawo.com/sawo-products/finnish-sauna/sauna-controls/",
+      imgWebp: SaunovaSeries,
+      imgJpg: SaunovaSeries,
+      alt: "SAWO sauna control system for ultimate comfort",
     },
   ];
 
@@ -99,7 +106,6 @@ const Section1 = () => {
                         src={item.imgJpg}
                         alt={item.alt}
                         title={item.title}
-                        loading="lazy"
                         className="w-full h-auto block transition-transform duration-500 ease-in-out hover:scale-105"
                       />
                     </picture>
@@ -134,7 +140,7 @@ const Section1 = () => {
         .sawo-carousel-track {
           display: flex;
           gap: 20px;
-          animation: sawo-scroll 10s linear infinite;
+          animation: sawo-scroll 17s linear infinite;
         }
         .sawo-carousel-item:hover .sawo-carousel-caption {
           opacity: 1;
