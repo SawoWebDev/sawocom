@@ -43,7 +43,7 @@ export default function Footer() {
 
           {/* Column 4 - Social Media */}
           <div className="flex flex-col items-center text-center">
-            <img src={sLogo} alt="SAWO" className="h-20 mb-4" />
+            <img src={sLogo} alt="SAWO" className="h-20 w-auto mb-4" />
             <h3 className="font-bold text-lg mb-2">Follow Us</h3>
             <div className="flex flex-wrap justify-center gap-4 text-xl">
               <a href="#" className="hover:text-gray-300"><i className="fab fa-facebook-f"></i></a>
@@ -91,58 +91,60 @@ export default function Footer() {
           </div>
         </div>
 
-{/* Offices */}
-<div className="py-8">
-  <h3 className="font-bold text-lg mb-6 text-center lg:text-left">OFFICES</h3>
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-    {[ // Array for easy mapping
-      {
-        icon: "fas fa-globe",
-        title: "GLOBAL SALES & GENERAL INQUIRIES",
-        company: "SAWO Inc.",
-        address: ["Mactan Economic Zone 2, Mactan,", "Cebu 6015, Philippines"],
-        tel: "+63 32 341 2233",
-        email: "info@sawo.com",
-      },
-      {
-        icon: "fas fa-warehouse",
-        title: "SALES & WAREHOUSE FOR THE NORDICS",
-        company: "SAWO Nordic Oy.",
-        address: ["Hampuntie 18, 36220 Kangasala,", "Finland"],
-        tel: "+358 40 038 3265",
-        email: "finland@sawo.com",
-      },
-      {
-        icon: "fas fa-warehouse",
-        title: "SALES & WAREHOUSE FOR ASIA",
-        company: "F.E.M. Ltd",
-        address: ["2302, 23rd Floor, Cable TV Tower 9", "Hoi Shing Road, Tsuen Wan, Hong Kong"],
-        tel: "+852 2417 1188",
-        email: "hongkong@sawo.com",
-      },
-      {
-        icon: "fas fa-warehouse",
-        title: "SALES & WAREHOUSE FOR EUROPE",
-        company: "SAWO EUROPE HUB",
-        address: ["De Vest 24, 5555 XL Valkenswaard", "Netherlands"],
-        tel: "+358 40 016 8269",
-        email: "europehub@sawo.com",
-      },
-    ].map((office, idx) => (
-      <div key={idx} className="flex flex-col sm:flex-row items-start gap-3 text-sm text-center lg:text-left">
-        <i className={`${office.icon} text-xl mt-1 sm:mt-0`}></i>
-        <div className="flex-1">
-          <h4 className="font-bold text-lg mb-1 leading-[1.3]">{office.title}</h4>
-          <p className="font-semibold">{office.company}</p>
-          {office.address.map((line, i) => <p key={i}>{line}</p>)}
-          <p>Tel: <a href={`tel:${office.tel}`} className="hover:text-gray-300">{office.tel}</a></p>
-          <p><a href={`mailto:${office.email}`} className="hover:text-gray-300">{office.email}</a></p>
+        {/* Offices */}
+        <div className="py-8">
+          <h3 className="font-bold text-lg mb-6 text-center lg:text-left">OFFICES</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                icon: "fas fa-globe",
+                title: "GLOBAL SALES & GENERAL INQUIRIES",
+                company: "SAWO Inc.",
+                address: ["Mactan Economic Zone 2, Mactan,", "Cebu 6015, Philippines"],
+                tel: "+63 32 341 2233",
+                email: "info@sawo.com",
+              },
+              {
+                icon: "fas fa-warehouse",
+                title: "SALES & WAREHOUSE FOR THE NORDICS",
+                company: "SAWO Nordic Oy.",
+                address: ["Hampuntie 18, 36220 Kangasala,", "Finland"],
+                tel: "+358 40 038 3265",
+                email: "finland@sawo.com",
+              },
+              {
+                icon: "fas fa-warehouse",
+                title: "SALES & WAREHOUSE FOR ASIA",
+                company: "F.E.M. Ltd",
+                address: ["2302, 23rd Floor, Cable TV Tower 9", "Hoi Shing Road, Tsuen Wan, Hong Kong"],
+                tel: "+852 2417 1188",
+                email: "hongkong@sawo.com",
+              },
+              {
+                icon: "fas fa-warehouse",
+                title: "SALES & WAREHOUSE FOR EUROPE",
+                company: "SAWO EUROPE HUB",
+                address: ["De Vest 24, 5555 XL Valkenswaard", "Netherlands"],
+                tel: "+358 40 016 8269",
+                email: "europehub@sawo.com",
+              },
+            ].map((office, idx) => (
+              <div
+                key={idx}
+                className="flex flex-col sm:flex-row gap-3 text-sm text-center sm:text-left items-center sm:items-start"
+              >
+                <i className={`${office.icon} text-xl mt-1 sm:mt-0`}></i>
+                <div className="flex-1">
+                  <h4 className="font-bold text-lg mb-1 leading-[1.3]">{office.title}</h4>
+                  <p className="font-semibold">{office.company}</p>
+                  {office.address.map((line, i) => <p key={i}>{line}</p>)}
+                  <p>Tel: <a href={`tel:${office.tel}`} className="hover:text-gray-300">{office.tel}</a></p>
+                  <p><a href={`mailto:${office.email}`} className="hover:text-gray-300">{office.email}</a></p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    ))}
-  </div>
-</div>
-
 
         {/* Copyright */}
         <div className="text-center text-sm pt-6">
