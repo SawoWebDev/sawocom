@@ -1,5 +1,5 @@
 // src/pages/Section5.jsx
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useCallback, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -8,7 +8,7 @@ const Section5 = () => {
   const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef(null);
 
-  const handleMove = (clientX) => {
+  const handleMove = useCallback((clientX) => {
     if (!containerRef.current) return;
 
     const rect = containerRef.current.getBoundingClientRect();
@@ -16,33 +16,34 @@ const Section5 = () => {
     const percentage = (x / rect.width) * 100;
 
     setSliderPosition(Math.min(Math.max(percentage, 0), 100));
-  };
+  }, []);
 
-  const handleMouseDown = () => {
-    setIsDragging(true);
-  };
+  const handleMouseDown = () => setIsDragging(true);
+  const handleMouseUp = () => setIsDragging(false);
 
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
+  const handleMouseMove = useCallback(
+    (e) => {
+      if (!isDragging) return;
+      handleMove(e.clientX);
+    },
+    [isDragging, handleMove]
+  );
 
-  const handleMouseMove = (e) => {
+  const handleTouchMove = useCallback(
+    (e) => {
+      if (!isDragging) return;
+      handleMove(e.touches[0].clientX);
+    },
+    [isDragging, handleMove]
+  );
+
+  useEffect(() => {
     if (!isDragging) return;
-    handleMove(e.clientX);
-  };
 
-  const handleTouchMove = (e) => {
-    if (!isDragging) return;
-    handleMove(e.touches[0].clientX);
-  };
-
-  React.useEffect(() => {
-    if (isDragging) {
-      document.addEventListener("mousemove", handleMouseMove);
-      document.addEventListener("mouseup", handleMouseUp);
-      document.addEventListener("touchmove", handleTouchMove);
-      document.addEventListener("touchend", handleMouseUp);
-    }
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseup", handleMouseUp);
+    document.addEventListener("touchmove", handleTouchMove);
+    document.addEventListener("touchend", handleMouseUp);
 
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
@@ -50,7 +51,7 @@ const Section5 = () => {
       document.removeEventListener("touchmove", handleTouchMove);
       document.removeEventListener("touchend", handleMouseUp);
     };
-  }, [isDragging]);
+  }, [isDragging, handleMouseMove, handleTouchMove]);
 
   return (
     <section className="py-16 bg-white">
