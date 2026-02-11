@@ -22,16 +22,33 @@ export default function Header() {
       submenu: [
         {
           name: "Sauna Heaters",
-          submenu: ["Wall-Mounted", "Tower", "Stone", "Floor", "Combi", "Dragonfire"],
+          submenu: [
+            "Wall-Mounted",
+            "Tower",
+            "Stone",
+            "Floor",
+            "Combi",
+            "Dragonfire",
+          ],
         },
         { name: "Sauna Controls" },
         { name: "Sauna Accessories" },
         { name: "Sauna Rooms" },
       ],
     },
-    { name: "Steam", submenu: ["Steam Generators", "Steam Controls", "Accessories"] },
+    {
+      name: "Steam",
+      submenu: ["Steam Generators", "Steam Controls", "Accessories"],
+    },
     { name: "Infrared" },
-    { name: "Support", submenu: ["Frequently Asked Questions", "User Manuals", "Product Catalogue"] },
+    {
+      name: "Support",
+      submenu: [
+        "Frequently Asked Questions",
+        "User Manuals",
+        "Product Catalogue",
+      ],
+    },
     { name: "Contact Us" },
     { name: "About Us", submenu: ["Latest News", "Sustainability"] },
     { name: "Careers" },
@@ -65,7 +82,10 @@ export default function Header() {
   // Close mobile menu on outside click
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+      if (
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target)
+      ) {
         setMobileOpen(false);
       }
     };
@@ -101,9 +121,8 @@ export default function Header() {
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap"
         rel="stylesheet"
       />
-
       {/* Preload hero image */}
-      <link rel="preload" as="image" href={heroBg} />
+      <link rel="preload" as="image" href={heroBg} fetchpriority="high" />
 
       <header
         className={`fixed top-0 left-0 w-full bg-white z-50 shadow-md transition-transform duration-500 font-sans ${
@@ -134,7 +153,9 @@ export default function Header() {
                 >
                   <button className="flex items-center gap-1 hover:text-[#af8564] transition-colors">
                     {item.name}{" "}
-                    {item.submenu && <i className="fa-solid fa-chevron-down text-[10px]"></i>}
+                    {item.submenu && (
+                      <i className="fa-solid fa-chevron-down text-[10px]"></i>
+                    )}
                   </button>
 
                   {item.submenu && hoveredMenu === item.name && (
@@ -203,17 +224,24 @@ export default function Header() {
                   }
                 >
                   {item.name}
-                  {item.submenu && <i className="fa-solid fa-chevron-down text-[10px]"></i>}
+                  {item.submenu && (
+                    <i className="fa-solid fa-chevron-down text-[10px]"></i>
+                  )}
                 </button>
                 {item.submenu && hoveredMenu === item.name && (
                   <div className="bg-gray-50">
                     {item.submenu.map((sub) =>
                       sub.submenu ? (
-                        <div key={sub.name} className="border-t border-gray-200">
+                        <div
+                          key={sub.name}
+                          className="border-t border-gray-200"
+                        >
                           <button
                             className="w-full px-6 py-2 flex justify-between items-center text-gray-800 font-normal hover:bg-[#af8564] hover:text-white transition-colors"
                             onClick={() =>
-                              setHoveredSubmenu(hoveredSubmenu === sub.name ? null : sub.name)
+                              setHoveredSubmenu(
+                                hoveredSubmenu === sub.name ? null : sub.name,
+                              )
                             }
                           >
                             {sub.name}{" "}
@@ -241,7 +269,7 @@ export default function Header() {
                         >
                           {sub.name || sub}
                         </a>
-                      )
+                      ),
                     )}
                   </div>
                 )}
