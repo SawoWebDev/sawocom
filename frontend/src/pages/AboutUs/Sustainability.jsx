@@ -470,7 +470,7 @@ const Sustainability = () => {
             {/* Image */}
             <div className="energy-image-card rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:translate-y-[-3px] hover:shadow-2xl">
               <img
-                src="http://172.16.2.68/localsawocom/wp-content/uploads/2025/05/SAWO_Cumulus_Wall_NS.webp"
+                src="https://www.sawo.com/wp-content/uploads/2025/05/SAWO_Cumulus_Wall_NS.webp"
                 alt="Energy Smart Sauna Design"
                 className="w-full h-full object-cover"
               />
@@ -515,7 +515,7 @@ const Sustainability = () => {
           {/* Info Banner */}
           <div className="info-banner relative flex items-center justify-center bg-gradient-to-tr from-[#8B5E3C] to-[#A67853] rounded-xl shadow-lg p-8 mt-6">
             <img
-              src="http://172.16.2.68/localsawocom/wp-content/uploads/2026/02/Wood-Pattern-Brown-03.png"
+              src="https://www.sawo.com/wp-content/uploads/2026/02/Wood-Pattern-Brown-03.png"
               alt="Sustainable Wood"
               className="absolute left-10 top-1/2 transform -translate-y-1/2 h-[75px] w-auto"
             />
@@ -821,7 +821,7 @@ const Sustainability = () => {
           <div className="unique-wellbeing-quote-image-wrapper">
             <img
               className="unique-wellbeing-quote-image"
-              src="http://172.16.2.68/localsawocom/wp-content/uploads/2026/01/SAWO_Sauna_Instagram.jpg"
+              src="https://www.sawo.com/wp-content/uploads/2026/01/health-well-being.webp"
               alt="Sauna in a sustainable setting"
             />
           </div>
