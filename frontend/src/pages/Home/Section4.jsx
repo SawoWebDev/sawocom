@@ -1,58 +1,69 @@
 import React, { useRef, useEffect, useState } from "react";
 
+// Import all images locally
+import imgPailsLadles from "../../assets/Home/Section4/DRAGON-FIRE-PAIL-AND-LADDLE-SCENE.webp";
+import imgThermometers from "../../assets/Home/Section4/BoxType2-copy-new.webp";
+import imgSandTimers from "../../assets/Home/Section4/sand-timer-copy-new.webp";
+import imgSaunaLights from "../../assets/Home/Section4/TR-LIGHT-COVER_SCENE1-copy.webp";
+import imgHeadrests from "../../assets/Home/Section4/506-2-D.webp";
+import imgDoorsHandles from "../../assets/Home/Section4/DOORS-AND-HANDLES-copy.webp";
+import imgBenches from "../../assets/Home/Section4/siro-bench.webp";
+import imgKivistone from "../../assets/Home/Section4/R-500-D_Scene2.webp";
+import imgVentilation from "../../assets/Home/Section4/Ventilation.webp";
+
 const accessories = [
   {
     title: "PAILS and LADLES",
     href: "https://www.sawo.com/sawo-products/finnish-sauna/sauna-accessories/pails-ladles/",
-    img: "https://www.sawo.com/wp-content/uploads/2025/08/DRAGON-FIRE-PAIL-AND-LADDLE-SCENE.webp",
+    img: imgPailsLadles,
     alt: "Sauna pails and ladles",
   },
   {
     title: "THERMOMETERS and COMBINED METERS",
     href: "https://www.sawo.com/sawo-products/finnish-sauna/sauna-accessories/thermometers-combined-meters/",
-    img: "https://www.sawo.com/wp-content/uploads/2025/09/BoxType2-copy-new.webp",
+    img: imgThermometers,
     alt: "Sauna thermometers and combined meters",
   },
   {
     title: "CLOCKS and SANDTIMERS",
     href: "https://www.sawo.com/sawo-products/finnish-sauna/sauna-accessories/clocks-sandtimers/",
-    img: "https://www.sawo.com/wp-content/uploads/2025/09/sand-timer-copy-new.webp",
+    img: imgSandTimers,
     alt: "Sauna clocks and sand timers",
   },
   {
     title: "SAUNA LIGHTS and COVERS",
     href: "https://www.sawo.com/sawo-products/finnish-sauna/sauna-accessories/sauna-light/",
-    img: "https://www.sawo.com/wp-content/uploads/2025/11/TR-LIGHT-COVER_SCENE1-copy.webp",
+    img: imgSaunaLights,
     alt: "Sauna light covers",
   },
   {
     title: "HEADRESTS and BACKRESTS",
     href: "https://www.sawo.com/sawo-products/finnish-sauna/sauna-accessories/headrests-backrests/",
-    img: "https://www.sawo.com/wp-content/uploads/2025/09/506-2-D.webp",
+    img: imgHeadrests,
     alt: "Sauna headrests and backrests",
   },
   {
     title: "DOORS and HANDLES",
     href: "https://www.sawo.com/sawo-products/finnish-sauna/sauna-accessories/doors-handles/",
-    img: "https://www.sawo.com/wp-content/uploads/2025/09/DOORS-AND-HANDLES-copy.webp",
+    img: imgDoorsHandles,
     alt: "Sauna doors and handles",
   },
   {
     title: "BENCHES and FLOOR TILES",
     href: "https://www.sawo.com/benches-and-floor-tiles/",
-    img: "https://www.sawo.com/wp-content/uploads/2025/08/siro-bench.webp",
+    img: imgBenches,
     alt: "Sauna benches and floor tiles",
   },
   {
     title: "KIVISTONE",
     href: "https://www.sawo.com/kivistone/",
-    img: "https://www.sawo.com/wp-content/uploads/2025/08/R-500-D_Scene2.webp",
+    img: imgKivistone,
     alt: "Kivistone sauna stones",
   },
   {
     title: "VENTILATION and ADD-ONS",
     href: "https://www.sawo.com/ventilations-and-add-ons/",
-    img: "https://www.sawo.com/wp-content/uploads/2025/08/Ventilation.webp",
+    img: imgVentilation,
     alt: "Sauna ventilation and add-ons",
   },
 ];
@@ -140,12 +151,9 @@ const Section4 = () => {
                 src={item.img}
                 alt={item.alt}
                 title={item.title}
-                loading="lazy"
                 className="w-full h-auto block transition-transform duration-300 ease-in-out group-hover:scale-105"
               />
-              {/* Gradient Overlay */}
               <div className="gradient-overlay absolute bottom-0 left-0 w-full h-2/3 z-10 pointer-events-none"></div>
-              {/* Title */}
               <div
                 className="slide-title absolute bottom-0 w-full text-center p-2 z-20"
                 style={{
@@ -203,28 +211,20 @@ const Section4 = () => {
           scrollbar-width: none;
         }
 
-        /* Gradient overlay */
         .gradient-overlay {
-          background: linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.75),
-            rgba(0, 0, 0, 0)
-          );
+          background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
         }
 
-        /* Desktop: 4 cards */
         .carousel-item {
           flex: 0 0 calc((100% - 3*1.5rem)/4);
         }
 
-        /* Tablet: 2 cards */
         @media (max-width: 1024px) {
           .carousel-item {
             flex: 0 0 calc((100% - 1.5rem)/2);
           }
         }
 
-        /* Mobile: 1 card */
         @media (max-width: 640px) {
           .carousel-item {
             flex: 0 0 100%;

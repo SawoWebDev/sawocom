@@ -2,6 +2,28 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
+// ===== Import local images =====
+// Steam
+import steamGenerator from "../../assets/Home/Section3/steam-generator1.webp";
+import steamControl from "../../assets/Home/Section3/SteamControlFinal.webp";
+import steamAccessories from "../../assets/Home/Section3/ST-746-I_Display2.webp";
+
+// Sauna Rooms
+import standardSauna from "../../assets/Home/Section3/700x525.webp";
+import glassFrontSauna from "../../assets/Home/Section3/GLASS-FRONT.webp";
+import outdoorSauna from "../../assets/Home/Section3/700x525-outdoor-2.webp";
+import infraredSaunaRoom from "../../assets/Home/Section3/INFRARED-SAUNA-ROOM.webp";
+
+// Infrared
+import infraredRooms from "../../assets/Home/Section3/SR06-44710101-1313LS_PERSPECTIVE-VIEW-1.webp";
+import infraredPanels from "../../assets/Home/Section3/infrared-panelss-400x600px.webp";
+import infraredControls from "../../assets/Home/Section3/IR-UI-V2.webp";
+
+// Sauna Control
+import saunovaSeries from "../../assets/Home/Section3/SAU-UI-V2_AspenSauna.webp";
+import innovaSeries from "../../assets/Home/Section3/INC-S-V2_SpruceSauna.webp";
+import controlAccessories from "../../assets/Home/Section3/sensor-holder.webp";
+
 const Section3 = () => {
   const exploreBtnStyle = {
     fontFamily: "'Montserrat', sans-serif",
@@ -26,14 +48,10 @@ const Section3 = () => {
           className="steam-card has-caption"
           href="https://www.sawo.com/sawo-products/steam-sauna/steam-generators/"
         >
-          <img
-            src="https://www.sawo.com/wp-content/uploads/2025/09/steam-generator1.jpg"
-            alt="Steam Generators"
-          />
+          <img src={steamGenerator} alt="Steam Generators" />
           <div className="steam-title">Steam Generators</div>
           <div className="steam-caption">
-            The luxury of tailored steam from advanced steam generators for a
-            spa-like experience.
+            The luxury of tailored steam from advanced steam generators for a spa-like experience. Customized settings and overall exceptional performance.
           </div>
         </a>
 
@@ -41,14 +59,10 @@ const Section3 = () => {
           className="steam-card has-caption"
           href="https://www.sawo.com/sawo-products/steam-sauna/steam-controls/"
         >
-          <img
-            src="https://www.sawo.com/wp-content/uploads/2025/07/SteamControlFinal.webp"
-            alt="Steam Controls"
-          />
+          <img src={steamControl} alt="Steam Controls" />
           <div className="steam-title">Steam Controls</div>
           <div className="steam-caption">
-            Precision, effortlessness, and personalization from Saunova and
-            Innova control series.
+            Precision, effortlessness, and personalization: Precise steam settings, effortless operation, and a personalized sauna experience from our Saunova and Innova control series.
           </div>
         </a>
 
@@ -56,14 +70,10 @@ const Section3 = () => {
           className="steam-card has-caption"
           href="https://www.sawo.com/sawo-products/steam-sauna/steam-accessories/"
         >
-          <img
-            src="https://www.sawo.com/wp-content/uploads/2025/05/ST-746-I_Display2.webp"
-            alt="Steam Accessories"
-          />
+          <img src={steamAccessories} alt="Steam Accessories" />
           <div className="steam-title">Steam Accessories</div>
           <div className="steam-caption">
-            Premium accessories designed to enhance functionality and maximize
-            comfort.
+            Premium accessories designed to enhance functionality and maximize comfort. Consistently extraordinary wellness and relaxation experience.
           </div>
         </a>
       </div>
@@ -87,13 +97,10 @@ const Section3 = () => {
           className="steam-card has-caption"
           href="https://www.sawo.com/sawo-products/finnish-sauna/sauna-rooms/standard-sauna-rooms/"
         >
-          <img
-            src="https://www.sawo.com/wp-content/uploads/2025/11/700x525.webp"
-            alt="Standard Sauna"
-          />
+          <img src={standardSauna} alt="Standard Sauna" />
           <div className="steam-title">Standard Sauna</div>
           <div className="steam-caption">
-            Classic indoor sauna experience with timeless design.
+            Timeless design and high-quality materials. Classic indoor sauna experience for any home or wellness space.
           </div>
         </a>
 
@@ -101,13 +108,10 @@ const Section3 = () => {
           className="steam-card has-caption"
           href="https://www.sawo.com/glass-front-sauna-rooms/"
         >
-          <img
-            src="https://www.sawo.com/wp-content/uploads/2025/11/GLASS-FRONT.webp"
-            alt="Glass Front Sauna"
-          />
+          <img src={glassFrontSauna} alt="Glass Front Sauna" />
           <div className="steam-title">Glass Front Sauna</div>
           <div className="steam-caption">
-            Modern design with clear tempered glass panels.
+            Modern design featuring clear tempered glass panels for an unobstructed view outside. Pure serenity and relaxation.
           </div>
         </a>
 
@@ -115,13 +119,10 @@ const Section3 = () => {
           className="steam-card has-caption"
           href="https://www.sawo.com/outdoor-sauna-rooms/"
         >
-          <img
-            src="https://www.sawo.com/wp-content/uploads/2025/12/700x525-outdoor-2.jpg"
-            alt="Outdoor Sauna"
-          />
+          <img src={outdoorSauna} alt="Outdoor Sauna" />
           <div className="steam-title">Outdoor Sauna</div>
           <div className="steam-caption">
-            Built to withstand extreme weather conditions.
+            Engineered to withstand severe weather. Top-coated walls and durable asphalt-shingle roof for maximum protection from the sun and rain.
           </div>
         </a>
 
@@ -129,13 +130,10 @@ const Section3 = () => {
           className="steam-card has-caption"
           href="https://www.sawo.com/sawo-products/finnish-sauna/sauna-rooms/infrared-sauna-rooms/"
         >
-          <img
-            src="https://www.sawo.com/wp-content/uploads/2025/08/INFRARED-SAUNA-ROOM.webp"
-            alt="Infrared Sauna"
-          />
+          <img src={infraredSaunaRoom} alt="Infrared Sauna" />
           <div className="steam-title">Infrared Sauna</div>
           <div className="steam-caption">
-            Gentle infrared warmth for therapeutic comfort.
+            Expertly crafted in cedar, aspen, and spruce. Gentle infrared warmth for soothing, therapeutic comfort.
           </div>
         </a>
       </div>
@@ -155,33 +153,18 @@ const Section3 = () => {
       <h2 className="section-title">INFRARED</h2>
 
       <div className="image-grid">
-        <a
-          href="https://www.sawo.com/infrared-sauna-rooms/"
-          className="image-card"
-        >
-          <img
-            src="https://www.sawo.com/wp-content/uploads/2025/04/SR06-44710101-1313LS_PERSPECTIVE-VIEW-1.webp"
-            alt="Infrared Rooms"
-          />
+        <a href="https://www.sawo.com/infrared-sauna-rooms/" className="image-card">
+          <img src={infraredRooms} alt="Infrared Rooms" />
           <div className="title">Infrared Rooms</div>
         </a>
 
         <a href="https://www.sawo.com/infrared-panels/" className="image-card">
-          <img
-            src="https://www.sawo.com/wp-content/uploads/2025/12/infrared-panelss-400x600px.webp"
-            alt="Infrared Panels"
-          />
+          <img src={infraredPanels} alt="Infrared Panels" />
           <div className="title">Infrared Panels</div>
         </a>
 
-        <a
-          href="https://www.sawo.com/infrared-2-0-built-in-control/"
-          className="image-card"
-        >
-          <img
-            src="https://www.sawo.com/wp-content/uploads/2025/07/IR-UI-V2.webp"
-            alt="Infrared Controls"
-          />
+        <a href="https://www.sawo.com/infrared-2-0-built-in-control/" className="image-card">
+          <img src={infraredControls} alt="Infrared Controls" />
           <div className="title">Infrared Controls</div>
         </a>
       </div>
@@ -201,36 +184,18 @@ const Section3 = () => {
       <h2 className="section-title">SAUNA CONTROL</h2>
 
       <div className="image-grid">
-        <a
-          href="https://www.sawo.com/sawo-products/finnish-sauna/saunova-series/"
-          className="image-card"
-        >
-          <img
-            src="https://www.sawo.com/wp-content/uploads/2025/08/SAU-UI-V2_AspenSauna.webp"
-            alt="Saunova Series"
-          />
+        <a href="https://www.sawo.com/sawo-products/finnish-sauna/saunova-series/" className="image-card">
+          <img src={saunovaSeries} alt="Saunova Series" />
           <div className="title">Saunova Series</div>
         </a>
 
-        <a
-          href="https://www.sawo.com/sawo-products/finnish-sauna/innova-series/"
-          className="image-card"
-        >
-          <img
-            src="https://www.sawo.com/wp-content/uploads/2025/04/INC-S-V2_SpruceSauna.webp"
-            alt="Innova Series"
-          />
+        <a href="https://www.sawo.com/sawo-products/finnish-sauna/innova-series/" className="image-card">
+          <img src={innovaSeries} alt="Innova Series" />
           <div className="title">Innova Series</div>
         </a>
 
-        <a
-          href="https://www.sawo.com/sawo-products-finnish-sauna/control-accessories/"
-          className="image-card"
-        >
-          <img
-            src="https://www.sawo.com/wp-content/uploads/2025/04/sensor-holder.webp"
-            alt="Control Accessories"
-          />
+        <a href="https://www.sawo.com/sawo-products/finnish-sauna/control-accessories/" className="image-card">
+          <img src={controlAccessories} alt="Control Accessories" />
           <div className="title">Control Accessories</div>
         </a>
       </div>
@@ -307,10 +272,10 @@ const Section3 = () => {
 
         .steam-caption {
           position: absolute;
-          inset: 0; /* FULL CARD */
+          inset: 0; 
           display: flex;
-          align-items: center; /* vertical center */
-          justify-content: center; /* horizontal center */
+          align-items: center; 
+          justify-content: center; 
           text-align: center;
           padding: 20px;
           color: #fff;
