@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import sLogo from "assets/SAWO-logo.webp";
-import heroBg from "assets/Home/SAWO-hero.webp";
 import menuPaths from "menuPaths";
 
 export default function Header() {
@@ -134,9 +133,6 @@ export default function Header() {
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap"
         rel="stylesheet"
       />
-      {/* Preload hero image */}
-      <link rel="preload" as="image" href={heroBg} fetchpriority="high" />
-
       <header
         className={`fixed top-0 left-0 w-full bg-white z-50 shadow-md transition-transform duration-500 font-sans ${
           hidden ? "-translate-y-full" : "translate-y-0"

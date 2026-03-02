@@ -1,84 +1,95 @@
 ﻿// src/pages/Hero.jsx
-import React, { useEffect } from "react";
-import heroBg from "assets/Home/SAWO-hero.webp";
-// import heroBgSmall from "assets/Home/SAWO-hero-400.webp";
-// import heroBgMedium from "assets/Home/SAWO-hero-800.webp";
+import React, { useEffect, useRef } from "react";
+
+const sentences = [
+  "a rejuvenating escape",
+  "wellness with ancient tradition",
+  "an authentic Finnish sauna",
+];
 
 const Hero = () => {
+  const typewriterRef = useRef(null);
+
   useEffect(() => {
-    const typewriterEl = document.querySelector(".sauna-unique .typewriter");
-    const sentences = [
-      "a rejuvenating escape",
-      "wellness with ancient tradition",
-      "an authentic Finnish sauna",
-    ];
-    let n = 0, i = 0, isTyping = true, spans = [];
+    const el = typewriterRef.current;
+    if (!el) return;
+
+    let n = 0; // sentence index
+    let i = 0; // character index
+    let isTyping = true;
+    let spans = [];
+    let timeout;
 
     function setupSentence() {
       const current = sentences[n];
-      typewriterEl.innerHTML = current
+      if (!el) return;
+      el.innerHTML = current
         .split("")
         .map((char) => `<span>${char}</span>`)
         .join("");
-      spans = typewriterEl.querySelectorAll("span");
+      spans = el.querySelectorAll("span");
       i = 0;
       isTyping = true;
     }
 
     function animate() {
+      if (!el) return;
       if (isTyping) {
         if (i < spans.length) {
           spans[i].style.opacity = 1;
           i++;
-          setTimeout(animate, 120);
+          timeout = setTimeout(animate, 70); // faster typing
         } else {
           isTyping = false;
-          setTimeout(animate, 1500);
+          timeout = setTimeout(animate, 900); // pause at sentence end
         }
       } else {
         if (i > 0) {
           i--;
           spans[i].style.opacity = 0;
-          setTimeout(animate, 80);
+          timeout = setTimeout(animate, 50); // faster deleting
         } else {
           n = (n + 1) % sentences.length;
           setupSentence();
-          setTimeout(animate, 600);
+          timeout = setTimeout(animate, 500); // short pause before next
         }
       }
     }
 
-    setupSentence();
-    animate();
+    // Slight delay to ensure hero image paints first
+    const start = setTimeout(() => {
+      setupSentence();
+      animate();
+    }, 300);
+
+    return () => {
+      clearTimeout(timeout);
+      clearTimeout(start);
+    };
   }, []);
 
   return (
-    <section className="sauna-unique relative z-0 w-full min-h-[95vh] flex flex-col justify-center px-5 md:px-10">
-      {/* Preload hero image */}
-      <link rel="preload" as="image" href={heroBg} fetchpriority="high" />
-
-      {/* Hero image */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
-        <img
-          src={heroBg}
-          alt="SAWO hero"
-          className="w-full h-full object-cover"
-          loading="eager"
-          decoding="async"
-        />
-        {/*
-        // Uncomment when responsive images are available
+    <section className="sauna-unique relative w-full min-h-[95vh] flex flex-col justify-center px-5 md:px-10 overflow-hidden">
+      <div className="absolute inset-0 -z-10">
         <picture>
-          <source type="image/webp" media="(max-width:640px)" srcSet={heroBgSmall} />
-          <source type="image/webp" media="(max-width:1024px)" srcSet={heroBgMedium} />
-          <img src={heroBg} alt="SAWO hero" className="w-full h-full object-cover" loading="eager" decoding="async" />
+          <source media="(max-width: 640px)" srcSet="/640.webp" />
+          <source media="(max-width: 1024px)" srcSet="/1024.webp" />
+          <img
+            src="/1920.webp"
+            alt="SAWO hero"
+            className="w-full h-full object-cover"
+            fetchPriority="high"
+            decoding="async"
+          />
         </picture>
-        */}
       </div>
 
       <h1
-        className="experience-title font-montserrat font-bold text-white text-left whitespace-nowrap text-2xl mt-10 sm:text-4xl md:text-5xl lg:text-[60px] leading-tight"
-        style={{ textShadow: "4px 6px 7px rgba(0,0,0,0.5)" }}
+        className="font-bold text-white text-left whitespace-nowrap text-2xl mt-10 sm:text-4xl md:text-5xl lg:text-[60px] leading-tight"
+        style={{
+          fontFamily: "Montserrat, sans-serif",
+          textShadow: "4px 6px 7px rgba(0,0,0,0.5)",
+        }}
       >
         Experience . . .
       </h1>
@@ -91,8 +102,13 @@ const Hero = () => {
 
       <div className="stack flex flex-col items-center text-center">
         <div
+          ref={typewriterRef}
           className="typewriter font-montserrat font-light text-white text-center mb-6 sm:mb-8 text-lg sm:text-2xl md:text-4xl lg:text-[46px] leading-snug"
-          style={{ letterSpacing: "0.2px", textShadow: "0px 12px 10px rgba(0,0,0,0.9)", minHeight: "1.4em" }}
+          style={{
+            letterSpacing: "0.2px",
+            textShadow: "0px 12px 10px rgba(0,0,0,0.9)",
+            minHeight: "1.4em",
+          }}
         ></div>
 
         <a
@@ -105,7 +121,7 @@ const Hero = () => {
         </a>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .sr-only {
           position: absolute;
           width: 1px;
@@ -117,15 +133,9 @@ const Hero = () => {
           white-space: nowrap;
           border: 0;
         }
-        .experience-title {
-          font-family: "Montserrat", sans-serif !important;
-        }
-        .stack * {
-          font-family: inherit !important;
-        }
         .typewriter span {
           opacity: 0;
-          transition: opacity 0.25s ease-in-out;
+          transition: opacity 0.2s ease-in-out;
         }
       `}</style>
     </section>
@@ -133,4 +143,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
