@@ -2,6 +2,7 @@
 import React, { useState, useRef, useCallback, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import ButtonBrown from "../../components/Buttons/ButtonBrown";
 
 // Import local images
 import imgCustomizedSolutions from "../../assets/Home/Section5/Customized-Solutions_1.webp";
@@ -28,7 +29,7 @@ const Section5 = () => {
       if (!isDragging) return;
       handleMove(e.clientX);
     },
-    [isDragging, handleMove]
+    [isDragging, handleMove],
   );
 
   const handleTouchMove = useCallback(
@@ -36,7 +37,7 @@ const Section5 = () => {
       if (!isDragging) return;
       handleMove(e.touches[0].clientX);
     },
-    [isDragging, handleMove]
+    [isDragging, handleMove],
   );
 
   useEffect(() => {
@@ -100,27 +101,7 @@ const Section5 = () => {
             >
               Call us or send us a message.
             </p>
-            <a
-              href="#inquire"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded font-medium transition-all duration-300 border-4 border-transparent text-white"
-              style={{
-                backgroundColor: "#AF8564",
-                fontFamily: "Montserrat, sans-serif",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = "transparent";
-                e.currentTarget.style.color = "#AF8564";
-                e.currentTarget.style.borderColor = "#AF8564";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = "#AF8564";
-                e.currentTarget.style.color = "#ffffff";
-                e.currentTarget.style.borderColor = "transparent";
-              }}
-            >
-              INQUIRE TODAY
-              <FontAwesomeIcon icon={faChevronRight} />
-            </a>
+            <ButtonBrown text="INQUIRE TODAY" href="#inquire" />
           </div>
 
           {/* Right Image Comparison Slider */}
@@ -191,4 +172,3 @@ const Section5 = () => {
 };
 
 export default Section5;
-

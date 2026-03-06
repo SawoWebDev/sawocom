@@ -1,4 +1,4 @@
-// Sustainability.jsx
+﻿// Sustainability.jsx
 
 import React, { useEffect } from "react";
 import heroBg from "assets/About/Sustainability-hero.webp";
@@ -714,7 +714,6 @@ const Sustainability = () => {
             transform: scale(1.2);
             box-shadow: 0 6px 20px rgba(139, 94, 60, 0.35);
           }
-
           .waste-item-content h3 {
             font-family: "Montserrat", sans-serif;
             font-size: 1.2rem;

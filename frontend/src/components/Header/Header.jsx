@@ -20,10 +20,11 @@ export default function Header() {
     { name: "Home", path: menuPaths.home },
     {
       name: "Sauna",
-      path: menuPaths.sauna, // Optional: make top parent clickable
+      path: menuPaths.sauna.parent, // Optional: make top parent clickable
       submenu: [
         {
           name: "Sauna Heaters",
+          path: menuPaths.sauna.heaters.parent,
           submenu: [
             { name: "Wall-Mounted", path: menuPaths.sauna.heaters.wallMounted },
             { name: "Tower", path: menuPaths.sauna.heaters.tower },
@@ -40,7 +41,7 @@ export default function Header() {
     },
     {
       name: "Steam",
-      path: menuPaths.steam, // Optional clickable parent
+      path: menuPaths.steam.parent, // Optional clickable parent
       submenu: [
         { name: "Steam Generators", path: menuPaths.steam.generators },
         { name: "Steam Controls", path: menuPaths.steam.controls },
@@ -50,7 +51,7 @@ export default function Header() {
     { name: "Infrared", path: menuPaths.infrared },
     {
       name: "Support",
-      path: menuPaths.support, // Optional clickable parent
+      path: menuPaths.support.parent, // Optional clickable parent
       submenu: [
         { name: "Frequently Asked Questions", path: menuPaths.support.faq },
         { name: "User Manuals", path: menuPaths.support.manuals },
@@ -60,7 +61,7 @@ export default function Header() {
     { name: "Contact Us", path: menuPaths.contact },
     {
       name: "About Us",
-      path: menuPaths.about, // Optional clickable parent
+      path: menuPaths.about.parent, // Optional clickable parent
       submenu: [
         { name: "Latest News", path: menuPaths.about.news },
         { name: "Sustainability", path: menuPaths.about.sustainability },

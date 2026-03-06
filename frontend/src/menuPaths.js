@@ -5,6 +5,7 @@ const menuPaths = {
   sauna: {
     parent: "/sauna", // clickable parent
     heaters: {
+      parent: "/sauna/heaters", // clickable parent
       wallMounted: "/sauna/heaters/wall-mounted",
       tower: "/sauna/heaters/tower",
       stone: "/sauna/heaters/stone",

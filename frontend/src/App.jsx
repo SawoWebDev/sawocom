@@ -8,6 +8,7 @@ import Home from "./pages/Home/Home";
 import Infrared from "./pages/Infrared/Infrared";
 
 // AboutUs
+import About from "./pages/AboutUs/About";
 import Sustainability from "./pages/AboutUs/Sustainability";
 import LatestNews from "./pages/AboutUs/LatestNews";
 
@@ -20,6 +21,7 @@ import Contact from "./pages/Contact/Contact";
 // Sauna top-level page
 import Sauna from "./pages/Sauna/Sauna";
 // Sauna submenu
+import SaunaHeaters from "./pages/Sauna/SaunaHeaters";
 import WallMounted from "./pages/Sauna/heaters/WallMounted";
 import Tower from "./pages/Sauna/heaters/Tower";
 import Stone from "./pages/Sauna/heaters/Stone";
@@ -56,6 +58,7 @@ function App() {
           <Route path={menuPaths.infrared} element={<Infrared />} />
 
           {/* About pages */}
+          <Route path={menuPaths.about.parent} element={<About />} />
           <Route path={menuPaths.about.sustainability} element={<Sustainability />} />
           <Route path={menuPaths.about.news} element={<LatestNews />} />
 
@@ -67,6 +70,7 @@ function App() {
           <Route path={menuPaths.contact} element={<Contact />} />
 
           {/* Sauna submenu */}
+          <Route path={menuPaths.sauna.heaters.parent} element={<SaunaHeaters />} />
           <Route path={menuPaths.sauna.heaters.wallMounted} element={<WallMounted />} />
           <Route path={menuPaths.sauna.heaters.tower} element={<Tower />} />
           <Route path={menuPaths.sauna.heaters.stone} element={<Stone />} />

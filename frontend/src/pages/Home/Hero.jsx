@@ -1,5 +1,6 @@
 ﻿// src/pages/Hero.jsx
 import React, { useEffect, useRef } from "react";
+import ButtonClear from "../../components/Buttons/ButtonClear";
 
 const sentences = [
   "a rejuvenating escape",
@@ -111,14 +112,11 @@ const Hero = () => {
           }}
         ></div>
 
-        <a
+        <ButtonClear
+          text="VIEW CATALOGUE"
           href="https://www.sawo.com/wp-content/uploads/2025/10/SAWO-Product-Catalogue-2025.pdf"
-          download="SAWO-Product-Catalogue-2025.pdf"
-          rel="noopener"
-          className="mt-4 sm:mt-6 md:mt-8 inline-flex items-center gap-2 px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 border-2 border-white text-white font-semibold text-sm sm:text-base md:text-lg rounded transition-all duration-300 hover:bg-white hover:text-[#AF8564]"
-        >
-          VIEW CATALOGUE
-        </a>
+          download
+        />
       </div>
 
       <style>{`
