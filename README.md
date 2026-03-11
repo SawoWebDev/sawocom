@@ -147,6 +147,19 @@ git status
 git checkout branch-name
 ```
 
+---
+
+> # 🚨 IMPORTANT: Never work directly on `development`!
+> ## Always clone the `development` branch and create your own feature branch before making any changes!
+>
+> ```bash
+> git checkout development
+> git pull origin development
+> git checkout -b feature/your-feature-name
+> ```
+
+---
+
 ### Create a New Branch
 
 **Create and switch to a new branch:**
