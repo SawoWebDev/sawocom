@@ -1,0 +1,5540 @@
+[
+  {
+    "name": "HP02-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Frames",
+      "NIM",
+      "Nimbus",
+      "NIMC",
+      "SAV",
+      "SCA"
+    ],
+    "date": "2026-01-29",
+    "image": "/assets/products/HP02-001-3.webp"
+  },
+  {
+    "name": "HP45-004",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "TH12",
+      "Tower Round - Stone Spacer",
+      "Tower Spare Parts"
+    ],
+    "date": "2026-01-29",
+    "image": "/assets/products/HP45-004.webp"
+  },
+  {
+    "name": "HP71-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI6",
+      "Aries Round - Heating Element Holder",
+      "Aries Spare Parts"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP71-002-1.webp"
+  },
+  {
+    "name": "HP12-006",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Combi Spare Parts",
+      "Combi Tanks",
+      "SSAVC (15-18.0kW)"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP12-006.webp"
+  },
+  {
+    "name": "HP02-011",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Cable Channel for Built-in Control",
+      "Controlling Spare Parts",
+      "SCA-NB"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP02-011.webp"
+  },
+  {
+    "name": "HP07-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Cable Channel for Built-in Control",
+      "Controlling Spare Parts",
+      "MX-NB"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP07-002.webp"
+  },
+  {
+    "name": "HP34-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "HP34-003",
+      "Nimbus Combi",
+      "Nimbus Combi - Cover Stones"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP34-003.webp"
+  },
+  {
+    "name": "HP34-007",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nimbus Combi",
+      "Nimbus Combi - Cover Stones",
+      "NIMC"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP34-007.webp"
+  },
+  {
+    "name": "HP34-005",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nimbus",
+      "Nimbus Combi - Cover Stones",
+      "NIMC"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP34-005.webp"
+  },
+  {
+    "name": "HP35-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nimbus Combi",
+      "Nimbus Combi - Cover Stones",
+      "SNMC"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/hp35-003.webp"
+  },
+  {
+    "name": "HP34-004",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nimbus Combi",
+      "Nimbus Combi - Cover Stones",
+      "NIMC"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP34-004.webp"
+  },
+  {
+    "name": "HP35-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nimbus Combi",
+      "Nimbus Combi - Cover Stones"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/hp35-002.webp"
+  },
+  {
+    "name": "HP23-004",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "NIM",
+      "Nimbus Combi",
+      "Nimbus Combi - Cover Stones"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP23-004-1.webp"
+  },
+  {
+    "name": "HP35-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nimbus Combi",
+      "Nimbus Combi - Cover Stones",
+      "NIMC"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP35-001.webp"
+  },
+  {
+    "name": "HP34-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nimbus Combi",
+      "Nimbus Combi - Cover Stones",
+      "NIMC"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP34-001.webp"
+  },
+  {
+    "name": "HP34-006",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nimbus Combi",
+      "Nimbus Combi - Cover Stones",
+      "NIMC"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP34-006.webp"
+  },
+  {
+    "name": "HP34-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nimbus Combi",
+      "Nimbus Combi - Cover Stones",
+      "NIMC"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP34-002.webp"
+  },
+  {
+    "name": "HP23-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nimbus Combi"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP23-002-1.webp"
+  },
+  {
+    "name": "HP23-012",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Frames",
+      "NIM",
+      "Nimbus",
+      "NIMC"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP23-012-1.webp"
+  },
+  {
+    "name": "HP23-009",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Frames",
+      "Nimbus",
+      "NIMC"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP23-009.webp"
+  },
+  {
+    "name": "HP23-008",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "NIM",
+      "Nimbus",
+      "Nimbus - Cover Stones",
+      "NIMC"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP23-008.webp"
+  },
+  {
+    "name": "HP23-007",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "NIM",
+      "Nimbus",
+      "Nimbus - Cover Stones",
+      "NIMC"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP23-007.webp"
+  },
+  {
+    "name": "HP23-006",
+    "content": "",
+    "categories": [
+      "Uncategorized"
+    ],
+    "tags": [
+      "NIM",
+      "Nimbus",
+      "Nimbus - Cover Stones",
+      "NIMC"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP23-006.webp"
+  },
+  {
+    "name": "HP25-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "NIM",
+      "Nimbus",
+      "Nimbus - Cover Stones"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP25-002.webp"
+  },
+  {
+    "name": "HP24-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "NIM",
+      "Nimbus",
+      "Nimbus - Cover Stones"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP24-002.webp"
+  },
+  {
+    "name": "HP23-005",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "NIM",
+      "Nimbus",
+      "Nimbus - Cover Stones"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP23-005.webp"
+  },
+  {
+    "name": "HP23-004",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nimbus",
+      "Nimbus - Cover Stones"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP23-004.webp"
+  },
+  {
+    "name": "HP25-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "NIM",
+      "Nimbus",
+      "Nimbus - Cover Stones"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP25-001.webp"
+  },
+  {
+    "name": "HP24-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "NIM",
+      "Nimbus",
+      "Nimbus - Cover Stones"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP24-001.webp"
+  },
+  {
+    "name": "HP23-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "NIM",
+      "Nimbus",
+      "Nimbus - Cover Stones"
+    ],
+    "date": "2026-01-28",
+    "image": "/assets/products/HP23-003.webp"
+  },
+  {
+    "name": "HP23-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "NIM",
+      "Nimbus",
+      "Nimbus - Cover Stones"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP23-002.webp"
+  },
+  {
+    "name": "HP23-012",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "NIM",
+      "Nimbus",
+      "Nimbus - Name Plate",
+      "NIMC"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP23-012.webp"
+  },
+  {
+    "name": "HP29-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Cumulus Spare Parts",
+      "Stone Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP29-002.webp"
+  },
+  {
+    "name": "HP29-005",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Cumulus Spare Parts",
+      "Stone Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP29-005.webp"
+  },
+  {
+    "name": "HP29-004",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Cumulus Spare Parts",
+      "Stone Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP29-004.webp"
+  },
+  {
+    "name": "HP29-006",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Cumulus Spare Parts",
+      "Stone Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP29-006.webp"
+  },
+  {
+    "name": "HP29-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Cumulus Spare Parts",
+      "Stone Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP29-003.webp"
+  },
+  {
+    "name": "HP29-011",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Cumulus Spare Parts",
+      "Heat Reflector"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP29-011.webp"
+  },
+  {
+    "name": "HP29-007",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Cumulus Spare Parts",
+      "Heat Reflector"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP29-007.webp"
+  },
+  {
+    "name": "HP02-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Cumulus Spare Parts",
+      "SCA",
+      "Stone Holder"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP02-003-1.webp"
+  },
+  {
+    "name": "HP06-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Cumulus Spare Parts",
+      "NR",
+      "Stone Holder"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP06-002.webp"
+  },
+  {
+    "name": "HP29-016",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Cumulus - Bottom Cover",
+      "Cumulus Spare Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP29-016.webp"
+  },
+  {
+    "name": "HP29-015",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Cumulus - Cable Box",
+      "Cumulus Spare Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP29-015.webp"
+  },
+  {
+    "name": "HP29-014",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Cable Box CML-NS",
+      "Cumulus - Cable Box",
+      "Cumulus Spare Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP29-014.webp"
+  },
+  {
+    "name": "HP29-009",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Cumulus - Heat Shield",
+      "Cumulus Spare Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP29-009.webp"
+  },
+  {
+    "name": "HP29-008",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Cumulus Spare Parts",
+      "Frames"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP29-008.webp"
+  },
+  {
+    "name": "HP29-012",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Cumulus Spare Parts",
+      "Frames"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP29-012.webp"
+  },
+  {
+    "name": "HP02-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Cumulus Spare Parts",
+      "Frames",
+      "SAV",
+      "SCA"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP02-001-2.webp"
+  },
+  {
+    "name": "HP29-010",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Cumulus Spare Parts",
+      "Wall Mounting Rack"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP29-010.webp"
+  },
+  {
+    "name": "HP12-009",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Frames",
+      "Savonia Combi Spare Parts",
+      "SSAVC (15-18.0kW)"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP12-009-scaled.webp"
+  },
+  {
+    "name": "HP10-013",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Frames",
+      "SAVC (9-12.0kW)",
+      "Savonia Combi Spare Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP10-013.webp"
+  },
+  {
+    "name": "HP02-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Frame",
+      "SAV",
+      "Savonia Combi Spare Parts",
+      "SCA"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP02-001-1.webp"
+  },
+  {
+    "name": "HP01-015",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Front Cover",
+      "MN",
+      "MX",
+      "SAV",
+      "Savonia Spare Parts",
+      "SCA"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP01-015-1-scaled.webp"
+  },
+  {
+    "name": "HP01-018",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Control Unit Body",
+      "MN",
+      "MX",
+      "SAV",
+      "Savonia Spare Parts",
+      "SCA"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP01-018-2-scaled.webp"
+  },
+  {
+    "name": "HP05-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Frames",
+      "Savonia Spare Parts",
+      "SSAV V12"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP05-001-scaled.webp"
+  },
+  {
+    "name": "HP04-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Frames",
+      "Savonia Spare Parts",
+      "SSAV (15-18.0kW)"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP04-001.webp"
+  },
+  {
+    "name": "HP03-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Frames",
+      "SAV (9.0-12.0kW)",
+      "Savonia Spare Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP03-001.webp"
+  },
+  {
+    "name": "HP02-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Frames",
+      "SAV",
+      "Savonia Spare Parts",
+      "SCA"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP02-002-1.webp"
+  },
+  {
+    "name": "HP02-010",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heat Reflector",
+      "SCA",
+      "Scandia Spare Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP02-010.webp"
+  },
+  {
+    "name": "HP03-007",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Name Plate",
+      "Savonia Spare Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP03-007-1.webp"
+  },
+  {
+    "name": "HP02-014",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heat Reflector",
+      "Scandia Spare Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP02-014.webp"
+  },
+  {
+    "name": "HP01-006",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "MN",
+      "SCA",
+      "Scandia Spare Parts",
+      "Wall Mounting Rack"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP01-006-1.webp"
+  },
+  {
+    "name": "HP02-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "SCA",
+      "Scandia Spare Parts",
+      "Stone Holder"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP02-003.webp"
+  },
+  {
+    "name": "HP02-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Frames",
+      "SAV",
+      "SCA",
+      "Scandia Spare Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP02-002.webp"
+  },
+  {
+    "name": "HP02-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Frames",
+      "SAV",
+      "SCA",
+      "Scandia Spare Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP02-001.webp"
+  },
+  {
+    "name": "HP02-016",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Catchpan",
+      "SCA",
+      "Scandia Spare Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP02-016.webp"
+  },
+  {
+    "name": "HP01-015",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Front Cover",
+      "MN",
+      "MX",
+      "SAV",
+      "SCA",
+      "Scandia Spare Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP01-015-scaled.webp"
+  },
+  {
+    "name": "HP01-018",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Control Unit Body",
+      "MN",
+      "MX",
+      "SAV",
+      "SCA",
+      "Scandia Spare Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP01-018-1-scaled.webp"
+  },
+  {
+    "name": "HP02-009",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Name Plate",
+      "SCA",
+      "Scandia Spare Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP02-009-1.webp"
+  },
+  {
+    "name": "HP95-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex Pro Heat Shield",
+      "Nordex Pro Spare Parts",
+      "NRNF"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP95-002-2.webp"
+  },
+  {
+    "name": "HP03-007",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex Floor - Name Plate",
+      "Nordex Floor Spare Parts",
+      "NRNF"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP03-007.webp"
+  },
+  {
+    "name": "HP95-004",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Floor Mounting Bracket",
+      "Nordex Floor Spare Parts",
+      "NRNF"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP95-004.webp"
+  },
+  {
+    "name": "HP97-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex Floor - Side Frame",
+      "Nordex Floor Spare Parts",
+      "NRNF V12"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP97-001.webp"
+  },
+  {
+    "name": "HP96-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex Floor - Side Frame",
+      "Nordex Floor Spare Parts",
+      "NRNF 15.0-18.0kW"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP96-001.webp"
+  },
+  {
+    "name": "HP95-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex Floor - Side Frame",
+      "Nordex Floor Spare Parts",
+      "NRNF (9.0-12.0kW)"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP95-003.webp"
+  },
+  {
+    "name": "HP95-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex Floor - Support Frame",
+      "Nordex Floor Spare Parts",
+      "NRNF"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP95-002-1.webp"
+  },
+  {
+    "name": "HP95-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex Floor - Front Frame",
+      "Nordex Floor Spare Parts",
+      "NRNF"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP95-001.webp"
+  },
+  {
+    "name": "HP06-010",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex - Bottom Cover",
+      "Nordex Spare Parts",
+      "NR",
+      "NRNSC"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP06-010-1.webp"
+  },
+  {
+    "name": "HP06-019-1",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex - Cable Box",
+      "Nordex Spare Parts",
+      "NRX-NS"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP06-019-1.webp"
+  },
+  {
+    "name": "HP60-006",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex - Cable Box",
+      "Nordex Spare Parts",
+      "NRX-NB"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP60-006.webp"
+  },
+  {
+    "name": "HP06-004",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex - Heat Reflector",
+      "Nordex Spare Parts",
+      "NRNS",
+      "NRNSC",
+      "NRX"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP06-004-1-scaled.webp"
+  },
+  {
+    "name": "HP60-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex - Heat Reflector",
+      "Nordex Spare Parts",
+      "NRX"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP60-001.webp"
+  },
+  {
+    "name": "HP60-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "KRI",
+      "Nordex Spare Parts",
+      "NRNSC",
+      "NRX",
+      "Wall Mounting Rack"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP60-002.webp"
+  },
+  {
+    "name": "HP60-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex - Heat Shield",
+      "Nordex Spare Parts",
+      "NRNS",
+      "NRX"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP60-003.webp"
+  },
+  {
+    "name": "HP06-010",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex Mini - Bottom Cover",
+      "Nordex Spare Parts",
+      "NRNSC"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP06-010.webp"
+  },
+  {
+    "name": "HP94-006",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex Mini - Bottom Cover",
+      "Nordex Spare Parts",
+      "NRM"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP94-006.webp"
+  },
+  {
+    "name": "HP94-005",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex Mini - Cale Box",
+      "Nordex Spare Parts",
+      "NRM-NS"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP94-005.webp"
+  },
+  {
+    "name": "STP-PUMP-ROL",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [
+      "Aroma Pump Spare Parts",
+      "Roller"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/STP-PUMP-ROL.webp"
+  },
+  {
+    "name": "STP-PUMP-NOZ",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [
+      "Aroma Pump Spare Parts",
+      "Nozzle with 3m Hose"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/STP-PUMP-NOZ.webp"
+  },
+  {
+    "name": "STP-PUMP-HOL",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [
+      "Aroma Pump Spare Parts",
+      "Hose Holder"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/STP-PUMP-HOL.webp"
+  },
+  {
+    "name": "HP94-004",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex Mini - Cable Box",
+      "Nordex Spare Parts"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP94-004.webp"
+  },
+  {
+    "name": "STE-RELAY",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [
+      "Spare Parts: STE",
+      "Spare Parts: STE-W",
+      "STE: Relay Board"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/STE-RELAY-scaled.webp"
+  },
+  {
+    "name": "HP06-004",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex Mini - Heat Reflector",
+      "Nordex Spare Parts",
+      "NRM"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP06-004-scaled.webp"
+  },
+  {
+    "name": "STE-BOARD",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [
+      "Spare Parts: STE",
+      "Spare Parts: STE-W",
+      "STE: PC Board"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/STE-BOARD-scaled.webp"
+  },
+  {
+    "name": "HP94-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex Mini - Heat Reflector",
+      "Nordex Spare Parts",
+      "NRM"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP94-001-scaled.webp"
+  },
+  {
+    "name": "HP09-004",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [
+      "Ball Valve",
+      "MNC",
+      "NIMC",
+      "SAVC",
+      "SCAC",
+      "Spare Parts: STE",
+      "Spare Parts: STE-W",
+      "TRDC"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP09-004-1.webp"
+  },
+  {
+    "name": "HP94-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex Spare Parts",
+      "NRM",
+      "Wall Mounting Rack"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP94-002-scaled.webp"
+  },
+  {
+    "name": "STN-HECOV-6HE",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [
+      "Spare Parts: STN",
+      "Spare Parts: STN-S",
+      "Spare Parts: STN-W",
+      "STN: Heating Element Cover"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/STN-HECOV-6HE.webp"
+  },
+  {
+    "name": "STN-HECOV-3HE",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [
+      "Spare Parts: STN",
+      "Spare Parts: STN-S",
+      "Spare Parts: STN-W",
+      "STN: Heating Element Cover"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/STN-HECOV-3HE.webp"
+  },
+  {
+    "name": "HP94-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Nordex Mini - Heat Shield",
+      "Nordex Spare Parts",
+      "NRM"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/HP94-003-scaled.webp"
+  },
+  {
+    "name": "STN-HECOV-2HE",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [
+      "Spare Parts: STN",
+      "Spare Parts: STN-S",
+      "Spare Parts: STN-W",
+      "STN: Heating Element Cover"
+    ],
+    "date": "2026-01-27",
+    "image": "/assets/products/STN-HECOV-2HE.webp"
+  },
+  {
+    "name": "STP-HOLDER-6HE",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-27",
+    "image": "/assets/products/STP-HOLDER-6HE-scaled.webp"
+  },
+  {
+    "name": "STP-HOLDER-3HE",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-27",
+    "image": "/assets/products/STP-HOLDER-3HE-scaled.webp"
+  },
+  {
+    "name": "STP-HOLDER-2HE",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-27",
+    "image": "/assets/products/STP-HOLDER-2HE.webp"
+  },
+  {
+    "name": "STN-W-TOPCOV-6HE",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-27",
+    "image": "/assets/products/STN-W-TOPCOV-6HE.webp"
+  },
+  {
+    "name": "STN-W-TOPCOV-3HE",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-27",
+    "image": "/assets/products/STN-W-TOPCOV-3HE.webp"
+  },
+  {
+    "name": "STN-W-TOPCOV-2HE",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-27",
+    "image": "/assets/products/STN-W-TOPCOV-2HE.webp"
+  },
+  {
+    "name": "STN-TOPCOV-6HE",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-27",
+    "image": "/assets/products/STN-TOPCOV-6HE.webp"
+  },
+  {
+    "name": "STN-TOPCOV-3HE",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-27",
+    "image": "/assets/products/STN-TOPCOV-3HE.webp"
+  },
+  {
+    "name": "STN-TOPCOV-2HE",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-27",
+    "image": "/assets/products/STN-TOPCOV-2HE.webp"
+  },
+  {
+    "name": "HP01-007",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heat Reflector",
+      "Mini &amp; Mini X Spare Parts",
+      "MN",
+      "MX"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP01-007.webp"
+  },
+  {
+    "name": "HP07-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heat Reflector",
+      "Mini &amp; Mini X Spare Parts",
+      "MX"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP07-003.webp"
+  },
+  {
+    "name": "HP01-024",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heat Reflector",
+      "Mini &amp; Mini X Spare Parts",
+      "MN"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP01-024.webp"
+  },
+  {
+    "name": "HP07-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "HP07-001",
+      "Mini &amp; Mini X Spare Parts",
+      "Wall Mounting Rack"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP07-001.webp"
+  },
+  {
+    "name": "HP01-006",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Mini &amp; Mini X Spare Parts",
+      "MN",
+      "SCA",
+      "Wall Mounting Rack"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP01-006.webp"
+  },
+  {
+    "name": "HP01-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Frame",
+      "Mini &amp; Mini X Spare Parts",
+      "MN"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP01-001.webp"
+  },
+  {
+    "name": "HP01-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Mini &amp; Mini X Spare Parts",
+      "MN",
+      "Stone Holder"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP01-002.webp"
+  },
+  {
+    "name": "HP01-026",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Catch Pan",
+      "Mini &amp; Mini X Spare Parts",
+      "MN"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP01-026-scaled.webp"
+  },
+  {
+    "name": "HP01-015",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Front Cover",
+      "Mini &amp; Mini X Spare Parts",
+      "MN",
+      "MX",
+      "SAV",
+      "SCA"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP01-015-scaled.webp"
+  },
+  {
+    "name": "HP01-018",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Control Unit Body",
+      "Mini &amp; Mini X Spare Parts",
+      "MN",
+      "MX",
+      "SAV",
+      "SCA"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP01-018-scaled.webp"
+  },
+  {
+    "name": "HP02-009",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Mini &amp; Mini X Spare Parts",
+      "MN",
+      "MX",
+      "Name Plate",
+      "SAV",
+      "SCA"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP02-009.webp"
+  },
+  {
+    "name": "HP65-022",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Taurus",
+      "Taurus - Cable Box Cover",
+      "TRD"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP65-022.webp"
+  },
+  {
+    "name": "HP65-021",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Taurus",
+      "Taurus - Cable Box Cover",
+      "TRD",
+      "TRDC (9.0-12.0kW)"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP65-021.webp"
+  },
+  {
+    "name": "HP65-020",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Taurus",
+      "Taurus - Catchpan",
+      "TRD"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP65-020.webp"
+  },
+  {
+    "name": "HP65-019",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Taurus",
+      "Taurus - Catchpan",
+      "TRD"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP65-019.webp"
+  },
+  {
+    "name": "HP66-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Taurus",
+      "Taurus - Stone Container",
+      "TRD"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP66-001.webp"
+  },
+  {
+    "name": "HP65-015",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Taurus",
+      "Taurus - Stone Container",
+      "TRD"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP65-015.webp"
+  },
+  {
+    "name": "HP66-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Taurus",
+      "Taurus - Stone Container",
+      "TRD",
+      "TRDC"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP66-002.webp"
+  },
+  {
+    "name": "HP65-016",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Taurus",
+      "Taurus - Stone Container",
+      "TRD",
+      "TRDC"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP65-016.webp"
+  },
+  {
+    "name": "HP68-005",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Helius - Stone Container",
+      "Helius Spare Parts",
+      "HES"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP68-005.webp"
+  },
+  {
+    "name": "HP68-004",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Helius - Water Distributor Pipe",
+      "Helius Spare Parts",
+      "HES"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP68-004.webp"
+  },
+  {
+    "name": "HP68-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Helius - Hose",
+      "Helius Spare Parts",
+      "HES"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP68-003.webp"
+  },
+  {
+    "name": "HP68-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Helius - Stone Cup",
+      "Helius Spare Parts",
+      "HES"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP68-002.webp"
+  },
+  {
+    "name": "HP68-006",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Helius - Stone Cup",
+      "Helius Spare Parts",
+      "HES"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP68-006.webp"
+  },
+  {
+    "name": "HP68-008",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Helius - Hood",
+      "Helius Spare Parts"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP68-008.webp"
+  },
+  {
+    "name": "HP77-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "HES",
+      "Phoenix - Outer Cover",
+      "Phoenix Spare Parts",
+      "PNX6"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP77-001.webp"
+  },
+  {
+    "name": "HP76-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Phoenix - Outer Cover",
+      "Phoenix Spare Parts",
+      "PNX3"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP76-001.webp"
+  },
+  {
+    "name": "HP77-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Phoenix - Heating Element Spacer",
+      "Phoenix Spare Parts",
+      "PNX6"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP77-002.webp"
+  },
+  {
+    "name": "HP76-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Phoenix - Heating Element Spacer",
+      "Phoenix Spare Parts",
+      "PNX3"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP76-002.webp"
+  },
+  {
+    "name": "HP49-011",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "TH-CNR",
+      "TH-WL",
+      "Tower Spare Parts",
+      "Tower Wall &amp; Corner - Wall Mounting Bracket"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP49-011.webp"
+  },
+  {
+    "name": "HP43-009",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "TH",
+      "Tower Spare Parts",
+      "Tower Wall Mounting Rod"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP43-009-scaled.webp"
+  },
+  {
+    "name": "HP51-004",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "TH6-CNR",
+      "Tower Corner - Heat Reflector",
+      "Tower Spare Parts"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP51-004.webp"
+  },
+  {
+    "name": "HP50-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "TH4-CNR",
+      "Tower Corner - Heat Reflector",
+      "Tower Spare Parts"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP50-003.webp"
+  },
+  {
+    "name": "HP49-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "TH3-CNR",
+      "Tower Corner - Heat Reflector",
+      "Tower Spare Parts"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP49-001.webp"
+  },
+  {
+    "name": "HP51-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "SW3-CNR",
+      "TH6-CNR",
+      "Tower Corner - Stone Spacer",
+      "Tower Spare Parts"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP51-002.webp"
+  },
+  {
+    "name": "HP50-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "SW3-CNR",
+      "TH4-CNR",
+      "Tower Corner - Stone Spacer",
+      "Tower Spare Parts"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP50-002-scaled.webp"
+  },
+  {
+    "name": "HP49-009",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "SW3-CNR",
+      "TH3-CNR",
+      "Tower Corner - Stone Spacer",
+      "Tower Spare Parts"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP49-009.webp"
+  },
+  {
+    "name": "HP56-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "TH12-WL",
+      "Tower Spare Parts",
+      "Tower Wall - Heat Reflector"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP56-003.webp"
+  },
+  {
+    "name": "HP55-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "TH9-WL",
+      "Tower Spare Parts",
+      "Tower Wall - Heat Reflector"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP55-002.webp"
+  },
+  {
+    "name": "HP54-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "TH6-WL",
+      "Tower Spare Parts",
+      "Tower Wall - Heat Reflector"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP54-003.webp"
+  },
+  {
+    "name": "HP53-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "TH4-WL",
+      "Tower Spare Parts",
+      "Tower Wall - Heat Reflector"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP53-003.webp"
+  },
+  {
+    "name": "HP52-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "TH3-WL",
+      "Tower Spare Parts",
+      "Tower Wall",
+      "Tower Wall - Heat Reflector"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP52-001.png"
+  },
+  {
+    "name": "HP56-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Tower Spare Parts",
+      "Tower Wall - Stone Spacer"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP56-002.png"
+  },
+  {
+    "name": "HP55-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "SW3-WL",
+      "TH12-WL",
+      "TH9-WL",
+      "Tower Spare Parts",
+      "Tower Wall - Stone Spacer"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP55-001.png"
+  },
+  {
+    "name": "STN-TANK-6HE",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STN-TANK-6HE.webp"
+  },
+  {
+    "name": "HP54-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "SW3-WL",
+      "TH6-WL",
+      "Tower Spare Parts",
+      "Tower Wall - Stone Spacer"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP54-001.png"
+  },
+  {
+    "name": "HP53-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "SW3-WL",
+      "TH4-WL",
+      "Tower Spare Parts",
+      "Tower Wall - Stone Spacer"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP53-001.png"
+  },
+  {
+    "name": "STN-TANK-3HE",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STN-TANK-3HE.webp"
+  },
+  {
+    "name": "HP52-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "SW3-WL",
+      "TH3-WL",
+      "Tower Spare Parts",
+      "Tower Wall - Stone Spacer"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP52-003.png"
+  },
+  {
+    "name": "STN-TANK-2HE",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STN-TANK-2HE.webp"
+  },
+  {
+    "name": "HP44-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "TH9",
+      "Tower Round - Stone Spacer",
+      "Tower Spare Parts"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP44-003.png"
+  },
+  {
+    "name": "STP-GASKET 6H.E.",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STP-GASKET6.webp"
+  },
+  {
+    "name": "HP43-008",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "SW3",
+      "TH6",
+      "Tower Round - Stone Spacer",
+      "Tower Spare Parts"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP43-008.png"
+  },
+  {
+    "name": "HP42-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "SW3",
+      "TH4",
+      "Tower Round - Stone Spacer",
+      "Tower Spare Parts"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP42-002.png"
+  },
+  {
+    "name": "STP-GASKET 3H.E.",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STP-GASKET3.webp"
+  },
+  {
+    "name": "STP-GASKET 2H.E.",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STP-GASKET2.webp"
+  },
+  {
+    "name": "STP-CONT",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STP-CONT.webp"
+  },
+  {
+    "name": "STP-BOARD-DFP",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STP-BOARD-DFP.webp"
+  },
+  {
+    "name": "STP-TRANS",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STP-TRANS-scaled.webp"
+  },
+  {
+    "name": "AUTODRAIN-BRASS",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/AUTODRAIN-BRASS.webp"
+  },
+  {
+    "name": "STP-AUTODRAIN-1",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STP-AUTODRAIN-1-scaled.webp"
+  },
+  {
+    "name": "STP-COV",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STP-COV-scaled.webp"
+  },
+  {
+    "name": "STP-SHEAD",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STP-SHEAD.webp"
+  },
+  {
+    "name": "STP-SWITCHM",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STP-SWITCHM.webp"
+  },
+  {
+    "name": "STP-RTS",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STP-RTS-scaled.webp"
+  },
+  {
+    "name": "STP-TTS",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STP-TTS-scaled.webp"
+  },
+  {
+    "name": "STP-FUSE",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STP-FUSE-scaled.webp"
+  },
+  {
+    "name": "HP41-026",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "TH3",
+      "Tower Round - Stone Spacer",
+      "Tower Spare Parts"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP41-026.png"
+  },
+  {
+    "name": "HP72-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI3-CNR",
+      "Aries Corner - Heat Reflector",
+      "Aries Spare Parts"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP72-001.png"
+  },
+  {
+    "name": "HP72-008",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI3-CNR",
+      "Aries Corner - Outer Cover",
+      "Aries Spare Parts"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP72-008.png"
+  },
+  {
+    "name": "HP72-013",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI-NB-CNR (9.0kW)",
+      "Aries Corner - Heating Element Holder",
+      "Aries Spare Parts"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP72-013.png"
+  },
+  {
+    "name": "STE-LPRO",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STE-LPRO-scaled.webp"
+  },
+  {
+    "name": "STN-LPRO",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STN-LPRO-scaled.webp"
+  },
+  {
+    "name": "HP72-012",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI-NB-CNR (7.5kW)",
+      "Aries Corner - Heating Element Holder",
+      "Aries Spare Parts"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP72-012.png"
+  },
+  {
+    "name": "STP-SOL",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STP-SOL.webp"
+  },
+  {
+    "name": "HP72-011",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI-NB-CNR (6.0kW)",
+      "Aries Corner - Heating Element Holder",
+      "Aries Spare Parts"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP72-011.png"
+  },
+  {
+    "name": "HP72-010",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI-NB-CNR (4.5kW)",
+      "Aries Corner - Heating Element Holder",
+      "Aries Spare Parts"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP72-010.png"
+  },
+  {
+    "name": "HP72-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI3-NS-CNR",
+      "Aries Corner - Heating Element Holder",
+      "Aries Spare Parts"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP72-002.png"
+  },
+  {
+    "name": "STP-HT2.5",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [],
+    "date": "2026-01-26",
+    "image": "/assets/products/STP-HT2.5.webp"
+  },
+  {
+    "name": "HP72-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI-CNR",
+      "ARI-WL",
+      "Aries Spare Parts",
+      "Aries Wall &amp; Corner - Wall Mounting Bracket"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP72-003.png"
+  },
+  {
+    "name": "STP-HT2",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [
+      "STE",
+      "STE-W",
+      "STN",
+      "STN-S",
+      "STN-W"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/STP-HT-2.webp"
+  },
+  {
+    "name": "STP-HT1.5",
+    "content": "",
+    "categories": [
+      "Steam Spare Parts"
+    ],
+    "tags": [
+      "STE",
+      "STE-W",
+      "STN",
+      "STN-S",
+      "STN-W"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/STP-HT-1.5.webp"
+  },
+  {
+    "name": "HP74-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI-WL",
+      "Aries Spare Parts",
+      "Aries Wall - Heat Reflector"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP74-002.png"
+  },
+  {
+    "name": "HP74-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI3-WL",
+      "Aries Spare Parts",
+      "Aries Wall - Outer Cover"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP74-003.png"
+  },
+  {
+    "name": "HP74-013",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI-NB-WL (9.0kW)",
+      "Aries Spare Parts",
+      "Aries Wall - Heating Element Holder"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP74-013.png"
+  },
+  {
+    "name": "HP74-012",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI-NB-WL 7.5kW",
+      "Aries Spare Parts",
+      "Aries Wall - Heating Element Holder"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP74-012.png"
+  },
+  {
+    "name": "HP74-011",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI-NB-WL (6.0kW)",
+      "Aries Spare Parts",
+      "Aries Wall - Heating Element Holder"
+    ],
+    "date": "2026-01-26",
+    "image": "/assets/products/HP74-011.png"
+  },
+  {
+    "name": "HP74-010",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI-NB-WL (4.5kW)",
+      "Aries Spare Parts",
+      "Aries Wall - Heating Element Holder"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP74-010.png"
+  },
+  {
+    "name": "HP74-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI3-NS-WL",
+      "Aries Spare Parts",
+      "Aries Wall - Heating Element Holder"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP74-001.png"
+  },
+  {
+    "name": "HP70-031",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI",
+      "Aries Round - Wall Mounting Bracket",
+      "Aries Spare Parts"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP70-031.webp"
+  },
+  {
+    "name": "HP70-019",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI3",
+      "Aries Round - Heating Element Holder",
+      "Aries Round - Rock Container"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP70-019.png"
+  },
+  {
+    "name": "HP70-042",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI3",
+      "Aries Round - Outer Cover",
+      "Aries Spare Parts"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP70-042.png"
+  },
+  {
+    "name": "HP70-008",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI3",
+      "Aries Round - Outer Cover",
+      "Aries Spare Parts"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP70-008.webp"
+  },
+  {
+    "name": "HP70-036",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI-NB (9.0kW)",
+      "Aries Round - Heating Element Holder",
+      "Aries Spare Parts"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP70-036.png"
+  },
+  {
+    "name": "HP70-035",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Aries Round - Heating Element Holder",
+      "Aries Spare Parts"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP70-035.png"
+  },
+  {
+    "name": "HP70-034",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI-NB (6.0kW)",
+      "Aries Round - Heating Element Holder",
+      "Aries Spare Parts"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP70-034.png"
+  },
+  {
+    "name": "HP70-033",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI-NB (4.5kW)",
+      "Aries Round - Heating Element Holder",
+      "Aries Spare Parts"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP70-033.png"
+  },
+  {
+    "name": "HP71-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI6-NS",
+      "Aries Round - Heating Element Holder",
+      "Aries Spare Parts"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP71-001.png"
+  },
+  {
+    "name": "HP70-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI3-NS",
+      "Aries Round - Heating Element Holder",
+      "Aries Spare Parts"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP70-002.png"
+  },
+  {
+    "name": "HP09-021",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Combi Spare Parts",
+      "NIMC",
+      "SAVC",
+      "SCAC",
+      "Solenoid Valve"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP09-021.webp"
+  },
+  {
+    "name": "HP09-024",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Combi Spare Parts",
+      "MNC",
+      "Steam Cover"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP09-024.webp"
+  },
+  {
+    "name": "HP09-020",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Combi Spare Parts",
+      "SAVC",
+      "SCAC",
+      "Steam Cover"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP09-020.webp"
+  },
+  {
+    "name": "HP09-006",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Combi Spare Parts",
+      "SAVC",
+      "SCAC",
+      "Steam Cover"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP09-006.png"
+  },
+  {
+    "name": "HP09-007",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Combi - Level Indicator",
+      "Combi Spare Parts",
+      "MNC",
+      "SAVC",
+      "SCAC"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP09-007-scaled.webp"
+  },
+  {
+    "name": "HP09-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "HP09-002",
+      "MNC",
+      "NIMC",
+      "SAVC",
+      "SCAC",
+      "TRDC"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP09-002.webp"
+  },
+  {
+    "name": "HP09-018",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Combi - Switch",
+      "Combi Spare Parts",
+      "NIMC",
+      "SAVC",
+      "SCAC",
+      "TRDC"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP09-018.webp"
+  },
+  {
+    "name": "HP09-019",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Combi - Switch",
+      "Combi Spare Parts",
+      "NIMC",
+      "SAVC",
+      "SCAC",
+      "TRDC"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP09-019.webp"
+  },
+  {
+    "name": "HP09-010",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Combi - Switch",
+      "Combi Spare Parts",
+      "MNC",
+      "NIMC",
+      "SAVC",
+      "SCAC",
+      "TRDC"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP09-010.png"
+  },
+  {
+    "name": "HP09-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Combi Spare Parts",
+      "MNC",
+      "SAVC",
+      "SCAC",
+      "Scent Basin"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP09-001.webp"
+  },
+  {
+    "name": "HP12-007",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Combi",
+      "Combi Spare Parts"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP12-007.webp"
+  },
+  {
+    "name": "HP12-005",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Combi",
+      "Combi Spare Parts"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP12-005.webp"
+  },
+  {
+    "name": "HP12-001",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Combi",
+      "Combi Spare Parts",
+      "SSAVC (15-18.0kW)"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP12-001.webp"
+  },
+  {
+    "name": "HP10-005",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Combi",
+      "Combi Spare Parts",
+      "SAVC (9-12.0kW)"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP10-005-scaled.webp"
+  },
+  {
+    "name": "HP10-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Combi",
+      "Combi Spare Parts",
+      "SAVC (9-12.0kW)"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP10-003.webp"
+  },
+  {
+    "name": "HP09-022",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Combi Spare Parts",
+      "Combi Tanks",
+      "NIMC (9-12.0kW)",
+      "SCAC (8-9.0kW)"
+    ],
+    "date": "2026-01-23",
+    "image": "/assets/products/HP09-022.webp"
+  },
+  {
+    "name": "HP09-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Combi Spare Parts",
+      "Combi Tanks",
+      "NIMC (9-12.0kW)",
+      "SCAC (8-9.0kW)"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP09-003-scaled.png"
+  },
+  {
+    "name": "HP11-059",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Combi Spare Parts",
+      "Combi Tanks",
+      "MNC (2.3-3.6kW)",
+      "NRC (6.0kW)",
+      "SCAC (6.0kW)"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP11-059.png"
+  },
+  {
+    "name": "HP41-009",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI",
+      "General Spare Parts",
+      "Grommet",
+      "PNX",
+      "SW3",
+      "SW3-CNR",
+      "TAU",
+      "TH"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP41-009.png"
+  },
+  {
+    "name": "HP02-012",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Cable Box for Separate Control",
+      "Controlling Spare Parts",
+      "SCA-NS"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP02-012.png"
+  },
+  {
+    "name": "HP65-023",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Controlling Spare Parts",
+      "TAU",
+      "Taurus Power Controller Board",
+      "TRD",
+      "TRDC"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP65-023-scaled.png"
+  },
+  {
+    "name": "HP01-020",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Cable Box for Separate Control",
+      "Controlling Spare Parts",
+      "MN",
+      "MX-NS"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP01-020.png"
+  },
+  {
+    "name": "HP01-012",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Controlling Spare Parts",
+      "MN",
+      "MX",
+      "SAV",
+      "SCA",
+      "Sensor Holder"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP01-012.png"
+  },
+  {
+    "name": "HP03-008",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Cable Channel for Built-in Control",
+      "Controlling Spare Parts",
+      "SAV-NB"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP03-008.png"
+  },
+  {
+    "name": "HP02-011",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Cable Channel for Built-in Control",
+      "Controlling Spare Parts"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP07-002.png"
+  },
+  {
+    "name": "HP01-019",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Cable Channel for Built-in Control",
+      "Controlling Spare Parts",
+      "MN-NB"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP01-019.png"
+  },
+  {
+    "name": "HP01-017",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Cable Clip for Built-in Control",
+      "Controlling Spare Parts",
+      "MN",
+      "MX-NB",
+      "SCA-NB"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP01-017.webp"
+  },
+  {
+    "name": "HP03-022",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Cable Holder",
+      "Controlling Spare Parts"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP03-022.png"
+  },
+  {
+    "name": "HP31-006",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heating Elements",
+      "Thermostat"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP31-006-1.webp"
+  },
+  {
+    "name": "HP01-013",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI-NB",
+      "CML",
+      "Heating Elements",
+      "MN",
+      "MX",
+      "NR",
+      "NRM",
+      "SAV",
+      "SCA",
+      "Thermostat"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP01-013.png"
+  },
+  {
+    "name": "HP01-013",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heating Elements",
+      "MN",
+      "MX",
+      "Pilot Lights for Knob Sets",
+      "SAV",
+      "SCA",
+      "TH",
+      "TH-CNR",
+      "TH-WL"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP01-014.png"
+  },
+  {
+    "name": "HP01-010",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Heating Elements",
+      "MN",
+      "MX",
+      "NR",
+      "NRM",
+      "Pilot Lights for Knob Sets",
+      "SAV",
+      "SCA",
+      "TH",
+      "TH-CNR",
+      "TH-WL"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP01-010-scaled.png"
+  },
+  {
+    "name": "HP06-022",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Controlling Spare Parts",
+      "Knob Sets",
+      "NR",
+      "NRMN",
+      "NRX"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP06-022.png"
+  },
+  {
+    "name": "HP06-015",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Controlling Spare Parts",
+      "Knob Sets",
+      "NR",
+      "NRMN",
+      "NRX"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP06-015.png"
+  },
+  {
+    "name": "HP01-016",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Controlling Spare Parts",
+      "Knob Sets",
+      "MN",
+      "MX",
+      "SAV",
+      "SCA"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP01-016.png"
+  },
+  {
+    "name": "HP01-009",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Controlling Spare Parts",
+      "Knob Sets"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP01-009.png"
+  },
+  {
+    "name": "HP03-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heating Elements",
+      "NIM",
+      "NIMC",
+      "NRNF",
+      "SAV",
+      "Sav - Heating Elements"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP03-003-scaled.png"
+  },
+  {
+    "name": "HP03-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heating Elements",
+      "NIM",
+      "NIMC",
+      "NRNF",
+      "SAV",
+      "Sav - Heating Elements"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP03-002-scaled.png"
+  },
+  {
+    "name": "HP02-008",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Heating Elements",
+      "KRI",
+      "NR",
+      "NRNS",
+      "NRNSC",
+      "SCA",
+      "Sca - Heating Elements"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP02-008-1-scaled.png"
+  },
+  {
+    "name": "HP02-007",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heating Elements",
+      "NRNSC",
+      "Sca - Heating Elements",
+      "SCAC"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP02-007-scaled.png"
+  },
+  {
+    "name": "HP02-006",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heating Elements",
+      "NRNSC",
+      "Sca - Heating Elements",
+      "SCAC"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP02-006-scaled.png"
+  },
+  {
+    "name": "HP02-005",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heating Elements",
+      "Sca - Heating Elements"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP02-005-scaled.png"
+  },
+  {
+    "name": "HP02-004",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CML",
+      "Heating Elements",
+      "KRI",
+      "NR",
+      "NRNS",
+      "SCA",
+      "Sca - Heating Elements"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP02-004-scaled.png"
+  },
+  {
+    "name": "HP01-004",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heating Elements",
+      "MN",
+      "Mn - Heating Elements",
+      "MX",
+      "NRM"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP01-004-scaled.png"
+  },
+  {
+    "name": "HP01-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heating Elements",
+      "MN",
+      "Mn - Heating Elements",
+      "MX",
+      "NRM"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP01-003-scaled.png"
+  },
+  {
+    "name": "HP65-006",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heating Elements",
+      "TAU",
+      "Tau - Heating Elements",
+      "TRD"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP65-006-scaled.png"
+  },
+  {
+    "name": "HP65-005",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heating Elements",
+      "TAU",
+      "Tau - Heating Elements",
+      "TRD"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP65-005-scaled.png"
+  },
+  {
+    "name": "HP65-004",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heating Elements",
+      "Tau - Heating Elements"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP65-004-scaled.png"
+  },
+  {
+    "name": "HP65-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heating Elements",
+      "Tau - Heating Elements"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP65-003-scaled.png"
+  },
+  {
+    "name": "HP41-007",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heating Elements",
+      "SW3",
+      "SW3-CNR",
+      "SW3-WL",
+      "TH",
+      "TH-CNR",
+      "TH-WL",
+      "Tower - Heating Element Fastener"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP41-007.png"
+  },
+  {
+    "name": "HP41-004",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heating Elements",
+      "SW3",
+      "SW3-CNR",
+      "SW3-WL",
+      "TH",
+      "TH-CNR",
+      "TH-WL",
+      "Tower - Heating Elements"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP41-004-scaled.png"
+  },
+  {
+    "name": "HP41-003",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heating Elements",
+      "SW3",
+      "SW3-CNR",
+      "SW3-WL",
+      "TH",
+      "TH-CNR",
+      "TH-WL",
+      "Tower - Heating Elements"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP41-003-scaled.png"
+  },
+  {
+    "name": "HP41-002",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heating Elements",
+      "SW3",
+      "SW3-CNR",
+      "SW3-WL",
+      "TH",
+      "TH-CNR",
+      "TH-WL",
+      "Tower - Heating Elements"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP41-002-scaled.png"
+  },
+  {
+    "name": "HP70-015",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Ari- Heating Element Spacer",
+      "Heating Elements"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP70-015.png"
+  },
+  {
+    "name": "HP70-014",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Ari- Heating Element Spacer",
+      "ARI3",
+      "ARI6 (9-10.5-12kW)",
+      "Heating Elements",
+      "PNX3 (4.5-6kW)"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP70-014.png"
+  },
+  {
+    "name": "HP06-005",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI3 (4.5 - 6.0kW",
+      "ARI3 (4.5 - 6.0kW) &amp; ARI6 (9 - 12kW)",
+      "ARI6 (9 - 12kW)",
+      "Heating Element Locks",
+      "Heating Elements",
+      "NR",
+      "NRF",
+      "NRM",
+      "NRNS",
+      "NRNSC"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP06-005.png"
+  },
+  {
+    "name": "HP76-004",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Heating Element Locks",
+      "Heating Elements",
+      "PNX6 (7.5-9.0kW)"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP76-004.webp"
+  },
+  {
+    "name": "HP70-007",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "Ari - Heating Elements",
+      "Heating Elements"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP70-007.webp"
+  },
+  {
+    "name": "HP70-006",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI",
+      "Ari - Heating Elements",
+      "CUB",
+      "Heating Elements",
+      "HES",
+      "PNX"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP70-006.webp"
+  },
+  {
+    "name": "HP70-005",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI",
+      "Ari - Heating Elements",
+      "CUB",
+      "Heating Elements",
+      "HES",
+      "PNX"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP70-005.webp"
+  },
+  {
+    "name": "HP70-004",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI",
+      "Ari - Heating Elements",
+      "CUB",
+      "Heating Elements",
+      "HES",
+      "PNX"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP70-004.webp"
+  },
+  {
+    "name": "HP31-006",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CIR",
+      "Controlling Spare Parts",
+      "TH",
+      "TH-CNR",
+      "TH-WL",
+      "Thermostat"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP31-006.webp"
+  },
+  {
+    "name": "HP03-004",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI",
+      "General Spare Parts",
+      "HES",
+      "Leveling Bolt",
+      "NIM",
+      "NIMC",
+      "PNX",
+      "SAV",
+      "SW3",
+      "SW3-CNR",
+      "TAU",
+      "TH",
+      "TRD",
+      "TRDC"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP03-004.webp"
+  },
+  {
+    "name": "HP01-021",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI3",
+      "Cable Holder",
+      "CML",
+      "Controlling Spare Parts",
+      "KRI",
+      "MN",
+      "MX",
+      "NIM",
+      "NR",
+      "NRM",
+      "PNX3",
+      "SCA",
+      "SW3",
+      "SW3-CNR",
+      "SW3-WL"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP01-021.webp"
+  },
+  {
+    "name": "HP01-011",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "ARI-NB",
+      "CML",
+      "Controlling Spare Parts",
+      "MN",
+      "MX",
+      "NR",
+      "NRM",
+      "SAV",
+      "SCA",
+      "TH-CNR-NB",
+      "TH-NB",
+      "TH-WL-NB",
+      "Timer Switch"
+    ],
+    "date": "2026-01-22",
+    "image": "/assets/products/HP01-011-1.webp"
+  },
+  {
+    "name": "HP01-008",
+    "content": "",
+    "categories": [
+      "Heater Spare Parts"
+    ],
+    "tags": [
+      "CIRM",
+      "CML",
+      "CRRM",
+      "Heating Element Locks",
+      "Heating Elements",
+      "HES",
+      "MN",
+      "MX",
+      "NIM",
+      "NIMC",
+      "NRNF",
+      "PNX3 (4.5-6.0kW)",
+      "SAV",
+      "SCA"
+    ],
+    "date": "2026-01-21",
+    "image": "/assets/products/HP01-008.webp"
+  },
+  {
+    "name": "Minidragon Black NB",
+    "content": "",
+    "categories": [
+      "Dragonfire",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Minidragon"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_MN-NB-Dragonfire_Black.webp"
+  },
+  {
+    "name": "Minidragon Red NB",
+    "content": "",
+    "categories": [
+      "Dragonfire",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Minidragon"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_MN-NB-Dragonfire_Red.webp"
+  },
+  {
+    "name": "Minidragon Black NS",
+    "content": "",
+    "categories": [
+      "Dragonfire",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Minidragon"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_MN-NS-Dragonfire_Black.webp"
+  },
+  {
+    "name": "Minidragon Red NS",
+    "content": "",
+    "categories": [
+      "Dragonfire",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Minidragon"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_MN-NS-Dragonfire_Red.webp"
+  },
+  {
+    "name": "Taurus D Combi",
+    "content": "",
+    "categories": [
+      "Combi",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Taurus"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_floor_TRDC_NS.webp"
+  },
+  {
+    "name": "Nordex Floor Black NS",
+    "content": "",
+    "categories": [
+      "Floor",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex",
+      "Nordex Floor"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_floor_NRFS_Black_NS.webp"
+  },
+  {
+    "name": "Nordex Floor NS",
+    "content": "",
+    "categories": [
+      "Floor",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex",
+      "Nordex Floor"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_floor_NRFS_NS.webp"
+  },
+  {
+    "name": "Nordex S Combi Black NS",
+    "content": "",
+    "categories": [
+      "Combi",
+      "Floor",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex",
+      "Nordex S"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_floor_NRNSC_Black_NS.webp"
+  },
+  {
+    "name": "Nordex S Combi NS",
+    "content": "",
+    "categories": [
+      "Combi",
+      "Floor",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex",
+      "Nordex S"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_floor_NRNSC_NS.webp"
+  },
+  {
+    "name": "Nordex S Black NS",
+    "content": "",
+    "categories": [
+      "Floor",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex",
+      "Nordex S"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_floor_NRNS_Black_NS.webp"
+  },
+  {
+    "name": "Nordex S NS",
+    "content": "",
+    "categories": [
+      "Floor",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex",
+      "Nordex S"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_floor_NRNS_NS.webp"
+  },
+  {
+    "name": "Nordex Pro Combi",
+    "content": "",
+    "categories": [
+      "Combi",
+      "Floor",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex",
+      "Nordex Pro"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_floor_Nordex_Pro_Combi_NS.webp"
+  },
+  {
+    "name": "Nordex Pro NS",
+    "content": "",
+    "categories": [
+      "Floor",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex",
+      "Nordex Pro"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_floor_Nordex_Pro_NS.webp"
+  },
+  {
+    "name": "Savonia Combi Fibercoated NS",
+    "content": "",
+    "categories": [
+      "Combi",
+      "Floor",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Savonia"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_floor_SAVC_NS_Fibercoated.webp"
+  },
+  {
+    "name": "Savonia Combi NS",
+    "content": "",
+    "categories": [
+      "Combi",
+      "Floor",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Savonia"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_floor_SAVC_NS.webp"
+  },
+  {
+    "name": "Savonia Fibercoated NS",
+    "content": "",
+    "categories": [
+      "Combi",
+      "Floor",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Savonia"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_floor_SAV_NS_Fibercoated.webp"
+  },
+  {
+    "name": "Savonia NS",
+    "content": "",
+    "categories": [
+      "Floor",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Savonia"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_floor_SAV_NS.webp"
+  },
+  {
+    "name": "Krios Floor NS",
+    "content": "",
+    "categories": [
+      "Floor",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Krios Floor"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_floor_KRFS_NS.webp"
+  },
+  {
+    "name": "Helius NS",
+    "content": "",
+    "categories": [
+      "Floor",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Helius"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_floor_HES_NS.webp"
+  },
+  {
+    "name": "Taurus D NS",
+    "content": "",
+    "categories": [
+      "Floor",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Taurus"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_floor_TRD_NS.webp"
+  },
+  {
+    "name": "Nimbus Combi NS",
+    "content": "",
+    "categories": [
+      "Combi",
+      "Stone",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nimbus"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_stone_NIMC_NS.webp"
+  },
+  {
+    "name": "Nimbus NS",
+    "content": "",
+    "categories": [
+      "Stone",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nimbus"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_stone_NIM_NS.webp"
+  },
+  {
+    "name": "Cumulus NB",
+    "content": "",
+    "categories": [
+      "Stone",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Cumulus"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_stone_CML_NB.webp"
+  },
+  {
+    "name": "Cumulus NS",
+    "content": "",
+    "categories": [
+      "Stone",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Cumulus"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_stone_CML_NS.webp"
+  },
+  {
+    "name": "Cumulus Ni2",
+    "content": "",
+    "categories": [
+      "Stone",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Cumulus"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_stone_CML_Ni2.webp"
+  },
+  {
+    "name": "Fiberjungle NS",
+    "content": "",
+    "categories": [
+      "Dragonfire",
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Fiberjungle"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_DRF_Round_NS.webp"
+  },
+  {
+    "name": "Phoenix NS",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Phoenix"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_Phoenix_Round_NS.webp"
+  },
+  {
+    "name": "Phoenix Ni2",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Phoenix"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_Phoenix_Round_Ni2.webp"
+  },
+  {
+    "name": "Heaterking Corner NS",
+    "content": "",
+    "categories": [
+      "Dragonfire",
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Heaterking"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_DRFT6_Corner_NS.webp"
+  },
+  {
+    "name": "Heaterking Wall NS",
+    "content": "",
+    "categories": [
+      "Dragonfire",
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Heaterking"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_DRFT6_Wall_NS.webp"
+  },
+  {
+    "name": "Heaterking Round NS",
+    "content": "",
+    "categories": [
+      "Dragonfire",
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Heaterking"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_DRFT6_Round_NS.webp"
+  },
+  {
+    "name": "Cubos NB",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Cubos"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_CUB3_NB.webp"
+  },
+  {
+    "name": "Cubos NS",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Cubos"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_CUB3_NS.webp"
+  },
+  {
+    "name": "Cubos Ni2",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Cubos"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_CUB3_Ni2.webp"
+  },
+  {
+    "name": "Aries Corner Black NB",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Aries Corner"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_series_tower_ARI_Corner_Black_NB.webp"
+  },
+  {
+    "name": "Aries Corner NB",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Aries Corner"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_series_tower_ARI_Corner_NB.webp"
+  },
+  {
+    "name": "Aries Corner Black NS",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Aries Corner"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_series_tower_ARI_Corner_Black_NS.webp"
+  },
+  {
+    "name": "Aries Corner NS",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Aries Corner"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_series_tower_ARI_Corner_NS.webp"
+  },
+  {
+    "name": "Aries Corner Black Ni2",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Aries Corner"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_series_tower_ARI_Corner_Black_Ni2.webp"
+  },
+  {
+    "name": "Aries Corner Ni2",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Aries Corner"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_series_tower_ARI_Corner_Ni2.webp"
+  },
+  {
+    "name": "Aries Wall Black NB",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Aries Wall"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_series_tower_ARI_Wall_Black_NB.webp"
+  },
+  {
+    "name": "Aries Wall NB",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Aries Wall"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_series_tower_ARI_Wall_NB.webp"
+  },
+  {
+    "name": "Aries Wall Black NS",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Aries Wall"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_series_tower_ARI_Wall_Black_NS.webp"
+  },
+  {
+    "name": "Aries Wall NS",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Aries Wall"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_series_tower_ARI_Wall_NS.webp"
+  },
+  {
+    "name": "Aries Wall Black Ni2",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Aries Wall"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_series_tower_ARI_Wall_Black_Ni2.webp"
+  },
+  {
+    "name": "Aries Wall Ni2",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Aries Wall"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_series_tower_ARI_Wall_Ni2.webp"
+  },
+  {
+    "name": "Aries Round Black NB",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Aries Round"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_series_tower_ARI_Round_Black_NB.webp"
+  },
+  {
+    "name": "Aries Round NB",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Aries Round"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_series_tower_ARI_Round_NB.webp"
+  },
+  {
+    "name": "Aries Round Black NS",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Aries Round"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_series_tower_ARI_Round_Black_NS.webp"
+  },
+  {
+    "name": "Aries Round NS",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Aries Round"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_series_tower_ARI_Round_NS.webp"
+  },
+  {
+    "name": "Aries Round Black Ni2",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Aries Round"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_series_tower_ARI_Round_Black_Ni2.webp"
+  },
+  {
+    "name": "Aries Round Ni2",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Aries Round"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_series_tower_ARI_Round_Ni2.webp"
+  },
+  {
+    "name": "Tower Corner NB",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Tower Corner"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_TH_Corner_NB.webp"
+  },
+  {
+    "name": "Tower Corner NS",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Tower Corner"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_TH_Corner_NS.webp"
+  },
+  {
+    "name": "Tower Corner Ni",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Tower Corner"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/TH-CNR-Ni.webp"
+  },
+  {
+    "name": "Tower Corner Ni2",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Tower Corner"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_TH_Corner_Ni2.webp"
+  },
+  {
+    "name": "Tower Wall NB",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Tower Wall"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_TH_Wall_NB.webp"
+  },
+  {
+    "name": "Tower Wall NS",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Tower Wall"
+    ],
+    "date": "2025-12-17",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_TH_Wall_NS.webp"
+  },
+  {
+    "name": "Tower Wall Ni",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Tower Wall"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/TH-WL-Ni.webp"
+  },
+  {
+    "name": "Tower Wall Ni2",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Tower Wall"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_TH_Wall_Ni2.webp"
+  },
+  {
+    "name": "Tower Round NB",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Tower Round"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_TH_Round_NB.webp"
+  },
+  {
+    "name": "Tower Round NS",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Tower Round"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_TH_Round_NS.webp"
+  },
+  {
+    "name": "Tower Round Ni",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Tower Round"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/TH-Round-Ni.webp"
+  },
+  {
+    "name": "Tower Round Ni2",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Tower Round"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_TH_Round_Ni2.webp"
+  },
+  {
+    "name": "SAWO30 Corner Black NB",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "SAWO30 Corner"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_SW3_Corner_Black_NB.webp"
+  },
+  {
+    "name": "SAWO30 Corner NB",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "SAWO30 Corner"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_SW3_Corner_NB.webp"
+  },
+  {
+    "name": "SAWO30 Corner Black NS",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "SAWO30 Corner"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_SW3_Corner_Black_NS.webp"
+  },
+  {
+    "name": "SAWO30 Corner NS",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "SAWO30 Corner"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_SW3_Corner_NS.webp"
+  },
+  {
+    "name": "SAWO30 Corner Black Ni2",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "SAWO30 Corner"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_SW3_Corner_Black_Ni2.webp"
+  },
+  {
+    "name": "SAWO30 Corner Ni2",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "SAWO30 Corner"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_SW3_Corner_Ni2.webp"
+  },
+  {
+    "name": "SAWO30 Wall Black NB",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "SAWO30 Wall"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_SW3_Wall_Black_NB.webp"
+  },
+  {
+    "name": "SAWO30 Wall NB",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "SAWO30 Wall"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_SW3_Wall_NB.webp"
+  },
+  {
+    "name": "SAWO30 Wall Black NS",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "SAWO30 Wall"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_SW3_Wall_Black_NS.webp"
+  },
+  {
+    "name": "SAWO30 Wall NS",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "SAWO30 Wall"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_SW3_Wall_NS.webp"
+  },
+  {
+    "name": "SAWO30 Wall Black Ni2",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "SAWO30 Wall"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_SW3_Wall_Black_Ni2.webp"
+  },
+  {
+    "name": "SAWO30 Wall Ni2",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "SAWO30 Wall"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_SW3_Wall_Ni2.webp"
+  },
+  {
+    "name": "SAWO30 Round NB",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "SAWO30 Round"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_SW3_Round_NB.webp"
+  },
+  {
+    "name": "SAWO30 Round Black NB",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "SAWO30 Round"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_SW3_Round_Black_NB.webp"
+  },
+  {
+    "name": "SAWO30 Round NS",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "SAWO30 Round"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_SW3_Round_NS.webp"
+  },
+  {
+    "name": "SAWO30 Round Black NS",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "SAWO30 Round"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_SW3_Round_Black_NS.webp"
+  },
+  {
+    "name": "SAWO30 Round Black Ni2",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "SAWO30 Round"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_SW3_Round_Black_Ni2.webp"
+  },
+  {
+    "name": "SAWO30 Round Ni2",
+    "content": "",
+    "categories": [
+      "Tower",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "SAWO30 Round"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_tower_SW3_Round_Ni2.webp"
+  },
+  {
+    "name": "Scandifire Red NB",
+    "content": "",
+    "categories": [
+      "Dragonfire",
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Scandifire"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_SCA_NB_Dragonfire_Red.webp"
+  },
+  {
+    "name": "Scandifire Black NB",
+    "content": "",
+    "categories": [
+      "Dragonfire",
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Scandifire"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_SCA_NB_Dragonfire_Black.webp"
+  },
+  {
+    "name": "Scandifire Black NS",
+    "content": "",
+    "categories": [
+      "Dragonfire",
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Scandifire"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_SCA_NS_Dragonfire_Black.webp"
+  },
+  {
+    "name": "Scandifire Red NS",
+    "content": "",
+    "categories": [
+      "Dragonfire",
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Scandifire"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_SCA_NS_Dragonfire_Red.webp"
+  },
+  {
+    "name": "Krios NB",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Krios"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_KRI_NB.webp"
+  },
+  {
+    "name": "Krios NS",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Krios"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_KRI_NS.webp"
+  },
+  {
+    "name": "Krios Ni2",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Krios"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_KRI_Ni2.webp"
+  },
+  {
+    "name": "Scandia Combi NS",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Scandia"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_SCAC_NS-1.webp"
+  },
+  {
+    "name": "Scandia Combi Fibercoated NS",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Scandia"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_SCAC_Fibercoated_NS.webp"
+  },
+  {
+    "name": "Scandia NB",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Scandia"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_SCA_NB.webp"
+  },
+  {
+    "name": "Scandia Fibercoated NB",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Scandia"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_SCA_Fibercoated_NB.webp"
+  },
+  {
+    "name": "Scandia Fibercoated NS",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Scandia"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_SCA_Fibercoated_NS.webp"
+  },
+  {
+    "name": "Scandia NS",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Scandia"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_SCA_NS.webp"
+  },
+  {
+    "name": "Mini Combi Fibercoated NS",
+    "content": "",
+    "categories": [
+      "Combi",
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Mini Combi"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_MNC_Fibercoated_NS.webp"
+  },
+  {
+    "name": "Mini Combi NS",
+    "content": "",
+    "categories": [
+      "Combi",
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Mini Combi"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_MNC_NS.webp"
+  },
+  {
+    "name": "Mini X Fibercoated NB",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Mini X"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_MX_Fibercoated_NB.webp"
+  },
+  {
+    "name": "Mini X NB",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Mini X"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_MX_NB.webp"
+  },
+  {
+    "name": "Mini X Fibercoated NS",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Mini X"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_MX_Fibercoated_NS.webp"
+  },
+  {
+    "name": "Mini X NS",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Mini X"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_MX_NS.webp"
+  },
+  {
+    "name": "Mini Fibercoated NB",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Mini"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_MN_Fibercoated_NB.webp"
+  },
+  {
+    "name": "Mini NB",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Mini"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_MN_NB.webp"
+  },
+  {
+    "name": "Nordex Mini Combi Black NS",
+    "content": "",
+    "categories": [
+      "Combi",
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex Mini Combi"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_NRMNC_Black_NS.webp"
+  },
+  {
+    "name": "Nordex Mini Combi NS",
+    "content": "",
+    "categories": [
+      "Combi",
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex Mini Combi"
+    ],
+    "date": "2025-12-16",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_NRMNC_NS.webp"
+  },
+  {
+    "name": "Nordex Combi Black NS",
+    "content": "",
+    "categories": [
+      "Combi",
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex Combi"
+    ],
+    "date": "2025-12-15",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_NRNC_BL_NS.webp"
+  },
+  {
+    "name": "Nordex Combi NS",
+    "content": "",
+    "categories": [
+      "Combi",
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex Combi"
+    ],
+    "date": "2025-12-15",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_NRNC_NS.webp"
+  },
+  {
+    "name": "Nordex Mini NB",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex Mini"
+    ],
+    "date": "2025-12-15",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_NRM_NB.webp"
+  },
+  {
+    "name": "Nordex Mini Black NB",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex Mini"
+    ],
+    "date": "2025-12-15",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_NRM_Black_NB.webp"
+  },
+  {
+    "name": "Nordex Mini Black NS",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex Mini"
+    ],
+    "date": "2025-12-15",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_NRM_Black_NS.webp"
+  },
+  {
+    "name": "Nordex Mini NS",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex Mini"
+    ],
+    "date": "2025-12-15",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_NRM_NS.webp"
+  },
+  {
+    "name": "Nordex Mini Black Ni2",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex Mini"
+    ],
+    "date": "2025-12-15",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_NRM_Black_Ni2.webp"
+  },
+  {
+    "name": "Nordex Mini N2",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex Mini"
+    ],
+    "date": "2025-12-15",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_NRM_Ni2.webp"
+  },
+  {
+    "name": "Nordex Black NB",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex"
+    ],
+    "date": "2025-12-15",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_NR_Black_NB.webp"
+  },
+  {
+    "name": "Nordex NB",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex"
+    ],
+    "date": "2025-12-15",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_NR_NB.webp"
+  },
+  {
+    "name": "Nordex Black NS",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex"
+    ],
+    "date": "2025-12-15",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_NRN_Black_NS.webp"
+  },
+  {
+    "name": "Nordex NS",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex"
+    ],
+    "date": "2025-12-15",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_NRN_NS.webp"
+  },
+  {
+    "name": "Nordex Black Ni2",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex"
+    ],
+    "date": "2025-12-15",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_NRN_Black_Ni2.webp"
+  },
+  {
+    "name": "Nordex Ni2",
+    "content": "",
+    "categories": [
+      "Wall-Mounted",
+      "Sauna Heaters"
+    ],
+    "tags": [
+      "Nordex"
+    ],
+    "date": "2025-12-15",
+    "image": "/assets/products/SAWO_sauna_heaters_wall_NRN_Ni2.webp"
+  }
+]
