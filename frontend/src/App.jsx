@@ -31,6 +31,8 @@ import Dragonfire from "./pages/Sauna/heaters/Dragonfire";
 import SaunaControls from "./pages/Sauna/SaunaControls";
 import SaunaAccessories from "./pages/Sauna/SaunaAccessories";
 import SaunaRooms from "./pages/Sauna/SaunaRooms";
+import InteriorDesign from "./pages/Sauna/rooms/InteriorDesign";
+import WoodPanelAndTimbers from "./pages/Sauna/rooms/WoodPanelandTimbers";
 
 // Steam top-level page
 import Steam from "./pages/Steam/Steam";
@@ -62,7 +64,7 @@ function App() {
           <Route path={menuPaths.about.sustainability} element={<Sustainability />} />
           <Route path={menuPaths.about.news} element={<LatestNews />} />
 
-          {/* Top-level parent pages (use parent string) */}
+          {/* Top-level parent pages */}
           <Route path={menuPaths.sauna.parent} element={<Sauna />} />
           <Route path={menuPaths.steam.parent} element={<Steam />} />
           <Route path={menuPaths.support.parent} element={<Support />} />
@@ -80,6 +82,8 @@ function App() {
           <Route path={menuPaths.sauna.controls} element={<SaunaControls />} />
           <Route path={menuPaths.sauna.accessories} element={<SaunaAccessories />} />
           <Route path={menuPaths.sauna.rooms} element={<SaunaRooms />} />
+          <Route path={menuPaths.sauna.interiorDesigns} element={<InteriorDesign />} />
+          <Route path={menuPaths.sauna.woodPanels} element={<WoodPanelAndTimbers />} />
 
           {/* Steam submenu */}
           <Route path={menuPaths.steam.generators} element={<SteamGenerators />} />
