@@ -85,10 +85,7 @@ export default function Header() {
     if (item.submenu) {
       return item.submenu.some((sub) => {
         if (sub.path && location.pathname.startsWith(sub.path)) return true;
-        if (sub.submenu)
-          return sub.submenu.some(
-            (s) => s.path && location.pathname.startsWith(s.path),
-          );
+        if (sub.submenu) return sub.submenu.some((s) => s.path && location.pathname.startsWith(s.path));
         return false;
       });
     }
@@ -96,14 +93,10 @@ export default function Header() {
   };
   const isSubActive = (sub) => {
     if (sub.path && location.pathname.startsWith(sub.path)) return true;
-    if (sub.submenu)
-      return sub.submenu.some(
-        (s) => s.path && location.pathname.startsWith(s.path),
-      );
+    if (sub.submenu) return sub.submenu.some((s) => s.path && location.pathname.startsWith(s.path));
     return false;
   };
-  const isSub2Active = (item2) =>
-    !!(item2.path && location.pathname === item2.path);
+  const isSub2Active = (item2) => !!(item2.path && location.pathname === item2.path);
 
   // Hide header on scroll down + close mobile menu
   useEffect(() => {
@@ -207,9 +200,7 @@ export default function Header() {
                       <Link
                         to={item.path}
                         className={`flex items-center gap-1 transition-colors ${
-                          isActive(item)
-                            ? "text-[#af8564] font-semibold"
-                            : "hover:text-[#af8564]"
+                          isActive(item) ? "text-[#af8564] font-semibold" : "hover:text-[#af8564]"
                         }`}
                       >
                         {item.name}{" "}
@@ -218,22 +209,17 @@ export default function Header() {
                     ) : (
                       <button
                         className={`flex items-center gap-1 transition-colors ${
-                          isActive(item)
-                            ? "text-[#af8564] font-semibold"
-                            : "hover:text-[#af8564]"
+                          isActive(item) ? "text-[#af8564] font-semibold" : "hover:text-[#af8564]"
                         }`}
                       >
-                        {item.name}{" "}
-                        <i className="fa-solid fa-chevron-down text-[10px]"></i>
+                        {item.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
                       </button>
                     )
                   ) : (
                     <Link
                       to={item.path}
                       className={`flex items-center gap-1 transition-colors ${
-                        isActive(item)
-                          ? "text-[#af8564] font-semibold"
-                          : "hover:text-[#af8564]"
+                        isActive(item) ? "text-[#af8564] font-semibold" : "hover:text-[#af8564]"
                       }`}
                     >
                       {item.name}
@@ -262,8 +248,7 @@ export default function Header() {
                                     : "text-[rgb(51,51,51)] hover:bg-[#af8564] hover:text-white"
                                 }`}
                               >
-                                {sub.name}{" "}
-                                <i className="fa-solid fa-chevron-right text-[9px]"></i>
+                                {sub.name} <i className="fa-solid fa-chevron-right text-[9px]"></i>
                               </Link>
                             ) : (
                               <button
@@ -273,8 +258,7 @@ export default function Header() {
                                     : "text-[rgb(51,51,51)] hover:bg-[#af8564] hover:text-white"
                                 }`}
                               >
-                                {sub.name}{" "}
-                                <i className="fa-solid fa-chevron-right text-[9px]"></i>
+                                {sub.name} <i className="fa-solid fa-chevron-right text-[9px]"></i>
                               </button>
                             )}
 
@@ -334,21 +318,32 @@ export default function Header() {
               <div key={item.name} className="border-b border-gray-200">
                 {/* Top-level toggle (FIXED) */}
                 {item.submenu ? (
-                  <button
-                    className={`w-full px-4 py-3 flex justify-between items-center text-[15px] font-normal transition-colors ${
-                      isActive(item)
-                        ? "bg-[#af8564] text-white font-semibold"
-                        : "text-gray-800 hover:bg-[#af8564] hover:text-white"
-                    }`}
-                    onClick={() =>
-                      setHoveredMenu(
-                        hoveredMenu === item.name ? null : item.name,
-                      )
-                    }
-                  >
-                    {item.name}{" "}
-                    <i className="fa-solid fa-chevron-down text-[10px]"></i>
-                  </button>
+                  item.path ? (
+                    <Link
+                      to={item.path}
+                      className={`w-full px-4 py-3 flex justify-between items-center text-[15px] font-normal transition-colors ${
+                        isActive(item)
+                          ? "bg-[#af8564] text-white font-semibold"
+                          : "text-gray-800 hover:bg-[#af8564] hover:text-white"
+                      }`}
+                      onClick={() => setMobileOpen(false)}
+                    >
+                      {item.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
+                    </Link>
+                  ) : (
+                    <button
+                      className={`w-full px-4 py-3 flex justify-between items-center text-[15px] font-normal transition-colors ${
+                        isActive(item)
+                          ? "bg-[#af8564] text-white font-semibold"
+                          : "text-gray-800 hover:bg-[#af8564] hover:text-white"
+                      }`}
+                      onClick={() =>
+                        setHoveredMenu(hoveredMenu === item.name ? null : item.name)
+                      }
+                    >
+                      {item.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
+                    </button>
+                  )
                 ) : (
                   <Link
                     to={item.path}
@@ -368,26 +363,35 @@ export default function Header() {
                   <div className="bg-gray-50">
                     {item.submenu.map((sub) =>
                       sub.submenu ? (
-                        <div
-                          key={sub.name}
-                          className="border-t border-gray-200"
-                        >
-                          {/* Sub toggle (FIXED) */}
-                          <button
-                            className={`w-full px-6 py-2 flex justify-between items-center text-[13px] font-normal transition-colors ${
-                              isSubActive(sub)
-                                ? "bg-[#af8564] text-white font-semibold"
-                                : "text-gray-800 hover:bg-[#af8564] hover:text-white"
-                            }`}
-                            onClick={() =>
-                              setHoveredSubmenu(
-                                hoveredSubmenu === sub.name ? null : sub.name,
-                              )
-                            }
-                          >
-                            {sub.name}{" "}
-                            <i className="fa-solid fa-chevron-down text-[9px]"></i>
-                          </button>
+                        <div key={sub.name} className="border-t border-gray-200">
+                          {sub.path ? (
+                            <Link
+                              to={sub.path}
+                              className={`w-full px-6 py-2 flex justify-between items-center text-[13px] font-normal transition-colors ${
+                                isSubActive(sub)
+                                  ? "bg-[#af8564] text-white font-semibold"
+                                  : "text-gray-800 hover:bg-[#af8564] hover:text-white"
+                              }`}
+                              onClick={() => setMobileOpen(false)}
+                            >
+                              {sub.name} <i className="fa-solid fa-chevron-down text-[9px]"></i>
+                            </Link>
+                          ) : (
+                            <button
+                              className={`w-full px-6 py-2 flex justify-between items-center text-[13px] font-normal transition-colors ${
+                                isSubActive(sub)
+                                  ? "bg-[#af8564] text-white font-semibold"
+                                  : "text-gray-800 hover:bg-[#af8564] hover:text-white"
+                              }`}
+                              onClick={() =>
+                                setHoveredSubmenu(
+                                  hoveredSubmenu === sub.name ? null : sub.name
+                                )
+                              }
+                            >
+                              {sub.name} <i className="fa-solid fa-chevron-down text-[9px]"></i>
+                            </button>
+                          )}
 
                           {/* Mobile Submenu — Level 2 */}
                           {hoveredSubmenu === sub.name && (
