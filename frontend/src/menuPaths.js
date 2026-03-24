@@ -3,9 +3,9 @@ const menuPaths = {
   home: "/",
 
   sauna: {
-    parent: "/sauna", // clickable parent
+    parent: "/sauna",
     heaters: {
-      parent: "/sauna/heaters", // clickable parent
+      parent: "/sauna/heaters",
       wallMounted: "/sauna/heaters/wall-mounted",
       tower: "/sauna/heaters/tower",
       stone: "/sauna/heaters/stone",
@@ -16,10 +16,12 @@ const menuPaths = {
     controls: "/sauna/controls",
     accessories: "/sauna/accessories",
     rooms: "/sauna/rooms",
+    interiorDesigns: "/sauna/rooms/interior-designs",
+    woodPanels: "/sauna/rooms/wood-panels-timbers",
   },
 
   steam: {
-    parent: "/steam", // clickable parent
+    parent: "/steam",
     generators: "/steam/generators",
     controls: "/steam/controls",
     accessories: "/steam/accessories",
@@ -28,7 +30,7 @@ const menuPaths = {
   infrared: "/infrared",
 
   support: {
-    parent: "/support", // clickable parent
+    parent: "/support",
     faq: "/support/faq",
     manuals: "/support/manuals",
     catalogue: "/support/catalogue",
@@ -37,7 +39,7 @@ const menuPaths = {
   contact: "/contact",
 
   about: {
-    parent: "/about", // clickable parent
+    parent: "/about",
     news: "/about/news",
     sustainability: "/about/sustainability",
   },

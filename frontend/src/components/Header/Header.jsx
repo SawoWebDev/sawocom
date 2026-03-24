@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import sLogo from "assets/SAWO-logo.webp";
 import menuPaths from "menuPaths";
 
 export default function Header() {
+  const location = useLocation();
+
   const [hidden, setHidden] = useState(false);
   const [hoveredMenu, setHoveredMenu] = useState(null);
   const [hoveredSubmenu, setHoveredSubmenu] = useState(null);
@@ -20,7 +22,7 @@ export default function Header() {
     { name: "Home", path: menuPaths.home },
     {
       name: "Sauna",
-      path: menuPaths.sauna.parent, // Optional: make top parent clickable
+      path: menuPaths.sauna.parent,
       submenu: [
         {
           name: "Sauna Heaters",
@@ -36,12 +38,19 @@ export default function Header() {
         },
         { name: "Sauna Controls", path: menuPaths.sauna.controls },
         { name: "Sauna Accessories", path: menuPaths.sauna.accessories },
-        { name: "Sauna Rooms", path: menuPaths.sauna.rooms },
+        {
+          name: "Sauna Rooms",
+          path: menuPaths.sauna.rooms,
+          submenu: [
+            { name: "Interior Designs", path: menuPaths.sauna.interiorDesigns },
+            { name: "Wood Panels & Timbers", path: menuPaths.sauna.woodPanels },
+          ],
+        },
       ],
     },
     {
       name: "Steam",
-      path: menuPaths.steam.parent, // Optional clickable parent
+      path: menuPaths.steam.parent,
       submenu: [
         { name: "Steam Generators", path: menuPaths.steam.generators },
         { name: "Steam Controls", path: menuPaths.steam.controls },
@@ -51,7 +60,7 @@ export default function Header() {
     { name: "Infrared", path: menuPaths.infrared },
     {
       name: "Support",
-      path: menuPaths.support.parent, // Optional clickable parent
+      path: menuPaths.support.parent,
       submenu: [
         { name: "Frequently Asked Questions", path: menuPaths.support.faq },
         { name: "User Manuals", path: menuPaths.support.manuals },
@@ -61,7 +70,7 @@ export default function Header() {
     { name: "Contact Us", path: menuPaths.contact },
     {
       name: "About Us",
-      path: menuPaths.about.parent, // Optional clickable parent
+      path: menuPaths.about.parent,
       submenu: [
         { name: "Latest News", path: menuPaths.about.news },
         { name: "Sustainability", path: menuPaths.about.sustainability },
@@ -69,6 +78,32 @@ export default function Header() {
     },
     { name: "Careers", path: menuPaths.careers },
   ];
+
+  // --- Active helpers ---
+  const isActive = (item) => {
+    if (item.path && location.pathname === item.path) return true;
+    if (item.submenu) {
+      return item.submenu.some((sub) => {
+        if (sub.path && location.pathname.startsWith(sub.path)) return true;
+        if (sub.submenu)
+          return sub.submenu.some(
+            (s) => s.path && location.pathname.startsWith(s.path),
+          );
+        return false;
+      });
+    }
+    return false;
+  };
+  const isSubActive = (sub) => {
+    if (sub.path && location.pathname.startsWith(sub.path)) return true;
+    if (sub.submenu)
+      return sub.submenu.some(
+        (s) => s.path && location.pathname.startsWith(s.path),
+      );
+    return false;
+  };
+  const isSub2Active = (item2) =>
+    !!(item2.path && location.pathname === item2.path);
 
   // Hide header on scroll down + close mobile menu
   useEffect(() => {
@@ -98,7 +133,10 @@ export default function Header() {
   // Close mobile menu on outside click
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+      if (
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target)
+      ) {
         setMobileOpen(false);
       }
     };
@@ -168,54 +206,90 @@ export default function Header() {
                     item.path ? (
                       <Link
                         to={item.path}
-                        className="flex items-center gap-1 hover:text-[#af8564] transition-colors"
+                        className={`flex items-center gap-1 transition-colors ${
+                          isActive(item)
+                            ? "text-[#af8564] font-semibold"
+                            : "hover:text-[#af8564]"
+                        }`}
                       >
-                        {item.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
+                        {item.name}{" "}
+                        <i className="fa-solid fa-chevron-down text-[10px]"></i>
                       </Link>
                     ) : (
-                      <button className="flex items-center gap-1 hover:text-[#af8564] transition-colors">
-                        {item.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
+                      <button
+                        className={`flex items-center gap-1 transition-colors ${
+                          isActive(item)
+                            ? "text-[#af8564] font-semibold"
+                            : "hover:text-[#af8564]"
+                        }`}
+                      >
+                        {item.name}{" "}
+                        <i className="fa-solid fa-chevron-down text-[10px]"></i>
                       </button>
                     )
                   ) : (
                     <Link
                       to={item.path}
-                      className="flex items-center gap-1 hover:text-[#af8564] transition-colors"
+                      className={`flex items-center gap-1 transition-colors ${
+                        isActive(item)
+                          ? "text-[#af8564] font-semibold"
+                          : "hover:text-[#af8564]"
+                      }`}
                     >
                       {item.name}
                     </Link>
                   )}
 
-                  {/* Submenu */}
+                  {/* Submenu — Level 1 */}
                   {item.submenu && hoveredMenu === item.name && (
-                    <div className="absolute left-0 top-full mt-2 bg-white rounded-md shadow-lg min-w-[220px] z-50">
+                    <div className="absolute left-0 top-full mt-2 bg-white rounded-xl shadow-xl min-w-[220px] z-50 py-3 px-2 border border-gray-100">
                       {item.submenu.map((sub) =>
                         sub.submenu ? (
                           <div
                             key={sub.name}
                             className="relative group"
-                            onMouseEnter={() => handleMouseEnterSubmenu(sub.name)}
+                            onMouseEnter={() =>
+                              handleMouseEnterSubmenu(sub.name)
+                            }
                             onMouseLeave={handleMouseLeaveSubmenu}
                           >
                             {sub.path ? (
                               <Link
                                 to={sub.path}
-                                className="w-full text-left px-4 py-2 hover:bg-[#af8564] hover:text-white transition-colors rounded-md flex justify-between items-center"
+                                className={`w-full text-left px-4 py-2.5 text-[13px] font-normal transition-colors rounded-lg flex justify-between items-center ${
+                                  isSubActive(sub)
+                                    ? "bg-[#af8564] text-white font-semibold"
+                                    : "text-[rgb(51,51,51)] hover:bg-[#af8564] hover:text-white"
+                                }`}
                               >
-                                {sub.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
+                                {sub.name}{" "}
+                                <i className="fa-solid fa-chevron-right text-[9px]"></i>
                               </Link>
                             ) : (
-                              <button className="w-full text-left px-4 py-2 hover:bg-[#af8564] hover:text-white transition-colors rounded-md flex justify-between items-center">
-                                {sub.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
+                              <button
+                                className={`w-full text-left px-4 py-2.5 text-[13px] font-normal transition-colors rounded-lg flex justify-between items-center ${
+                                  isSubActive(sub)
+                                    ? "bg-[#af8564] text-white font-semibold"
+                                    : "text-[rgb(51,51,51)] hover:bg-[#af8564] hover:text-white"
+                                }`}
+                              >
+                                {sub.name}{" "}
+                                <i className="fa-solid fa-chevron-right text-[9px]"></i>
                               </button>
                             )}
+
+                            {/* Submenu — Level 2 */}
                             {hoveredSubmenu === sub.name && (
-                              <div className="absolute top-0 left-full ml-1 bg-white rounded-md shadow-lg min-w-[180px] z-50">
+                              <div className="absolute top-0 left-full ml-1 bg-white rounded-xl shadow-xl min-w-[180px] z-50 py-3 px-2 border border-gray-100">
                                 {sub.submenu.map((item2) => (
                                   <Link
                                     key={item2.name || item2}
                                     to={item2.path || "#"}
-                                    className="block px-4 py-2 text-[16px] font-normal text-[rgb(51,51,51)] hover:bg-[#af8564] hover:text-white transition-colors rounded-md"
+                                    className={`block px-4 py-2.5 text-[13px] font-normal transition-colors rounded-lg ${
+                                      isSub2Active(item2)
+                                        ? "bg-[#af8564] text-white font-semibold"
+                                        : "text-[rgb(51,51,51)] hover:bg-[#af8564] hover:text-white"
+                                    }`}
                                   >
                                     {item2.name || item2}
                                   </Link>
@@ -227,11 +301,15 @@ export default function Header() {
                           <Link
                             key={sub.name || sub}
                             to={sub.path || "#"}
-                            className="block px-4 py-2 text-[16px] font-normal text-[rgb(51,51,51)] hover:bg-[#af8564] hover:text-white transition-colors rounded-md"
+                            className={`block px-4 py-2.5 text-[13px] font-normal transition-colors rounded-lg ${
+                              isSubActive(sub)
+                                ? "bg-[#af8564] text-white font-semibold"
+                                : "text-[rgb(51,51,51)] hover:bg-[#af8564] hover:text-white"
+                            }`}
                           >
                             {sub.name || sub}
                           </Link>
-                        )
+                        ),
                       )}
                     </div>
                   )}
@@ -254,69 +332,75 @@ export default function Header() {
           <div ref={mobileMenuRef} className="md:hidden bg-white shadow-lg">
             {navItems.map((item) => (
               <div key={item.name} className="border-b border-gray-200">
-                {/* Top-level link or toggle */}
+                {/* Top-level toggle (FIXED) */}
                 {item.submenu ? (
-                  item.path ? (
-                    <Link
-                      to={item.path}
-                      className="w-full px-4 py-3 flex justify-between items-center text-gray-800 font-normal hover:bg-[#af8564] hover:text-white transition-colors"
-                      onClick={() => setMobileOpen(false)}
-                    >
-                      {item.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
-                    </Link>
-                  ) : (
-                    <button
-                      className="w-full px-4 py-3 flex justify-between items-center text-gray-800 font-normal hover:bg-[#af8564] hover:text-white transition-colors"
-                      onClick={() =>
-                        setHoveredMenu(hoveredMenu === item.name ? null : item.name)
-                      }
-                    >
-                      {item.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
-                    </button>
-                  )
+                  <button
+                    className={`w-full px-4 py-3 flex justify-between items-center text-[15px] font-normal transition-colors ${
+                      isActive(item)
+                        ? "bg-[#af8564] text-white font-semibold"
+                        : "text-gray-800 hover:bg-[#af8564] hover:text-white"
+                    }`}
+                    onClick={() =>
+                      setHoveredMenu(
+                        hoveredMenu === item.name ? null : item.name,
+                      )
+                    }
+                  >
+                    {item.name}{" "}
+                    <i className="fa-solid fa-chevron-down text-[10px]"></i>
+                  </button>
                 ) : (
                   <Link
                     to={item.path}
-                    className="w-full px-4 py-3 flex items-center text-gray-800 font-normal hover:bg-[#af8564] hover:text-white transition-colors"
+                    className={`w-full px-4 py-3 flex items-center text-[15px] font-normal transition-colors ${
+                      isActive(item)
+                        ? "bg-[#af8564] text-white font-semibold"
+                        : "text-gray-800 hover:bg-[#af8564] hover:text-white"
+                    }`}
                     onClick={() => setMobileOpen(false)}
                   >
                     {item.name}
                   </Link>
                 )}
 
-                {/* Submenu */}
+                {/* Mobile Submenu — Level 1 */}
                 {item.submenu && hoveredMenu === item.name && (
                   <div className="bg-gray-50">
                     {item.submenu.map((sub) =>
                       sub.submenu ? (
-                        <div key={sub.name} className="border-t border-gray-200">
-                          {sub.path ? (
-                            <Link
-                              to={sub.path}
-                              className="w-full px-6 py-2 flex justify-between items-center text-gray-800 font-normal hover:bg-[#af8564] hover:text-white transition-colors"
-                              onClick={() => setMobileOpen(false)}
-                            >
-                              {sub.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
-                            </Link>
-                          ) : (
-                            <button
-                              className="w-full px-6 py-2 flex justify-between items-center text-gray-800 font-normal hover:bg-[#af8564] hover:text-white transition-colors"
-                              onClick={() =>
-                                setHoveredSubmenu(
-                                  hoveredSubmenu === sub.name ? null : sub.name
-                                )
-                              }
-                            >
-                              {sub.name} <i className="fa-solid fa-chevron-down text-[10px]"></i>
-                            </button>
-                          )}
+                        <div
+                          key={sub.name}
+                          className="border-t border-gray-200"
+                        >
+                          {/* Sub toggle (FIXED) */}
+                          <button
+                            className={`w-full px-6 py-2 flex justify-between items-center text-[13px] font-normal transition-colors ${
+                              isSubActive(sub)
+                                ? "bg-[#af8564] text-white font-semibold"
+                                : "text-gray-800 hover:bg-[#af8564] hover:text-white"
+                            }`}
+                            onClick={() =>
+                              setHoveredSubmenu(
+                                hoveredSubmenu === sub.name ? null : sub.name,
+                              )
+                            }
+                          >
+                            {sub.name}{" "}
+                            <i className="fa-solid fa-chevron-down text-[9px]"></i>
+                          </button>
+
+                          {/* Mobile Submenu — Level 2 */}
                           {hoveredSubmenu === sub.name && (
                             <div className="bg-gray-100">
                               {sub.submenu.map((item2) => (
                                 <Link
                                   key={item2.name || item2}
                                   to={item2.path || "#"}
-                                  className="block px-8 py-2 text-gray-800 hover:bg-[#af8564] hover:text-white transition-colors"
+                                  className={`block px-8 py-2 text-[12px] transition-colors ${
+                                    isSub2Active(item2)
+                                      ? "bg-[#af8564] text-white font-semibold"
+                                      : "text-gray-800 hover:bg-[#af8564] hover:text-white"
+                                  }`}
                                   onClick={() => setMobileOpen(false)}
                                 >
                                   {item2.name || item2}
@@ -329,12 +413,16 @@ export default function Header() {
                         <Link
                           key={sub.name || sub}
                           to={sub.path || "#"}
-                          className="block px-6 py-2 text-gray-800 hover:bg-[#af8564] hover:text-white transition-colors"
+                          className={`block px-6 py-2 text-[13px] transition-colors ${
+                            isSubActive(sub)
+                              ? "bg-[#af8564] text-white font-semibold"
+                              : "text-gray-800 hover:bg-[#af8564] hover:text-white"
+                          }`}
                           onClick={() => setMobileOpen(false)}
                         >
                           {sub.name || sub}
                         </Link>
-                      )
+                      ),
                     )}
                   </div>
                 )}
