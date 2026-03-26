@@ -1,4 +1,4 @@
-﻿// SteamGenerators.jsx
+// SteamGenerators.jsx
 
 import React from "react";
 import heroImg from "assets/Steam/Steam Generators/STN-S.webp";
