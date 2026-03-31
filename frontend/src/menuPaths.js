@@ -45,6 +45,8 @@ const menuPaths = {
   },
 
   careers: "/careers",
+  products: "/products",
+  adminDashboard:"/admin/dashboard",
 };
 
 export default menuPaths;
