@@ -1,224 +1,151 @@
-// src/pages/Sauna/heaters/WallMounted.jsx
-// Shows ALL published products — cards are clickable → /products/:slug
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+// WallMounted.jsx
+
+import React, { useState } from "react";
 import ButtonClear from "../../../components/Buttons/ButtonClear";
 import CirclesInfo from "../../../components/CirclesInfo";
-import heroImg from "../../../assets/Sauna/Sauna Heaters/wall-hero.webp";
-import "./heaters.css";
+import productsData from "../../../assets/data/products.json";
 
-const API       = process.env.REACT_APP_API_URL || "http://localhost:4000";
-const CACHE_KEY = "sawo_wm_products";
-const CACHE_TS  = "sawo_wm_products_ts";
-const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
+// ── Filter & group from JSON ─────────────────────────────────────────────────
+const wallMountedProducts = productsData.filter((p) =>
+  p.categories?.includes("Wall-Mounted")
+);
 
-function getCached() {
-  try {
-    const data = localStorage.getItem(CACHE_KEY);
-    const ts   = parseInt(localStorage.getItem(CACHE_TS) || "0");
-    if (data && Date.now() - ts < CACHE_TTL) return JSON.parse(data);
-  } catch {}
-  return null;
-}
-function setCache(data) {
-  try {
-    localStorage.setItem(CACHE_KEY, JSON.stringify(data));
-    localStorage.setItem(CACHE_TS, Date.now().toString());
-  } catch {}
-}
+const groupedProducts = wallMountedProducts.reduce((groups, product) => {
+  const tag = product.tags?.[0] || "Other";
+  if (!groups[tag]) groups[tag] = [];
+  groups[tag].push(product);
+  return groups;
+}, {});
 
-function SkeletonCard() {
-  return (
-    <div className="wm-product-item" style={{ opacity: 0.45 }}>
-      <div
-        className="wm-product-img-wrap"
-        style={{
-          background: "linear-gradient(90deg,#f0ebe3 25%,#faf8f5 50%,#f0ebe3 75%)",
-          backgroundSize: "200% 100%",
-          animation: "wm-shimmer 1.5s infinite",
-          borderRadius: 8,
-        }}
-      />
-      <div style={{ height: 10, background: "#f0ebe3", borderRadius: 4, marginTop: 8, width: "70%", animation: "wm-shimmer 1.5s infinite" }} />
-    </div>
-  );
-}
+const groupNames = Object.keys(groupedProducts);
 
-function ProductCard({ product }) {
-  // Look for a kW power range tag
-  const power = (product.tags || []).find(t => /\d+(\.\d+)?\s*[-–]\s*\d+(\.\d+)?\s*kW/i.test(t)) || "";
+const WallMounted = () => {
+  const [activeGroup, setActiveGroup] = useState(null);
 
-  return (
-    <Link
-      to={`/products/${product.slug}`}
-      className="wm-product-item"
-      style={{ textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", cursor: "pointer" }}
-    >
-      <div
-        className="wm-product-img-wrap"
-        style={{ transition: "transform 0.3s" }}
-        onMouseEnter={e => { e.currentTarget.style.transform = "scale(1.04)"; }}
-        onMouseLeave={e => { e.currentTarget.style.transform = "scale(1)"; }}
-      >
-        {product.thumbnail ? (
-          <img
-            src={product.thumbnail}
-            alt={product.name}
-            className="wm-product-img"
-            onError={e => { e.currentTarget.style.display = "none"; }}
-          />
-        ) : (
-          <div className="wm-product-img-placeholder"><i className="fas fa-image" /></div>
-        )}
-      </div>
-      <p className="wm-product-name" style={{ color: "#2c1f13" }}>{product.name}</p>
-      {power && <p className="wm-product-power">{power}</p>}
-    </Link>
-  );
-}
-
-export default function WallMounted() {
-  const cached = getCached();
-  const [products, setProducts] = useState(cached || []);
-  const [loading,  setLoading]  = useState(!cached);
-  const [syncing,  setSyncing]  = useState(false);
-  const [offline,  setOffline]  = useState(!navigator.onLine);
-
-  useEffect(() => {
-    const onOnline  = () => { setOffline(false); fetchProducts(true); };
-    const onOffline = () => setOffline(true);
-    window.addEventListener("online",  onOnline);
-    window.addEventListener("offline", onOffline);
-    return () => {
-      window.removeEventListener("online",  onOnline);
-      window.removeEventListener("offline", onOffline);
-    };
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
-
-  useEffect(() => { fetchProducts(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
-
-  async function fetchProducts(force = false) {
-    const c = getCached();
-    if (c && !force) {
-      setProducts(c);
-      setLoading(false);
-      setSyncing(true); // still refresh in background
-    } else if (!c) {
-      setLoading(true);
-    }
-
-    try {
-      const res = await fetch(`${API}/api/public/products`, { signal: AbortSignal.timeout(8000) });
-      if (res.ok) {
-        const data = await res.json();
-        setProducts(data);
-        setCache(data);
-      }
-    } catch {
-      // Try snapshot fallback
-      try {
-        const snap = await fetch(`${API}/api/snapshot`, { signal: AbortSignal.timeout(5000) });
-        if (snap.ok) {
-          const s = await snap.json();
-          if (Array.isArray(s?.data) && s.data.length) {
-            setProducts(s.data);
-            setCache(s.data);
-          } else if (Array.isArray(s) && s.length) {
-            setProducts(s);
-            setCache(s);
-          }
-        }
-      } catch {
-        // Keep whatever we already have in state
-      }
-    } finally {
-      setLoading(false);
-      setSyncing(false);
-    }
-  }
+  const filteredGroups = activeGroup
+    ? { [activeGroup]: groupedProducts[activeGroup] }
+    : groupedProducts;
 
   return (
     <div className="relative">
-      <style>{`
-        @keyframes wm-shimmer {
-          0%   { background-position: 200% 0; }
-          100% { background-position: -200% 0; }
-        }
-      `}</style>
 
-      {/* HERO */}
+      {/* ===================== */}
+      {/* HERO                  */}
+      {/* ===================== */}
       <section
         className="wm-hero min-h-[95vh] flex flex-col justify-center items-center text-center px-6 relative"
-        style={{ backgroundImage: `url(${heroImg})`, backgroundSize: "cover", backgroundPosition: "center" }}
+        style={{
+          backgroundImage: `url(https://www.sawo.com/wp-content/uploads/2025/09/WALL-MOUNTED-SERIES-v2-1.webp)`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
       >
         <div className="wm-hero-overlay" />
         <div className="wm-hero-content">
           <h1 className="wm-hero-title">WALL-MOUNTED SAUNA HEATERS</h1>
           <p className="wm-hero-subtitle">Space-saving sleek modern designs</p>
           <div style={{ marginTop: "32px" }}>
-            <ButtonClear text="EXPLORE HEATERS" href="https://www.sawo.com/sawo-products/finnish-sauna/sauna-heaters/sauna-products/" />
+            <ButtonClear
+              text="EXPLORE HEATERS"
+              href="https://www.sawo.com/sawo-products/finnish-sauna/sauna-heaters/sauna-products/"
+            />
           </div>
         </div>
       </section>
 
-      {/* INTRO */}
+      {/* ===================== */}
+      {/* INTRODUCING           */}
+      {/* ===================== */}
       <section className="wm-section">
         <div className="wm-container text-center">
           <h2 className="wm-products-title">Introducing Our Premium Wall Mounted Heaters</h2>
           <p className="wm-products-desc">
-            Our wall-mounted heaters are crafted for those who love the traditional dry and hot sauna experience.
-            This series of classic heaters boasts of robust, space-saving models for small and medium-sized saunas.
+            Our wall-mounted heaters are crafted for those who love the
+            traditional dry and hot sauna experience. This series of classic
+            heaters boasts of robust, space-saving models for small and
+            medium-sized saunas. For added safety, some models feature
+            cool-to-touch fibercoating to minimize the risk of injury.
           </p>
         </div>
       </section>
 
-      {/* Status banners */}
-      {offline && (
-        <div style={{ background: "#FEF5EC", borderTop: "1px solid #F5D5A0", borderBottom: "1px solid #F5D5A0", padding: "8px 24px", textAlign: "center", fontFamily: "'Montserrat', sans-serif", fontSize: "0.78rem", color: "#9C6A10" }}>
-          <i className="fa-solid fa-wifi" style={{ marginRight: 6, opacity: 0.6 }} />
-          You are offline — showing last saved data
-        </div>
-      )}
-      {syncing && !offline && (
-        <div style={{ background: "#EBF5FB", borderTop: "1px solid #C5DDF0", borderBottom: "1px solid #C5DDF0", padding: "6px 24px", textAlign: "center", fontFamily: "'Montserrat', sans-serif", fontSize: "0.75rem", color: "#1A6A9A" }}>
-          <i className="fa-solid fa-rotate" style={{ marginRight: 6 }} />
-          Refreshing products…
-        </div>
-      )}
-
-      {/* PRODUCTS GRID */}
-      <section className="wm-section wm-section--flush-top">
+      {/* ===================== */}
+      {/* FILTER + PRODUCTS     */}
+      {/* ===================== */}
+      <section className="wm-section" style={{ paddingBottom: "0" }}>
         <div className="wm-container">
-          {loading && (
-            <div className="wm-products-grid">
-              {Array.from({ length: 12 }).map((_, i) => <SkeletonCard key={i} />)}
-            </div>
-          )}
-          {!loading && products.length === 0 && (
-            <div style={{ textAlign: "center", padding: "48px 0", fontFamily: "'Montserrat', sans-serif", color: "#888" }}>
-              <p>No products available yet.{offline ? " Connect to the internet to load products." : ""}</p>
-            </div>
-          )}
-          {!loading && products.length > 0 && (
-            <div className="wm-products-grid">
-              {products.map(p => <ProductCard key={p.id || p.slug} product={p} />)}
-            </div>
-          )}
+          <div className="wm-filter-wrap">
+            <button
+              className={`wm-filter-btn ${activeGroup === null ? "wm-filter-btn--active" : ""}`}
+              onClick={() => setActiveGroup(null)}
+            >
+              All
+            </button>
+            {groupNames.map((g) => (
+              <button
+                key={g}
+                className={`wm-filter-btn ${activeGroup === g ? "wm-filter-btn--active" : ""}`}
+                onClick={() => setActiveGroup(g)}
+              >
+                {g}
+              </button>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* WHY SAWO */}
+      <section className="wm-section" style={{ paddingTop: "24px" }}>
+        <div className="wm-container">
+          {Object.entries(filteredGroups).map(([brand, products], gi) => (
+            <div className="wm-group" key={gi}>
+              <h3 className="wm-group-title">{brand.toUpperCase()}</h3>
+              <div className="wm-products-grid">
+                {products.map((product, ii) => {
+                  let productImage = null;
+                  try {
+                    if (product.image) {
+                      productImage = require(`../../../assets/products/${product.image.split("/").pop()}`);
+                    }
+                  } catch (err) {
+                    console.warn(`Image not found: ${product.image}`);
+                  }
+                  return (
+                    <div className="wm-product-item" key={ii}>
+                      <div className="wm-product-img-wrap">
+                        {productImage ? (
+                          <img src={productImage} alt={product.name} className="wm-product-img" />
+                        ) : (
+                          <div className="wm-product-img-placeholder">
+                            <i className="fas fa-image"></i>
+                          </div>
+                        )}
+                      </div>
+                      <p className="wm-product-name">{product.name}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ===================== */}
+      {/* WHY SAWO + CIRCLES    */}
+      {/* ===================== */}
       <section className="wm-section">
         <div className="wm-container">
           <div className="wm-why-grid">
+            {/* Left */}
             <div className="wm-why-left">
               <p className="wm-eyebrow">SAWO HEATERS</p>
               <h2 className="wm-why-title">Why Choose SAWO Heaters</h2>
               <p className="wm-why-desc">
-                SAWO heaters combine durability, energy efficiency, and modern design,
-                offering consistent performance for a reliable, superior sauna experience every time.
+                SAWO heaters combine durability, energy efficiency, and modern
+                design, offering consistent performance for a reliable, superior
+                sauna experience every time.
               </p>
-              <div style={{ marginTop: "20px" }}>
+              <div style={{ marginTop: "24px" }}>
                 <a
                   href="https://www.sawo.com/wp-content/uploads/2025/12/SAWO-Product-Catalogue-2025-2026-web.pdf"
                   target="_blank"
@@ -229,18 +156,216 @@ export default function WallMounted() {
                 </a>
               </div>
             </div>
-            <div className="wm-why-right"><CirclesInfo /></div>
+            {/* Right — CirclesInfo */}
+            <div className="wm-why-right">
+              <CirclesInfo />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* BANNER */}
+      {/* ===================== */}
+      {/* BANNER                */}
+      {/* ===================== */}
       <section className="wm-banner">
         <div className="wm-banner-content">
           <h2 className="wm-banner-title">Experience Ultimate Relaxation</h2>
-          <p className="wm-banner-sub">Find your source of serenity from over 100 heater models</p>
+          <p className="wm-banner-sub">
+            Find your source of serenity from over 100 heater models
+          </p>
         </div>
       </section>
+
+      {/* ===================== */}
+      {/* STYLES                */}
+      {/* ===================== */}
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+        /* ---- Hero ---- */
+        .wm-hero-overlay {
+          position: absolute; inset: 0;
+          background: rgba(0,0,0,0.48); z-index: 0;
+        }
+        .wm-hero-content {
+          position: relative; z-index: 1;
+          display: flex; flex-direction: column;
+          align-items: center; gap: 10px;
+        }
+        .wm-hero-title {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 45px; line-height: 52px;
+          font-weight: 700; color: #fff; margin: 0;
+        }
+        .wm-hero-subtitle {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 20px; font-weight: 300;
+          color: rgba(255,255,255,0.88); margin: 0;
+        }
+
+        /* ---- Layout ---- */
+        .wm-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .wm-section   { padding: 64px 0; }
+
+        /* ---- Intro desc ---- */
+        .wm-intro-desc {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1.1rem; font-weight: 400;
+          color: #555; line-height: 1.8;
+          max-width: 720px; margin: 0 auto;
+        }
+
+        /* ---- Introducing ---- */
+        .wm-products-title {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 2rem; font-weight: 700;
+          background: linear-gradient(135deg, #AA8161 0%, #c4a077 100%);
+          -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+          margin-bottom: 14px; line-height: 1.2;
+        }
+        .wm-products-desc {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1rem; font-weight: 400;
+          color: #555; line-height: 1.8;
+          max-width: 760px; margin: 0 auto;
+        }
+
+        /* ---- Filter tabs ---- */
+        .wm-filter-wrap {
+          display: flex; flex-wrap: wrap; gap: 10px;
+        }
+        .wm-filter-btn {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.78rem; font-weight: 600;
+          letter-spacing: 0.8px; padding: 8px 18px;
+          border-radius: 999px; border: 1.5px solid #e0d0c0;
+          background: transparent; color: #888;
+          cursor: pointer; transition: all 0.25s ease;
+        }
+        .wm-filter-btn:hover { border-color: #AA8161; color: #AA8161; }
+        .wm-filter-btn--active { background: #AA8161; border-color: #AA8161; color: #fff; }
+
+        /* ---- Product groups ---- */
+        .wm-group { margin-bottom: 52px; }
+        .wm-group-title {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1rem; font-weight: 700;
+          color: #AA8161; text-transform: uppercase;
+          letter-spacing: 1.5px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #ede5db;
+          margin-bottom: 24px;
+        }
+        .wm-products-grid {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          gap: 16px;
+        }
+
+        /* ---- Product item ---- */
+        .wm-product-item {
+          display: flex; flex-direction: column;
+          align-items: center; text-align: center;
+          cursor: default;
+        }
+        .wm-product-img-wrap {
+          width: 100%;
+          aspect-ratio: 1 / 1;
+          display: flex; align-items: center; justify-content: center;
+          overflow: hidden;
+          transition: transform 0.3s ease;
+        }
+        .wm-product-item:hover .wm-product-img-wrap {
+          transform: scale(1.04);
+        }
+        .wm-product-img {
+          width: 100%; height: 100%;
+          object-fit: contain; display: block;
+        }
+        .wm-product-img-placeholder {
+          width: 100%; height: 100%;
+          display: flex; align-items: center; justify-content: center;
+          color: #ddd; font-size: 1.8rem;
+        }
+        .wm-product-name {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.78rem; font-weight: 600;
+          color: #444; margin-top: 8px; line-height: 1.35;
+        }
+
+        /* ---- Why SAWO ---- */
+        .wm-why-grid {
+          display: grid; grid-template-columns: 1fr 1fr;
+          gap: 60px; align-items: center;
+        }
+        .wm-eyebrow {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.75rem; font-weight: 600;
+          letter-spacing: 2.5px; color: #AA8161;
+          text-transform: uppercase; margin-bottom: 10px;
+        }
+        .wm-why-title {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 2.2rem; font-weight: 700;
+          color: #AA8161; margin-bottom: 16px; line-height: 1.2;
+        }
+        .wm-why-desc {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1rem; font-weight: 400;
+          color: #444; line-height: 1.8; margin-bottom: 16px;
+        }
+        .wm-brochure-btn {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.85rem; font-weight: 600;
+          letter-spacing: 1px; padding: 12px 34px;
+          border: 2px solid #AA8161; color: #AA8161;
+          background: transparent; border-radius: 6px;
+          text-decoration: none; display: inline-block;
+          transition: all 0.3s ease;
+        }
+        .wm-brochure-btn:hover { background: #AA8161; color: #fff; }
+
+        /* ---- Banner ---- */
+        .wm-banner {
+          background: linear-gradient(135deg, #AA8161 0%, #c4a077 100%);
+          padding: 80px 24px;
+          text-align: center;
+        }
+        .wm-banner-content { max-width: 700px; margin: 0 auto; }
+        .wm-banner-title {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 2.4rem; font-weight: 700;
+          color: #fff; margin-bottom: 14px; line-height: 1.2;
+        }
+        .wm-banner-sub {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1.1rem; font-weight: 300;
+          color: rgba(255,255,255,0.9); margin: 0; line-height: 1.6;
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 1200px) {
+          .wm-products-grid { grid-template-columns: repeat(5, 1fr); }
+        }
+        @media (max-width: 1024px) {
+          .wm-products-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+        @media (max-width: 768px) {
+          .wm-hero-title { font-size: 28px; line-height: 36px; }
+          .wm-hero-subtitle { font-size: 16px; }
+          .wm-why-grid { grid-template-columns: 1fr; gap: 30px; }
+          .wm-products-grid { grid-template-columns: repeat(3, 1fr); }
+          .wm-why-title { font-size: 1.7rem; }
+          .wm-section { padding: 44px 0; }
+          .wm-banner-title { font-size: 1.8rem; }
+        }
+        @media (max-width: 480px) {
+          .wm-products-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+      `}</style>
+
     </div>
   );
-}
+};
+
+export default WallMounted;

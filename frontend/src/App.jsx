@@ -24,6 +24,7 @@ import Stone            from "./pages/Sauna/heaters/Stone";
 import Floor            from "./pages/Sauna/heaters/Floor";
 import Combi            from "./pages/Sauna/heaters/Combi";
 import Dragonfire       from "./pages/Sauna/heaters/Dragonfire";
+import AllHeaters       from "./pages/Sauna/heaters/AllHeaters";
 import SaunaControls    from "./pages/Sauna/SaunaControls";
 import SaunaAccessories from "./pages/Sauna/SaunaAccessories";
 import SaunaRooms       from "./pages/Sauna/SaunaRooms";
@@ -75,6 +76,7 @@ export default function App() {
                 <Route path={menuPaths.sauna.heaters.floor}     element={<Floor />} />
                 <Route path={menuPaths.sauna.heaters.combi}     element={<Combi />} />
                 <Route path={menuPaths.sauna.heaters.dragonfire} element={<Dragonfire />} />
+                <Route path={menuPaths.sauna.heaters.allheaters} element={<AllHeaters />} />
                 <Route path={menuPaths.sauna.controls}          element={<SaunaControls />} />
                 <Route path={menuPaths.sauna.accessories}       element={<SaunaAccessories />} />
                 <Route path={menuPaths.sauna.rooms}             element={<SaunaRooms />} />

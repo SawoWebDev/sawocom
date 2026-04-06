@@ -12,6 +12,7 @@ const menuPaths = {
       floor: "/sauna/heaters/floor",
       combi: "/sauna/heaters/combi",
       dragonfire: "/sauna/heaters/dragonfire",
+      allheaters: "/sauna/heaters/all-heaters",
     },
     controls: "/sauna/controls",
     accessories: "/sauna/accessories",
