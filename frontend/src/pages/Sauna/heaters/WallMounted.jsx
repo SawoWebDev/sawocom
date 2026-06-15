@@ -1,4 +1,4 @@
-﻿// WallMounted.jsx
+// WallMounted.jsx
 
 import React, { useState } from "react";
 import ButtonClear from "../../../components/Buttons/ButtonClear";

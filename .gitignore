@@ -1,0 +1,7 @@
+server/.env
+frontend/.env
+frontend/.env.local
+node_modules/
+frontend/node_modules/
+server/node_modules/
+frontend/build/

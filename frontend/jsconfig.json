@@ -7,6 +7,5 @@
       "@layouts/*": ["layouts/*"],
       "@pages/*": ["pages/*"]
     }
-  },
-  "include": ["src"]
+  }
 }
