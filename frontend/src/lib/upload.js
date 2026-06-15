@@ -6,15 +6,13 @@ export async function uploadPDF(file) {
   const timestamp = Date.now();
   const filePath = `product-pdf/${timestamp}_${file.name}`;
 
-  // Upload to Supabase Storage
   const { data, error } = await supabase.storage
     .from('product-pdf')
     .upload(filePath, file);
 
   if (error) throw error;
 
-  // Return public URL
-  const { publicUrl } = supabase.storage
+  const { data: { publicUrl } } = supabase.storage
     .from('product-pdf')
     .getPublicUrl(filePath);
 

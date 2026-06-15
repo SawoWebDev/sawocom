@@ -34,7 +34,7 @@ export default function Header() {
             { name: "Floor", path: menuPaths.sauna.heaters.floor },
             { name: "Combi", path: menuPaths.sauna.heaters.combi },
             { name: "Dragonfire", path: menuPaths.sauna.heaters.dragonfire },
-            { name: "Sauna-Heaters", path: menuPaths.sauna.heaters.allheaters },
+            { name: "Sauna Heaters", path: menuPaths.sauna.heaters.allheaters },
           ],
         },
         { name: "Sauna Controls", path: menuPaths.sauna.controls },

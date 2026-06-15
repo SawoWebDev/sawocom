@@ -197,14 +197,11 @@ async function syncTaxonomy(categories = [], tags = []) {
     if (!name.trim()) continue;
     const slug = name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
     await supabase.from("categories").upsert([{ name: name.trim(), slug }], { onConflict: "name", ignoreDuplicates: true });
-    // Increment usage count
-    await supabase.rpc("increment_cat_count", { p_name: name.trim() }).catch(() => {});
   }
   for (const name of tags) {
     if (!name.trim()) continue;
     const slug = name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
     await supabase.from("tags").upsert([{ name: name.trim(), slug }], { onConflict: "name", ignoreDuplicates: true });
-    await supabase.rpc("increment_tag_count", { p_name: name.trim() }).catch(() => {});
   }
 }
 
@@ -405,6 +402,7 @@ function buildProductPayload(body) {
     sort_order: body.sort_order || 0,
     spec_table: body.spec_table || null,
     resources:  body.resources  || null,
+    files:      Array.isArray(body.files) ? body.files : [],
   };
 }
 

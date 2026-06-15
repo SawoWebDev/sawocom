@@ -121,7 +121,7 @@ function FileRow({ file, index, onRemove, onRename }) {
           <div style={{ fontFamily: F, fontSize: "0.82rem", fontWeight: 600, color: C.text, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{file.name}</div>
         )}
         <a href={file.url} target="_blank" rel="noopener noreferrer" style={{ fontFamily: F, fontSize: "0.68rem", color: C.textLight, textDecoration: "none" }}>
-          {file.url.split("/").pop()}
+          {file.url ? file.url.split("/").pop() : ""}
         </a>
       </div>
       <button type="button" onClick={() => setEditing(true)} title="Rename"
@@ -163,7 +163,7 @@ function UnsavedConfirm({ open, onStay, onDiscard }) {
         </p>
         <div style={{ display: "flex", gap: 8, justifyContent: "flex-end" }}>
           <Btn label="Stay &amp; Keep Editing" variant="ghost" onClick={onStay} />
-          <Btn label="Discard " variant="danger" icon="fa-trash" onClick={onDiscard} />
+          <Btn label="Discard" variant="danger" icon="fa-trash" onClick={onDiscard} />
         </div>
       </div>
     </div>
@@ -334,20 +334,29 @@ export default function ProductsPage({ currentUser }) {
     finally { setUpSpec(false); }
   };
 
-  const handleFileUpload = async e => {
-    const files = Array.from(e.target.files || []);
-    if (!files.length) return;
-    setUpFile(true);
-    try {
-      for (const file of files) {
-        const { url } = await uploadPDF(file);
-        const name = file.name.replace(/\.pdf$/i, "").replace(/[-_]/g, " ").replace(/\b\w/g, c => c.toUpperCase());
-        setForm(f => ({ ...f, files: [...f.files, { name, url }] }));
-      }
-      add(`${files.length} file(s) uploaded.`, "success");
-    } catch (err) { add(err.message, "error"); }
-    finally { setUpFile(false); if (fileInputRef.current) fileInputRef.current.value = ""; }
-  };
+const handleFileUpload = async e => {
+  const files = Array.from(e.target.files || []);
+  if (!files.length) return;
+  setUpFile(true);
+  try {
+    for (const file of files) {
+      const result = await uploadPDF(file);
+      console.log("[uploadPDF] result:", result); // ← shows you the real shape
+
+      // Try common shapes — adjust once you see the log
+      const url = result?.url || result?.publicUrl || result?.data?.publicUrl || result?.data?.url;
+      if (!url) throw new Error("Upload returned no URL. Check console for result shape.");
+
+      const name = file.name
+        .replace(/\.pdf$/i, "")
+        .replace(/[-_]/g, " ")
+        .replace(/\b\w/g, c => c.toUpperCase());
+      setForm(f => ({ ...f, files: [...f.files, { name, url }] }));
+    }
+    add(`${files.length} file(s) uploaded.`, "success");
+  } catch (err) { add(err.message, "error"); }
+  finally { setUpFile(false); if (fileInputRef.current) fileInputRef.current.value = ""; }
+};
 
   const renameFile = (i, name) => setForm(f => ({ ...f, files: f.files.map((fi, idx) => idx === i ? { ...fi, name } : fi) }));
   const removeFile = i => setForm(f => ({ ...f, files: f.files.filter((_, idx) => idx !== i) }));
